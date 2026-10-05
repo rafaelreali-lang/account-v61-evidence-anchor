@@ -3,9 +3,15 @@
 
 Fontes, nesta ordem:
   A) Portal de Dados Abertos - votacao_partido_munzona_2026 / votacao_candidato_munzona_2026
-     -> agregado por tse2026_agrega.py (nominais + legenda)
-  B) API de divulgação (resultados.tse.jus.br) - um JSON por UF x cargo, soma dos votos
-     de cada candidato pelo partido (partido = 2 primeiros dígitos do número do candidato)
+     -> agregado por tse2026_agrega.py (nominais + legenda). Só funciona quando o TSE publicar.
+  B) API de divulgação (resultados.tse.jus.br/oficial/ele2026/6259/dados/<uf>/<uf>-c<cargo>-e006259-u.json)
+     Estrutura: carg[0].agr[*] (coligação/federação/partido isolado) .par[*] (partido) .cand[*] (candidato)
+       par.sg   sigla do partido
+       par.tvtn total de votos totalizados nominais (válidos)      par.tvan apurados nominais (inclui sub judice)
+       par.tvtl total de votos totalizados de legenda (válidos)    par.tval apurados de legenda
+       cand.vap votos apurados do candidato; cand.dvt 'Válido' ou 'Anulado sub judice'
+     Topo: v.vnom (válidos nominais), v.vl (válidos legenda), v.vv (válidos), v.vansj (anulados sub judice),
+           s.pst (% seções totalizadas).
 
 Só biblioteca padrão. Tudo que foi tentado fica registrado em raw/status.json.
 """
@@ -13,10 +19,10 @@ import csv
 import io
 import json
 import os
-import re
 import subprocess
 import sys
 import time
+import unicodedata
 import urllib.error
 import urllib.request
 import zipfile
@@ -37,20 +43,12 @@ UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/1
       "Accept": "*/*"}
 STATUS = {"inicio_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "passos": []}
 
-# número do partido (TSE) -> sigla canônica (sem acento)
-NUM_SIGLA = {
-    "10": "REPUBLICANOS", "11": "PP", "12": "PDT", "13": "PT", "14": "PTB", "15": "MDB",
-    "16": "PSTU", "17": "PSL", "18": "REDE", "19": "PODE", "20": "PSC", "21": "PCB",
-    "22": "PL", "23": "CIDADANIA", "25": "PRD", "27": "DC", "28": "PRTB", "29": "PCO",
-    "30": "NOVO", "33": "MOBILIZA", "35": "PMB", "36": "AGIR", "40": "PSB", "43": "PV",
-    "44": "UNIAO", "45": "PSDB", "50": "PSOL", "51": "PATRIOTA", "55": "PSD", "65": "PCDOB",
-    "70": "AVANTE", "77": "SOLIDARIEDADE", "80": "UP", "90": "PROS",
-}
 CARGO_GRUPO = {"3": "Governador", "5": "Senador", "6": "Dep. Federal",
                "7": "Dep. Estadual/Distrital", "8": "Dep. Estadual/Distrital"}
 UFS = ["ac", "al", "am", "ap", "ba", "ce", "df", "es", "go", "ma", "mg", "ms", "mt", "pa", "pb",
        "pe", "pi", "pr", "rj", "rn", "ro", "rr", "rs", "sc", "se", "sp", "to"]
-SUFIXOS = ["u", "r", "e", "ab", "s", "p", "t", "c", "v"]
+ALIAS = {"PODEMOS": "PODE", "PROGRESSISTAS": "PP", "UNIAO BRASIL": "UNIAO", "PC DO B": "PCDOB",
+         "SD": "SOLIDARIEDADE"}
 
 
 def log(msg, **kw):
@@ -79,6 +77,13 @@ def to_int_br(s):
         return 0
     s = str(s).strip().replace(".", "").replace(",", "")
     return int(s) if s.isdigit() else 0
+
+
+def norm_sigla(sg):
+    s = unicodedata.normalize("NFKD", sg or "")
+    s = "".join(c for c in s if not unicodedata.combining(c))
+    s = " ".join(s.upper().split())
+    return ALIAS.get(s, s)
 
 
 def save(path, content, binary=False):
@@ -114,7 +119,6 @@ def dados_abertos():
             p = os.path.join(TMP, os.path.basename(u))
             save(p, data, binary=True)
             paths.append(p)
-            # registra conteúdo do zip e cabeçalho/1ª linha de cada CSV
             try:
                 zf = zipfile.ZipFile(p)
                 info = []
@@ -138,39 +142,6 @@ def dados_abertos():
 
 
 # ---------------------------------------------------------------- B) divulgação
-def walk(obj, path=()):
-    if isinstance(obj, dict):
-        yield path, obj
-        for k, v in obj.items():
-            yield from walk(v, path + (k,))
-    elif isinstance(obj, list):
-        for i, v in enumerate(obj):
-            yield from walk(v, path + (i,))
-
-
-def listas_de_dicts(j):
-    """[(caminho, tamanho, chaves do 1º item)] para toda lista de dicts no JSON."""
-    out = []
-    for path, d in walk(j):
-        for k, v in d.items():
-            if isinstance(v, list) and v and isinstance(v[0], dict):
-                out.append(("/".join(map(str, path + (k,))), len(v), sorted(v[0].keys())))
-    return out
-
-
-def candidatos_de(j):
-    """(lista de candidatos, dict pai) tolerante a layout (cand no topo ou dentro de abr[])."""
-    for path, d in walk(j):
-        v = d.get("cand")
-        if isinstance(v, list) and v and isinstance(v[0], dict):
-            return v, d
-    for path, d in walk(j):
-        for k, v in d.items():
-            if isinstance(v, list) and v and isinstance(v[0], dict) and "vap" in v[0]:
-                return v, d
-    return [], j
-
-
 def eleicoes_2026(cfg):
     """[(ciclo, cd_eleicao, nome, [ufs], [(cd_cargo, ds_cargo)])] do 1º turno 2026."""
     out = []
@@ -179,8 +150,7 @@ def eleicoes_2026(cfg):
         for e in pl.get("e", []):
             if str(e.get("t", "")) != "1":
                 continue
-            cargos = []
-            ufs = []
+            cargos, ufs = [], []
             for abr in e.get("abr", []) or []:
                 cd = str(abr.get("cd", "")).lower()
                 ufs += UFS if cd == "br" else [cd]
@@ -192,27 +162,32 @@ def eleicoes_2026(cfg):
     return out
 
 
-def padroes_app():
-    """Lê o app de resultados do TSE e registra sufixos de arquivos .json usados."""
-    achados = {}
-    code, html, _ = http(f"{BASE}/app/index.html", tries=1, timeout=60)
-    achados["index.html"] = code
-    if code != 200 or not html:
-        return achados
-    scripts = re.findall(r'src="([^"]+\.js)"', html)
-    achados["scripts"] = scripts
-    pats = defaultdict(int)
-    for s in scripts[:12]:
-        u = s if s.startswith("http") else f"{BASE}/app/{s.lstrip('./')}"
-        code, js, _ = http(u, tries=1, timeout=120)
-        if code != 200 or not js:
-            continue
-        for m in re.findall(r'[-\w${}/.]{0,40}-[a-z]{1,3}\.json', js):
-            pats[m] += 1
-        for m in re.findall(r'dados-simplificados|arquivo-urna|/dados/|config/mun-', js):
-            pats[m] += 1
-    achados["padroes"] = sorted(pats.items(), key=lambda kv: -kv[1])[:80]
-    return achados
+def processar_json(j):
+    """Lê um arquivo -u.json de UF x cargo. Retorna (partidos, candidatos, totais)."""
+    partidos, cands = [], []
+    carg = (j.get("carg") or [{}])[0]
+    for agr in carg.get("agr", []) or []:
+        for par in agr.get("par", []) or []:
+            sg = norm_sigla(par.get("sg", ""))
+            p = {"sg": sg, "sg_tse": par.get("sg", ""), "num": par.get("n", ""), "nfed": par.get("nfed", ""),
+                 "agr_tp": agr.get("tp", ""), "agr_nm": agr.get("nm", ""),
+                 "tvtn": to_int_br(par.get("tvtn")), "tvan": to_int_br(par.get("tvan")),
+                 "tvtl": to_int_br(par.get("tvtl")), "tval": to_int_br(par.get("tval")),
+                 "soma_vap": 0, "soma_vap_valido": 0, "n_cand": 0}
+            for c in par.get("cand", []) or []:
+                v = to_int_br(c.get("vap"))
+                valido = str(c.get("dvt", "")).strip().lower() == "válido"
+                p["soma_vap"] += v
+                p["soma_vap_valido"] += v if valido else 0
+                p["n_cand"] += 1
+                cands.append({"sg": sg, "num": c.get("n", ""), "nm": c.get("nm", ""), "nmu": c.get("nmu", ""),
+                              "vap": v, "dvt": c.get("dvt", ""), "st": c.get("st", ""), "seq": c.get("seq", "")})
+            partidos.append(p)
+    v, s = j.get("v", {}) or {}, j.get("s", {}) or {}
+    totais = {"vnom": to_int_br(v.get("vnom")), "vl": to_int_br(v.get("vl")), "vv": to_int_br(v.get("vv")),
+              "vansj": to_int_br(v.get("vansj")), "vb": to_int_br(v.get("vb")), "vn": to_int_br(v.get("vn")),
+              "tv": to_int_br(v.get("tv")), "pst": s.get("pst", ""), "dg": j.get("dg", ""), "hg": j.get("hg", "")}
+    return partidos, cands, totais
 
 
 def divulgacao():
@@ -221,67 +196,30 @@ def divulgacao():
     if code != 200 or not txt:
         return False
     save(os.path.join(RAW, "ele-c.json"), txt)
-    cfg = json.loads(txt)
-    eleicoes = eleicoes_2026(cfg)
+    eleicoes = eleicoes_2026(json.loads(txt))
     log("eleições 2026 1º turno com cargos-alvo",
         eleicoes=[(c, cd, nm, len(u), cg) for c, cd, nm, u, cg in eleicoes])
     if not eleicoes:
         return False
-    try:
-        app = padroes_app()
-        save(os.path.join(RAW, "app_padroes.json"), json.dumps(app, ensure_ascii=False, indent=1))
-        log("padrões do app", n=len(app.get("padroes", [])))
-    except Exception as e:
-        log(f"app: {e!r}")
-
     ciclo, cd, nome, ufs, cargos = eleicoes[0]
-    cdi = int(cd)
-    # ---- sonda: UF pequena (ac), cargo majoritário (3) e proporcional (6)
-    sonda = {}
-    candidatos_url = []
-    for cg in ("3", "6"):
-        for suf in SUFIXOS:
-            candidatos_url.append(f"{BASE}/{ciclo}/{cd}/dados/ac/ac-c{int(cg):04d}-e{cdi:06d}-{suf}.json")
-        candidatos_url.append(f"{BASE}/{ciclo}/{cd}/dados-simplificados/ac/ac-c{int(cg):04d}-e{cdi:06d}-r.json")
-        candidatos_url.append(f"{BASE}/{ciclo}/{cd}/dados/ac/ac01120-c{int(cg):04d}-e{cdi:06d}-u.json")
-    candidatos_url.append(f"{BASE}/{ciclo}/{cd}/config/mun-e{cdi:06d}-cm.json")
-    candidatos_url.append(f"{BASE}/{ciclo}/{cd}/config/ac/ac-e{cdi:06d}-cm.json")
-    padrao_ok = None
-    for u in candidatos_url:
-        code, txt, _ = http(u, tries=1, timeout=60)
-        ent = {"http": code, "bytes": len(txt or "")}
-        if code == 200 and txt:
-            save(os.path.join(RAW, "samples", os.path.basename(u)), txt[:400000])
-            try:
-                j = json.loads(txt)
-                ent["chaves_topo"] = sorted(j.keys()) if isinstance(j, dict) else type(j).__name__
-                ent["listas"] = listas_de_dicts(j)[:15]
-                c, pai = candidatos_de(j)
-                ent["n_cand"] = len(c)
-                ent["chaves_cand"] = sorted(c[0].keys()) if c else []
-                ent["chaves_pai"] = sorted(pai.keys())[:40]
-                if c and "/dados/ac/ac-c" in u and padrao_ok is None:
-                    padrao_ok = u.replace("/ac/ac-c0003-", "/{uf}/{uf}-c{cg:04d}-").replace("/ac/ac-c0006-", "/{uf}/{uf}-c{cg:04d}-")
-            except Exception as e:
-                ent["erro"] = repr(e)
-        sonda[u] = ent
-        print(f"sonda {u} -> {code} {ent.get('n_cand', '')}", flush=True)
-    save(os.path.join(RAW, "schema.json"), json.dumps(sonda, ensure_ascii=False, indent=1))
-    log("sonda concluída", padrao=padrao_ok)
-    if not padrao_ok:
-        return False
+    padrao = f"{BASE}/{ciclo}/{cd}/dados/{{uf}}/{{uf}}-c{{cg:04d}}-e{int(cd):06d}-u.json"
 
-    cand_rows = [["cd_eleicao", "uf", "cd_cargo", "cargo", "grupo", "numero", "nome", "num_partido",
-                  "partido", "campo_cc", "votos", "situacao"]]
-    tot_rows = [["cd_eleicao", "uf", "cd_cargo", "cargo", "n_cand", "soma_votos_cand",
-                 "vv", "vn", "vb", "tv", "pst", "pea", "psi", "dg", "hg"]]
-    agg = defaultdict(lambda: defaultdict(int))
-    falhas = []
+    # linhas por UF x cargo x partido; por candidato; por UF x cargo
+    part_rows = [["uf", "cd_cargo", "cargo", "grupo", "partido", "sigla_tse", "num_partido", "federacao",
+                  "tipo_agremiacao", "agremiacao", "n_cand", "nominais_validos_tvtn", "nominais_apurados_tvan",
+                  "legenda_validos_tvtl", "legenda_apurados_tval", "soma_vap_cand", "soma_vap_cand_validos"]]
+    cand_rows = [["uf", "cd_cargo", "cargo", "grupo", "partido", "numero", "nome", "nome_urna", "votos_vap",
+                  "validade", "situacao", "seq"]]
+    tot_rows = [["uf", "cd_cargo", "cargo", "grupo", "n_partidos", "n_cand", "soma_tvtn", "soma_tvtl",
+                 "soma_vap", "vnom", "vl", "vv", "vansj", "vb", "vn", "tv", "pst", "dg", "hg",
+                 "ok_tvtn_eq_vnom", "ok_tvtl_eq_vl", "ok_vap_eq_vnom_mais_vansj"]]
+    agg = defaultdict(lambda: defaultdict(lambda: [0, 0]))  # grupo -> sigla -> [nominais, legenda]
+    falhas, pst_nao_100 = [], []
     for uf in ufs:
         for cg, ds in cargos:
             if (cg == "8") != (uf == "df"):
                 continue  # distrital só no DF; estadual nos demais
-            u = padrao_ok.format(uf=uf, cg=int(cg))
+            u = padrao.format(uf=uf, cg=int(cg))
             code, txt, _ = http(u, tries=3, timeout=180)
             if code != 200 or not txt:
                 falhas.append({"url": u, "http": code})
@@ -291,86 +229,116 @@ def divulgacao():
             except Exception as e:
                 falhas.append({"url": u, "erro": repr(e)})
                 continue
-            cands, pai = candidatos_de(j)
+            if uf in ("ac", "df"):
+                save(os.path.join(RAW, "samples", os.path.basename(u)), txt)
             grupo = CARGO_GRUPO[cg]
-            soma = 0
+            partidos, cands, t = processar_json(j)
+            s_tvtn = sum(p["tvtn"] for p in partidos)
+            s_tvtl = sum(p["tvtl"] for p in partidos)
+            s_vap = sum(p["soma_vap"] for p in partidos)
+            for p in partidos:
+                agg[grupo][p["sg"]][0] += p["tvtn"]
+                agg[grupo][p["sg"]][1] += p["tvtl"]
+                part_rows.append([uf.upper(), cg, ds, grupo, p["sg"], p["sg_tse"], p["num"], p["nfed"], p["agr_tp"],
+                                  p["agr_nm"], p["n_cand"], p["tvtn"], p["tvan"], p["tvtl"], p["tval"],
+                                  p["soma_vap"], p["soma_vap_valido"]])
             for c in cands:
-                n = str(c.get("n", "")).strip()
-                num_part = n[:2]
-                sigla = NUM_SIGLA.get(num_part, f"P{num_part}")
-                v = to_int_br(c.get("vap", c.get("v", c.get("votos"))))
-                soma += v
-                agg[grupo][sigla] += v
-                cand_rows.append([cd, uf.upper(), cg, ds, grupo, n, c.get("nm", ""), num_part, sigla,
-                                  c.get("cc", c.get("sgp", "")), v, c.get("st", "")])
-            g = lambda k: pai.get(k, j.get(k))  # noqa: E731
-            tot_rows.append([cd, uf.upper(), cg, ds, len(cands), soma, g("vv"), g("vn"), g("vb"), g("tv"),
-                             g("pst"), g("pea"), g("psi"), j.get("dg"), j.get("hg")])
-            print(f"{uf} c{cg} {ds}: {len(cands)} cand, soma={soma}, vv={g('vv')}, pst={g('pst')}", flush=True)
-    log(f"divulgação: {len(tot_rows)-1} arquivos lidos, {len(falhas)} falhas", falhas=falhas[:30])
+                cand_rows.append([uf.upper(), cg, ds, grupo, c["sg"], c["num"], c["nm"], c["nmu"], c["vap"],
+                                  c["dvt"], c["st"], c["seq"]])
+            tot_rows.append([uf.upper(), cg, ds, grupo, len(partidos), len(cands), s_tvtn, s_tvtl, s_vap,
+                             t["vnom"], t["vl"], t["vv"], t["vansj"], t["vb"], t["vn"], t["tv"], t["pst"],
+                             t["dg"], t["hg"], s_tvtn == t["vnom"], s_tvtl == t["vl"],
+                             s_vap == t["vnom"] + t["vansj"]])
+            if t["pst"] != "100,00":
+                pst_nao_100.append((uf.upper(), ds, t["pst"]))
+            print(f"{uf} c{cg} {ds}: {len(partidos)} partidos, {len(cands)} cand, tvtn={s_tvtn} vnom={t['vnom']} "
+                  f"tvtl={s_tvtl} vl={t['vl']} pst={t['pst']}", flush=True)
+    log(f"divulgação: {len(tot_rows)-1} arquivos lidos, {len(falhas)} falhas", falhas=falhas[:30],
+        pst_nao_100=pst_nao_100)
     if len(tot_rows) <= 1:
         return False
 
     out = os.path.join(SAIDA, "divulgacao")
     os.makedirs(out, exist_ok=True)
-    with open(os.path.join(out, "candidatos.csv"), "w", encoding="utf-8", newline="") as f:
-        csv.writer(f).writerows(cand_rows)
-    with open(os.path.join(out, "uf_cargo_totais.csv"), "w", encoding="utf-8", newline="") as f:
-        csv.writer(f).writerows(tot_rows)
+    for nome_arq, rows in (("partidos_uf_cargo.csv", part_rows), ("candidatos.csv", cand_rows),
+                           ("uf_cargo_totais.csv", tot_rows)):
+        with open(os.path.join(out, nome_arq), "w", encoding="utf-8", newline="") as f:
+            csv.writer(f).writerows(rows)
 
-    md = ["# TSE – Eleições 2026, 1º turno – votos por partido e por cargo (API de divulgação)\n",
-          f"Fonte: {BASE} (Tribunal Superior Eleitoral). Eleição `{cd}` – {nome}. Padrão: `{padrao_ok}`.",
-          f"Extraído em {time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime())}. "
-          f"Arquivos lidos: {len(tot_rows)-1}; falhas: {len(falhas)}.",
-          "Base: votos nominais apurados por candidato (`vap`), somados pelo partido do candidato "
-          "(2 primeiros dígitos do número). Não inclui votos de legenda.",
-          "Senador 2026: cada eleitor vota em 2 candidatos. Dep. Distrital (DF) junto com Dep. Estadual.\n",
+    n_ok = sum(1 for r in tot_rows[1:] if r[19] and r[20] and r[21])
+    md = ["# TSE – Eleições 2026, 1º turno – votos por partido e por cargo\n",
+          f"Fonte: Tribunal Superior Eleitoral, API de divulgação de resultados ({BASE}). "
+          f"Eleição `{cd}` – {nome}.",
+          f"Arquivos: `{padrao}` (um por UF x cargo). Lidos: {len(tot_rows)-1}; falhas: {len(falhas)}. "
+          f"Extraído em {time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime())}.",
+          "Votos **nominais válidos** = soma dos votos de todos os candidatos do partido (`par.tvtn`). "
+          "**Legenda** = votos na legenda do partido (`par.tvtl`), só em proporcionais. "
+          "**Total válidos** = nominais + legenda.",
+          "Senador 2026: cada eleitor vota em 2 candidatos. Dep. Distrital (DF) agregado com Dep. Estadual.",
+          f"Seções totalizadas (`pst`) = 100,00% em todos os arquivos: {'sim' if not pst_nao_100 else 'NÃO: ' + str(pst_nao_100)}.",
+          f"Checagem por UF x cargo (soma partidos = totais do TSE): {n_ok} de {len(tot_rows)-1} ok.\n",
           f"Direita: {', '.join(DIREITA)}  ", f"Centro-direita: {', '.join(CENTRO_DIREITA)}\n"]
     resumo = []
-    csv_rows = [["cargo", "partido", "bloco", "votos", "pct_cargo"]]
+    csv_rows = [["cargo", "partido", "bloco", "nominais_validos", "legenda", "total_validos", "pct_total_validos"]]
+    nao_map = set()
     for grupo in ORDEM_CARGOS:
         if grupo not in agg:
             continue
-        tab = agg[grupo]
-        total = sum(tab.values())
-        md += [f"## {grupo}\n", f"Total de votos nominais: **{fmt(total)}**\n",
-               "| Partido | Bloco | Votos | % |", "|---|---|---:|---:|"]
-        for p, v in sorted(tab.items(), key=lambda kv: -kv[1]):
-            md.append(f"| {p} | {bloco(p)} | {fmt(v)} | {pct(v, total)} |")
-            csv_rows.append([grupo, p, bloco(p), v, f"{100.0*v/total:.4f}" if total else ""])
-        d = sum(v for p, v in tab.items() if bloco(p) == "Direita")
-        cdv = sum(v for p, v in tab.items() if bloco(p) == "Centro-direita")
-        rest = total - d - cdv
-        md += [f"| **Subtotal Direita** | | **{fmt(d)}** | **{pct(d, total)}** |",
-               f"| **Subtotal Centro-direita** | | **{fmt(cdv)}** | **{pct(cdv, total)}** |",
-               f"| **Direita + Centro-direita** | | **{fmt(d+cdv)}** | **{pct(d+cdv, total)}** |",
-               f"| Demais partidos | | {fmt(rest)} | {pct(rest, total)} |",
-               f"| Total | | {fmt(total)} | 100,00% |\n"]
-        resumo.append((grupo, d, cdv, rest, total))
-    md += ["## Resumo por bloco\n",
-           "| Cargo | Direita | Centro-direita | Direita + Centro-direita | Demais | Total | % Dir+CD |",
+        tab = {sg: (v[0], v[1], v[0] + v[1]) for sg, v in agg[grupo].items()}
+        tot_nom = sum(t[0] for t in tab.values())
+        tot_leg = sum(t[1] for t in tab.values())
+        total = tot_nom + tot_leg
+        md += [f"## {grupo}\n",
+               f"Nominais válidos: **{fmt(tot_nom)}** · Legenda: **{fmt(tot_leg)}** · Total válidos: **{fmt(total)}**\n",
+               "| Partido | Bloco | Nominais válidos | Legenda | Total válidos | % total |",
+               "|---|---|---:|---:|---:|---:|"]
+        for sg, (nom, leg, tt) in sorted(tab.items(), key=lambda kv: -kv[1][2]):
+            b = bloco(sg)
+            if b == "Demais":
+                nao_map.add(sg)
+            md.append(f"| {sg} | {b} | {fmt(nom)} | {fmt(leg)} | {fmt(tt)} | {pct(tt, total)} |")
+            csv_rows.append([grupo, sg, b, nom, leg, tt, f"{100.0*tt/total:.4f}" if total else ""])
+        d = [sum(t[i] for sg, t in tab.items() if bloco(sg) == "Direita") for i in (0, 1, 2)]
+        c = [sum(t[i] for sg, t in tab.items() if bloco(sg) == "Centro-direita") for i in (0, 1, 2)]
+        r = [tot_nom - d[0] - c[0], tot_leg - d[1] - c[1], total - d[2] - c[2]]
+        md += [f"| **Subtotal Direita** | | **{fmt(d[0])}** | **{fmt(d[1])}** | **{fmt(d[2])}** | **{pct(d[2], total)}** |",
+               f"| **Subtotal Centro-direita** | | **{fmt(c[0])}** | **{fmt(c[1])}** | **{fmt(c[2])}** | **{pct(c[2], total)}** |",
+               f"| **Direita + Centro-direita** | | **{fmt(d[0]+c[0])}** | **{fmt(d[1]+c[1])}** | **{fmt(d[2]+c[2])}** | **{pct(d[2]+c[2], total)}** |",
+               f"| Demais partidos | | {fmt(r[0])} | {fmt(r[1])} | {fmt(r[2])} | {pct(r[2], total)} |",
+               f"| Total válidos | | {fmt(tot_nom)} | {fmt(tot_leg)} | {fmt(total)} | 100,00% |\n"]
+        resumo.append((grupo, d, c, r, tot_nom, tot_leg, total))
+
+    md += ["## Resumo por bloco – votos nominais válidos (soma dos candidatos)\n",
+           "| Cargo | Direita | Centro-direita | Direita + Centro-direita | Demais | Total nominais | % Dir+CD |",
            "|---|---:|---:|---:|---:|---:|---:|"]
-    for g_, d, cdv, rest, total in resumo:
-        md.append(f"| {g_} | {fmt(d)} | {fmt(cdv)} | {fmt(d+cdv)} | {fmt(rest)} | {fmt(total)} | {pct(d+cdv, total)} |")
-    md += ["", "## Checagens\n",
-           "- Por UF x cargo: soma dos candidatos vs `vv` (votos válidos) do JSON. "
-           "Diferença esperada em proporcionais = votos de legenda; em majoritários deve ser 0. "
-           "`pst` = % de seções totalizadas.", "",
-           "| UF | Cargo | N cand | Soma cand. | vv | Diferença | pst |", "|---|---|---:|---:|---:|---:|---:|"]
+    for g, d, c, r, tn, tl, tt in resumo:
+        md.append(f"| {g} | {fmt(d[0])} | {fmt(c[0])} | {fmt(d[0]+c[0])} | {fmt(r[0])} | {fmt(tn)} | {pct(d[0]+c[0], tn)} |")
+    md += ["", "## Resumo por bloco – total válidos (nominais + legenda)\n",
+           "| Cargo | Direita | Centro-direita | Direita + Centro-direita | Demais | Total válidos | % Dir+CD |",
+           "|---|---:|---:|---:|---:|---:|---:|"]
+    for g, d, c, r, tn, tl, tt in resumo:
+        md.append(f"| {g} | {fmt(d[2])} | {fmt(c[2])} | {fmt(d[2]+c[2])} | {fmt(r[2])} | {fmt(tt)} | {pct(d[2]+c[2], tt)} |")
+    md += ["", "## Siglas fora das listas Direita / Centro-direita (contadas em Demais)\n",
+           ", ".join(sorted(nao_map)) or "(nenhuma)", "",
+           "## Checagens por UF x cargo\n",
+           "Soma dos partidos vs totais do próprio arquivo do TSE: `tvtn`=`vnom` (nominais válidos), "
+           "`tvtl`=`vl` (legenda), soma `vap` = `vnom`+`vansj` (apurados incluem anulados sub judice).\n",
+           "| UF | Cargo | Partidos | Cand. | Σ nominais | vnom | Σ legenda | vl | vv | sub judice | pst | ok |",
+           "|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|:-:|"]
     for r in tot_rows[1:]:
-        vv = to_int_br(r[6])
-        md.append(f"| {r[1]} | {r[3]} | {r[4]} | {fmt(r[5])} | {fmt(vv)} | {fmt(vv - r[5])} | {r[10]} |")
-    desconhecidos = sorted({p for g_ in agg for p in agg[g_] if p.startswith("P") and p[1:].isdigit()})
-    md.append(f"\n- Números de partido sem sigla mapeada: {desconhecidos or 'nenhum'}")
-    md.append(f"- Falhas de download: {len(falhas)}")
+        ok = "sim" if (r[19] and r[20] and r[21]) else "NÃO"
+        md.append(f"| {r[0]} | {r[2]} | {r[4]} | {r[5]} | {fmt(r[6])} | {fmt(r[9])} | {fmt(r[7])} | {fmt(r[10])} | "
+                  f"{fmt(r[11])} | {fmt(r[12])} | {r[16]} | {ok} |")
+    md.append(f"\n- Falhas de download: {len(falhas)}")
     save(os.path.join(out, "resultado.md"), "\n".join(md))
     with open(os.path.join(out, "votos_por_partido_cargo.csv"), "w", encoding="utf-8", newline="") as f:
         csv.writer(f).writerows(csv_rows)
     with open(os.path.join(out, "resumo_blocos.csv"), "w", encoding="utf-8", newline="") as f:
         w = csv.writer(f)
-        w.writerow(["cargo", "direita", "centro_direita", "direita_mais_centro_direita", "demais", "total", "pct_dir_cd"])
-        for g_, d, cdv, rest, total in resumo:
-            w.writerow([g_, d, cdv, d + cdv, rest, total, f"{100.0*(d+cdv)/total:.4f}" if total else ""])
+        w.writerow(["cargo", "base", "direita", "centro_direita", "direita_mais_centro_direita", "demais", "total", "pct_dir_cd"])
+        for g, d, c, r, tn, tl, tt in resumo:
+            w.writerow([g, "nominais_validos", d[0], c[0], d[0] + c[0], r[0], tn, f"{100.0*(d[0]+c[0])/tn:.4f}" if tn else ""])
+            w.writerow([g, "total_validos", d[2], c[2], d[2] + c[2], r[2], tt, f"{100.0*(d[2]+c[2])/tt:.4f}" if tt else ""])
     return True
 
 
