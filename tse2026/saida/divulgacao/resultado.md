@@ -1,43 +1,43 @@
 # TSE – Eleições 2026, 1º turno – votos por partido e por cargo
 
-Fonte: Tribunal Superior Eleitoral, API de divulgação de resultados (https://resultados.tse.jus.br/oficial). Eleição `6259` – Eleição Ordinária Estadual - 2026 1º Turno.
-Arquivos: `https://resultados.tse.jus.br/oficial/ele2026/6259/dados/{uf}/{uf}-c{cg:04d}-e006259-u.json` (um por UF x cargo). Lidos: 105; falhas: 0. Extraído em 2026-10-05 03:51 UTC.
+Fonte: Tribunal Superior Eleitoral, API de divulgação de resultados (https://resultados.tse.jus.br/oficial). Eleição `6257, 6259` – 6257 – Eleição Ordinária Federal - 2026 1º Turno; 6259 – Eleição Ordinária Estadual - 2026 1º Turno.
+Arquivos: `https://resultados.tse.jus.br/oficial/ele2026/6257/dados/{uf}/{uf}-c{cg:04d}-e006257-u.json; https://resultados.tse.jus.br/oficial/ele2026/6259/dados/{uf}/{uf}-c{cg:04d}-e006259-u.json` (um por UF x cargo). Lidos: 106; falhas: 0. Extraído em 2026-10-05 11:41 UTC.
 Votos **nominais válidos** = soma dos votos de todos os candidatos do partido (`par.tvtn`). **Legenda** = votos na legenda do partido (`par.tvtl`), só em proporcionais. **Total válidos** = nominais + legenda.
 Senador 2026: cada eleitor vota em 2 candidatos. Dep. Distrital (DF) agregado com Dep. Estadual.
-Seções totalizadas (`pst`) = 100,00% em todos os arquivos: NÃO: [('AM', 'Governador', '99,99'), ('AM', 'Senador', '99,99'), ('AM', 'Deputado Federal', '99,99'), ('AM', 'Deputado Estadual', '99,99'), ('MA', 'Governador', '99,97'), ('MA', 'Senador', '99,97'), ('MA', 'Deputado Federal', '99,97'), ('MA', 'Deputado Estadual', '99,97')].
-Checagem por UF x cargo (soma partidos = totais do TSE): 91 de 105 ok.
+Seções totalizadas (`pst`) = 100,00% em todos os arquivos: sim.
+Checagem por UF x cargo (soma partidos = totais do TSE): 92 de 106 ok.
 
 Direita: PL, NOVO, REPUBLICANOS, PP, UNIAO, PRD, PRTB, DC, MISSAO  
 Centro-direita: PSD, MDB, PSDB, CIDADANIA, PODE, SOLIDARIEDADE, AVANTE, AGIR, MOBILIZA
 
 ## Dep. Estadual/Distrital
 
-Nominais válidos: **105.467.380** · Legenda: **7.270.576** · Total válidos: **112.737.956**
+Nominais válidos: **105.468.548** · Legenda: **7.270.677** · Total válidos: **112.739.225**
 
 | Partido | Bloco | Nominais válidos | Legenda | Total válidos | % total |
 |---|---|---:|---:|---:|---:|
-| PL | Direita | 21.424.542 | 1.338.053 | 22.762.595 | 20,19% |
-| PT | Demais | 13.726.396 | 1.833.787 | 15.560.183 | 13,80% |
-| PSD | Centro-direita | 11.069.199 | 413.664 | 11.482.863 | 10,19% |
-| MDB | Centro-direita | 9.765.097 | 568.595 | 10.333.692 | 9,17% |
-| REPUBLICANOS | Direita | 6.923.451 | 368.681 | 7.292.132 | 6,47% |
-| PP | Direita | 6.449.245 | 474.240 | 6.923.485 | 6,14% |
-| UNIAO | Direita | 6.048.562 | 313.782 | 6.362.344 | 5,64% |
-| PODE | Centro-direita | 4.697.944 | 144.304 | 4.842.248 | 4,30% |
-| PSB | Demais | 4.263.314 | 377.795 | 4.641.109 | 4,12% |
-| PSOL | Demais | 4.069.123 | 177.193 | 4.246.316 | 3,77% |
+| PL | Direita | 21.424.983 | 1.338.060 | 22.763.043 | 20,19% |
+| PT | Demais | 13.726.416 | 1.833.796 | 15.560.212 | 13,80% |
+| PSD | Centro-direita | 11.069.425 | 413.669 | 11.483.094 | 10,19% |
+| MDB | Centro-direita | 9.765.466 | 568.626 | 10.334.092 | 9,17% |
+| REPUBLICANOS | Direita | 6.923.498 | 368.683 | 7.292.181 | 6,47% |
+| PP | Direita | 6.449.245 | 474.254 | 6.923.499 | 6,14% |
+| UNIAO | Direita | 6.048.578 | 313.793 | 6.362.371 | 5,64% |
+| PODE | Centro-direita | 4.697.951 | 144.304 | 4.842.255 | 4,30% |
+| PSB | Demais | 4.263.327 | 377.796 | 4.641.123 | 4,12% |
+| PSOL | Demais | 4.069.130 | 177.194 | 4.246.324 | 3,77% |
 | PSDB | Centro-direita | 2.899.632 | 193.197 | 3.092.829 | 2,74% |
-| PDT | Demais | 2.415.365 | 270.408 | 2.685.773 | 2,38% |
-| NOVO | Direita | 2.070.873 | 158.113 | 2.228.986 | 1,98% |
-| AVANTE | Centro-direita | 2.165.089 | 58.643 | 2.223.732 | 1,97% |
+| PDT | Demais | 2.415.382 | 270.422 | 2.685.804 | 2,38% |
+| NOVO | Direita | 2.070.874 | 158.114 | 2.228.988 | 1,98% |
+| AVANTE | Centro-direita | 2.165.093 | 58.643 | 2.223.736 | 1,97% |
 | PV | Demais | 1.636.799 | 54.728 | 1.691.527 | 1,50% |
-| PRD | Direita | 1.106.752 | 59.940 | 1.166.692 | 1,03% |
+| PRD | Direita | 1.106.752 | 59.944 | 1.166.696 | 1,03% |
 | PCDOB | Demais | 1.084.108 | 43.442 | 1.127.550 | 1,00% |
 | MISSAO | Direita | 714.512 | 91.407 | 805.919 | 0,71% |
 | AGIR | Centro-direita | 712.643 | 12.988 | 725.631 | 0,64% |
 | SOLIDARIEDADE | Centro-direita | 623.609 | 29.779 | 653.388 | 0,58% |
 | MOBILIZA | Centro-direita | 526.838 | 15.725 | 542.563 | 0,48% |
-| REDE | Demais | 289.299 | 196.463 | 485.762 | 0,43% |
+| REDE | Demais | 289.299 | 196.464 | 485.763 | 0,43% |
 | DEMOCRATA | Demais | 298.875 | 10.479 | 309.354 | 0,27% |
 | CIDADANIA | Centro-direita | 209.213 | 35.530 | 244.743 | 0,22% |
 | DC | Direita | 222.637 | 6.189 | 228.826 | 0,20% |
@@ -45,75 +45,75 @@ Nominais válidos: **105.467.380** · Legenda: **7.270.576** · Total válidos: 
 | PSTU | Demais | 12.560 | 9.905 | 22.465 | 0,02% |
 | PCB | Demais | 2.143 | 4.098 | 6.241 | 0,01% |
 | PCO | Demais | 984 | 699 | 1.683 | 0,00% |
-| **Subtotal Direita** | | **44.960.574** | **2.810.405** | **47.770.979** | **42,37%** |
-| **Subtotal Centro-direita** | | **32.669.264** | **1.472.425** | **34.141.689** | **30,28%** |
-| **Direita + Centro-direita** | | **77.629.838** | **4.282.830** | **81.912.668** | **72,66%** |
-| Demais partidos | | 27.837.542 | 2.987.746 | 30.825.288 | 27,34% |
-| Total válidos | | 105.467.380 | 7.270.576 | 112.737.956 | 100,00% |
+| **Subtotal Direita** | | **44.961.079** | **2.810.444** | **47.771.523** | **42,37%** |
+| **Subtotal Centro-direita** | | **32.669.870** | **1.472.461** | **34.142.331** | **30,28%** |
+| **Direita + Centro-direita** | | **77.630.949** | **4.282.905** | **81.913.854** | **72,66%** |
+| Demais partidos | | 27.837.599 | 2.987.772 | 30.825.371 | 27,34% |
+| Total válidos | | 105.468.548 | 7.270.677 | 112.739.225 | 100,00% |
 
 ## Dep. Federal
 
-Nominais válidos: **108.642.195** · Legenda: **3.375.493** · Total válidos: **112.017.688**
+Nominais válidos: **108.643.423** · Legenda: **3.375.539** · Total válidos: **112.018.962**
 
 | Partido | Bloco | Nominais válidos | Legenda | Total válidos | % total |
 |---|---|---:|---:|---:|---:|
-| PL | Direita | 24.765.297 | 610.408 | 25.375.705 | 22,65% |
-| PT | Demais | 13.601.101 | 994.698 | 14.595.799 | 13,03% |
-| PSD | Centro-direita | 9.195.005 | 171.850 | 9.366.855 | 8,36% |
-| UNIAO | Direita | 7.666.120 | 124.980 | 7.791.100 | 6,96% |
-| REPUBLICANOS | Direita | 7.586.374 | 131.681 | 7.718.055 | 6,89% |
-| MDB | Centro-direita | 7.500.297 | 175.365 | 7.675.662 | 6,85% |
-| PP | Direita | 7.351.599 | 221.244 | 7.572.843 | 6,76% |
-| PODE | Centro-direita | 5.802.288 | 62.775 | 5.865.063 | 5,24% |
-| PSOL | Demais | 4.962.126 | 95.428 | 5.057.554 | 4,51% |
-| PSB | Demais | 4.841.651 | 95.789 | 4.937.440 | 4,41% |
+| PL | Direita | 24.765.454 | 610.418 | 25.375.872 | 22,65% |
+| PT | Demais | 13.601.130 | 994.706 | 14.595.836 | 13,03% |
+| PSD | Centro-direita | 9.195.138 | 171.856 | 9.366.994 | 8,36% |
+| UNIAO | Direita | 7.666.327 | 124.980 | 7.791.307 | 6,96% |
+| REPUBLICANOS | Direita | 7.586.417 | 131.681 | 7.718.098 | 6,89% |
+| MDB | Centro-direita | 7.500.783 | 175.378 | 7.676.161 | 6,85% |
+| PP | Direita | 7.351.629 | 221.246 | 7.572.875 | 6,76% |
+| PODE | Centro-direita | 5.802.290 | 62.775 | 5.865.065 | 5,24% |
+| PSOL | Demais | 4.962.135 | 95.429 | 5.057.564 | 4,51% |
+| PSB | Demais | 4.841.653 | 95.789 | 4.937.442 | 4,41% |
 | NOVO | Direita | 2.830.672 | 57.830 | 2.888.502 | 2,58% |
 | PSDB | Centro-direita | 2.760.196 | 72.694 | 2.832.890 | 2,53% |
-| PDT | Demais | 1.643.144 | 209.871 | 1.853.015 | 1,65% |
-| AVANTE | Centro-direita | 1.768.354 | 30.331 | 1.798.685 | 1,61% |
-| PCDOB | Demais | 1.271.805 | 34.334 | 1.306.139 | 1,17% |
+| PDT | Demais | 1.643.149 | 209.871 | 1.853.020 | 1,65% |
+| AVANTE | Centro-direita | 1.768.370 | 30.332 | 1.798.702 | 1,61% |
+| PCDOB | Demais | 1.271.806 | 34.334 | 1.306.140 | 1,17% |
 | PV | Demais | 1.237.662 | 43.113 | 1.280.775 | 1,14% |
 | MISSAO | Direita | 1.132.386 | 70.997 | 1.203.383 | 1,07% |
-| PRD | Direita | 1.143.773 | 39.555 | 1.183.328 | 1,06% |
-| SOLIDARIEDADE | Centro-direita | 906.726 | 19.336 | 926.062 | 0,83% |
-| CIDADANIA | Centro-direita | 255.071 | 34.648 | 289.719 | 0,26% |
+| PRD | Direita | 1.143.877 | 39.558 | 1.183.435 | 1,06% |
+| SOLIDARIEDADE | Centro-direita | 906.727 | 19.336 | 926.063 | 0,83% |
+| CIDADANIA | Centro-direita | 255.074 | 34.648 | 289.722 | 0,26% |
 | REDE | Demais | 212.715 | 49.525 | 262.240 | 0,23% |
 | DC | Direita | 106.035 | 4.017 | 110.052 | 0,10% |
 | UP | Demais | 38.571 | 6.014 | 44.585 | 0,04% |
-| MOBILIZA | Centro-direita | 23.690 | 6.579 | 30.269 | 0,03% |
+| MOBILIZA | Centro-direita | 23.690 | 6.580 | 30.270 | 0,03% |
 | DEMOCRATA | Demais | 20.219 | 3.246 | 23.465 | 0,02% |
-| PSTU | Demais | 12.578 | 6.117 | 18.695 | 0,02% |
+| PSTU | Demais | 12.578 | 6.118 | 18.696 | 0,02% |
 | AGIR | Centro-direita | 5.296 | 1.859 | 7.155 | 0,01% |
 | PCO | Demais | 1.444 | 1.209 | 2.653 | 0,00% |
-| **Subtotal Direita** | | **52.582.256** | **1.260.712** | **53.842.968** | **48,07%** |
-| **Subtotal Centro-direita** | | **28.216.923** | **575.437** | **28.792.360** | **25,70%** |
-| **Direita + Centro-direita** | | **80.799.179** | **1.836.149** | **82.635.328** | **73,77%** |
-| Demais partidos | | 27.843.016 | 1.539.344 | 29.382.360 | 26,23% |
-| Total válidos | | 108.642.195 | 3.375.493 | 112.017.688 | 100,00% |
+| **Subtotal Direita** | | **52.582.797** | **1.260.727** | **53.843.524** | **48,07%** |
+| **Subtotal Centro-direita** | | **28.217.564** | **575.458** | **28.793.022** | **25,70%** |
+| **Direita + Centro-direita** | | **80.800.361** | **1.836.185** | **82.636.546** | **73,77%** |
+| Demais partidos | | 27.843.062 | 1.539.354 | 29.382.416 | 26,23% |
+| Total válidos | | 108.643.423 | 3.375.539 | 112.018.962 | 100,00% |
 
 ## Senador
 
-Nominais válidos: **203.809.607** · Legenda: **0** · Total válidos: **203.809.607**
+Nominais válidos: **203.811.921** · Legenda: **0** · Total válidos: **203.811.921**
 
 | Partido | Bloco | Nominais válidos | Legenda | Total válidos | % total |
 |---|---|---:|---:|---:|---:|
-| PL | Direita | 56.482.547 | 0 | 56.482.547 | 27,71% |
-| PT | Demais | 26.695.900 | 0 | 26.695.900 | 13,10% |
-| PP | Direita | 21.937.041 | 0 | 21.937.041 | 10,76% |
+| PL | Direita | 56.482.749 | 0 | 56.482.749 | 27,71% |
+| PT | Demais | 26.696.048 | 0 | 26.696.048 | 13,10% |
+| PP | Direita | 21.937.416 | 0 | 21.937.416 | 10,76% |
 | PSB | Demais | 14.778.809 | 0 | 14.778.809 | 7,25% |
-| MDB | Centro-direita | 11.880.919 | 0 | 11.880.919 | 5,83% |
-| NOVO | Direita | 10.999.863 | 0 | 10.999.863 | 5,40% |
+| MDB | Centro-direita | 11.881.617 | 0 | 11.881.617 | 5,83% |
+| NOVO | Direita | 10.999.961 | 0 | 10.999.961 | 5,40% |
 | REDE | Demais | 10.777.999 | 0 | 10.777.999 | 5,29% |
 | PSD | Centro-direita | 10.522.601 | 0 | 10.522.601 | 5,16% |
 | REPUBLICANOS | Direita | 8.911.223 | 0 | 8.911.223 | 4,37% |
-| UNIAO | Direita | 7.968.065 | 0 | 7.968.065 | 3,91% |
-| PSOL | Demais | 7.950.535 | 0 | 7.950.535 | 3,90% |
-| PDT | Demais | 4.708.748 | 0 | 4.708.748 | 2,31% |
+| UNIAO | Direita | 7.968.162 | 0 | 7.968.162 | 3,91% |
+| PSOL | Demais | 7.950.538 | 0 | 7.950.538 | 3,90% |
+| PDT | Demais | 4.709.094 | 0 | 4.709.094 | 2,31% |
 | PODE | Centro-direita | 3.951.521 | 0 | 3.951.521 | 1,94% |
-| PSDB | Centro-direita | 2.776.192 | 0 | 2.776.192 | 1,36% |
+| PSDB | Centro-direita | 2.776.286 | 0 | 2.776.286 | 1,36% |
 | MISSAO | Direita | 684.138 | 0 | 684.138 | 0,34% |
 | PRD | Direita | 608.874 | 0 | 608.874 | 0,30% |
-| MOBILIZA | Centro-direita | 526.570 | 0 | 526.570 | 0,26% |
+| MOBILIZA | Centro-direita | 526.812 | 0 | 526.812 | 0,26% |
 | UP | Demais | 416.221 | 0 | 416.221 | 0,20% |
 | AVANTE | Centro-direita | 400.201 | 0 | 400.201 | 0,20% |
 | PSTU | Demais | 210.467 | 0 | 210.467 | 0,10% |
@@ -121,29 +121,29 @@ Nominais válidos: **203.809.607** · Legenda: **0** · Total válidos: **203.80
 | DC | Direita | 151.247 | 0 | 151.247 | 0,07% |
 | SOLIDARIEDADE | Centro-direita | 134.992 | 0 | 134.992 | 0,07% |
 | PRTB | Direita | 39.609 | 0 | 39.609 | 0,02% |
-| PCB | Demais | 33.319 | 0 | 33.319 | 0,02% |
+| PCB | Demais | 33.330 | 0 | 33.330 | 0,02% |
 | DEMOCRATA | Demais | 29.397 | 0 | 29.397 | 0,01% |
 | PCO | Demais | 12.647 | 0 | 12.647 | 0,01% |
 | AGIR | Centro-direita | 10.911 | 0 | 10.911 | 0,01% |
 | PV | Demais | 3.202 | 0 | 3.202 | 0,00% |
-| **Subtotal Direita** | | **107.782.607** | **0** | **107.782.607** | **52,88%** |
-| **Subtotal Centro-direita** | | **30.409.756** | **0** | **30.409.756** | **14,92%** |
-| **Direita + Centro-direita** | | **138.192.363** | **0** | **138.192.363** | **67,80%** |
-| Demais partidos | | 65.617.244 | 0 | 65.617.244 | 32,20% |
-| Total válidos | | 203.809.607 | 0 | 203.809.607 | 100,00% |
+| **Subtotal Direita** | | **107.783.379** | **0** | **107.783.379** | **52,88%** |
+| **Subtotal Centro-direita** | | **30.410.790** | **0** | **30.410.790** | **14,92%** |
+| **Direita + Centro-direita** | | **138.194.169** | **0** | **138.194.169** | **67,80%** |
+| Demais partidos | | 65.617.752 | 0 | 65.617.752 | 32,20% |
+| Total válidos | | 203.811.921 | 0 | 203.811.921 | 100,00% |
 
 ## Governador
 
-Nominais válidos: **110.102.098** · Legenda: **0** · Total válidos: **110.102.098**
+Nominais válidos: **110.103.310** · Legenda: **0** · Total válidos: **110.103.310**
 
 | Partido | Bloco | Nominais válidos | Legenda | Total válidos | % total |
 |---|---|---:|---:|---:|---:|
 | REPUBLICANOS | Direita | 23.685.397 | 0 | 23.685.397 | 21,51% |
-| PT | Demais | 22.536.584 | 0 | 22.536.584 | 20,47% |
-| PL | Direita | 18.229.249 | 0 | 18.229.249 | 16,56% |
-| PSD | Centro-direita | 13.691.138 | 0 | 13.691.138 | 12,43% |
-| MDB | Centro-direita | 8.163.234 | 0 | 8.163.234 | 7,41% |
-| UNIAO | Direita | 5.499.420 | 0 | 5.499.420 | 4,99% |
+| PT | Demais | 22.536.695 | 0 | 22.536.695 | 20,47% |
+| PL | Direita | 18.229.250 | 0 | 18.229.250 | 16,56% |
+| PSD | Centro-direita | 13.691.657 | 0 | 13.691.657 | 12,44% |
+| MDB | Centro-direita | 8.163.763 | 0 | 8.163.763 | 7,41% |
+| UNIAO | Direita | 5.499.447 | 0 | 5.499.447 | 4,99% |
 | PSDB | Centro-direita | 4.236.434 | 0 | 4.236.434 | 3,85% |
 | PDT | Demais | 3.786.441 | 0 | 3.786.441 | 3,44% |
 | PP | Direita | 3.161.307 | 0 | 3.161.307 | 2,87% |
@@ -152,7 +152,7 @@ Nominais válidos: **110.102.098** · Legenda: **0** · Total válidos: **110.10
 | PSOL | Demais | 450.581 | 0 | 450.581 | 0,41% |
 | MISSAO | Direita | 328.154 | 0 | 328.154 | 0,30% |
 | UP | Demais | 226.584 | 0 | 226.584 | 0,21% |
-| AVANTE | Centro-direita | 218.467 | 0 | 218.467 | 0,20% |
+| AVANTE | Centro-direita | 218.490 | 0 | 218.490 | 0,20% |
 | NOVO | Direita | 168.051 | 0 | 168.051 | 0,15% |
 | PSTU | Demais | 122.550 | 0 | 122.550 | 0,11% |
 | PCB | Demais | 71.630 | 0 | 71.630 | 0,07% |
@@ -160,34 +160,60 @@ Nominais válidos: **110.102.098** · Legenda: **0** · Total válidos: **110.10
 | PRD | Direita | 23.431 | 0 | 23.431 | 0,02% |
 | PCO | Demais | 16.387 | 0 | 16.387 | 0,01% |
 | DC | Direita | 13.274 | 0 | 13.274 | 0,01% |
-| REDE | Demais | 11.457 | 0 | 11.457 | 0,01% |
+| REDE | Demais | 11.459 | 0 | 11.459 | 0,01% |
 | AGIR | Centro-direita | 4.960 | 0 | 4.960 | 0,00% |
 | DEMOCRATA | Demais | 2.623 | 0 | 2.623 | 0,00% |
 | SOLIDARIEDADE | Centro-direita | 213 | 0 | 213 | 0,00% |
 | PRTB | Direita | 0 | 0 | 0 | 0,00% |
-| **Subtotal Direita** | | **51.108.283** | **0** | **51.108.283** | **46,42%** |
-| **Subtotal Centro-direita** | | **28.703.181** | **0** | **28.703.181** | **26,07%** |
-| **Direita + Centro-direita** | | **79.811.464** | **0** | **79.811.464** | **72,49%** |
-| Demais partidos | | 30.290.634 | 0 | 30.290.634 | 27,51% |
-| Total válidos | | 110.102.098 | 0 | 110.102.098 | 100,00% |
+| **Subtotal Direita** | | **51.108.311** | **0** | **51.108.311** | **46,42%** |
+| **Subtotal Centro-direita** | | **28.704.252** | **0** | **28.704.252** | **26,07%** |
+| **Direita + Centro-direita** | | **79.812.563** | **0** | **79.812.563** | **72,49%** |
+| Demais partidos | | 30.290.747 | 0 | 30.290.747 | 27,51% |
+| Total válidos | | 110.103.310 | 0 | 110.103.310 | 100,00% |
+
+## Presidente
+
+Nominais válidos: **119.300.788** · Legenda: **0** · Total válidos: **119.300.788**
+
+| Partido | Bloco | Nominais válidos | Legenda | Total válidos | % total |
+|---|---|---:|---:|---:|---:|
+| PL | Direita | 56.104.503 | 0 | 56.104.503 | 47,03% |
+| PT | Demais | 53.879.538 | 0 | 53.879.538 | 45,16% |
+| AVANTE | Centro-direita | 3.448.569 | 0 | 3.448.569 | 2,89% |
+| MISSAO | Direita | 2.675.887 | 0 | 2.675.887 | 2,24% |
+| PSD | Centro-direita | 2.605.148 | 0 | 2.605.148 | 2,18% |
+| NOVO | Direita | 326.488 | 0 | 326.488 | 0,27% |
+| UP | Demais | 122.911 | 0 | 122.911 | 0,10% |
+| PSTU | Demais | 43.103 | 0 | 43.103 | 0,04% |
+| DC | Direita | 40.043 | 0 | 40.043 | 0,03% |
+| PCB | Demais | 22.693 | 0 | 22.693 | 0,02% |
+| DEMOCRATA | Demais | 16.881 | 0 | 16.881 | 0,01% |
+| PCO | Demais | 15.024 | 0 | 15.024 | 0,01% |
+| **Subtotal Direita** | | **59.146.921** | **0** | **59.146.921** | **49,58%** |
+| **Subtotal Centro-direita** | | **6.053.717** | **0** | **6.053.717** | **5,07%** |
+| **Direita + Centro-direita** | | **65.200.638** | **0** | **65.200.638** | **54,65%** |
+| Demais partidos | | 54.100.150 | 0 | 54.100.150 | 45,35% |
+| Total válidos | | 119.300.788 | 0 | 119.300.788 | 100,00% |
 
 ## Resumo por bloco – votos nominais válidos (soma dos candidatos)
 
-| Cargo | Direita | Centro-direita | Direita + Centro-direita | Demais | Total nominais | % Dir+CD |
-|---|---:|---:|---:|---:|---:|---:|
-| Dep. Estadual/Distrital | 44.960.574 | 32.669.264 | 77.629.838 | 27.837.542 | 105.467.380 | 73,61% |
-| Dep. Federal | 52.582.256 | 28.216.923 | 80.799.179 | 27.843.016 | 108.642.195 | 74,37% |
-| Senador | 107.782.607 | 30.409.756 | 138.192.363 | 65.617.244 | 203.809.607 | 67,80% |
-| Governador | 51.108.283 | 28.703.181 | 79.811.464 | 30.290.634 | 110.102.098 | 72,49% |
+| Cargo | Direita | Centro-direita | Direita + Centro-direita | Demais | Total nominais | % só Direita | % Dir+CD |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Dep. Estadual/Distrital | 44.961.079 | 32.669.870 | 77.630.949 | 27.837.599 | 105.468.548 | 42,63% | 73,61% |
+| Dep. Federal | 52.582.797 | 28.217.564 | 80.800.361 | 27.843.062 | 108.643.423 | 48,40% | 74,37% |
+| Senador | 107.783.379 | 30.410.790 | 138.194.169 | 65.617.752 | 203.811.921 | 52,88% | 67,80% |
+| Governador | 51.108.311 | 28.704.252 | 79.812.563 | 30.290.747 | 110.103.310 | 46,42% | 72,49% |
+| Presidente | 59.146.921 | 6.053.717 | 65.200.638 | 54.100.150 | 119.300.788 | 49,58% | 54,65% |
 
 ## Resumo por bloco – total válidos (nominais + legenda)
 
-| Cargo | Direita | Centro-direita | Direita + Centro-direita | Demais | Total válidos | % Dir+CD |
-|---|---:|---:|---:|---:|---:|---:|
-| Dep. Estadual/Distrital | 47.770.979 | 34.141.689 | 81.912.668 | 30.825.288 | 112.737.956 | 72,66% |
-| Dep. Federal | 53.842.968 | 28.792.360 | 82.635.328 | 29.382.360 | 112.017.688 | 73,77% |
-| Senador | 107.782.607 | 30.409.756 | 138.192.363 | 65.617.244 | 203.809.607 | 67,80% |
-| Governador | 51.108.283 | 28.703.181 | 79.811.464 | 30.290.634 | 110.102.098 | 72,49% |
+| Cargo | Direita | Centro-direita | Direita + Centro-direita | Demais | Total válidos | % só Direita | % Dir+CD |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Dep. Estadual/Distrital | 47.771.523 | 34.142.331 | 81.913.854 | 30.825.371 | 112.739.225 | 42,37% | 72,66% |
+| Dep. Federal | 53.843.524 | 28.793.022 | 82.636.546 | 29.382.416 | 112.018.962 | 48,07% | 73,77% |
+| Senador | 107.783.379 | 30.410.790 | 138.194.169 | 65.617.752 | 203.811.921 | 52,88% | 67,80% |
+| Governador | 51.108.311 | 28.704.252 | 79.812.563 | 30.290.747 | 110.103.310 | 46,42% | 72,49% |
+| Presidente | 59.146.921 | 6.053.717 | 65.200.638 | 54.100.150 | 119.300.788 | 49,58% | 54,65% |
 
 ## Siglas fora das listas Direita / Centro-direita (contadas em Demais)
 
@@ -199,6 +225,7 @@ Soma dos partidos vs totais do próprio arquivo do TSE: `tvtn`=`vnom` (nominais 
 
 | UF | Cargo | Partidos | Cand. | Σ nominais | vnom | Σ legenda | vl | vv | sub judice | pst | ok |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|:-:|
+| BR | Presidente | 12 | 12 | 119.300.788 | 119.300.788 | 0 | 0 | 119.300.788 | 0 | 100,00 | sim |
 | AC | Governador | 6 | 6 | 439.647 | 439.647 | 0 | 0 | 439.647 | 0 | 100,00 | sim |
 | AC | Senador | 8 | 8 | 730.058 | 730.058 | 0 | 0 | 730.058 | 145.244 | 100,00 | sim |
 | AC | Deputado Federal | 20 | 87 | 448.322 | 448.322 | 14.163 | 14.163 | 462.485 | 6.127 | 100,00 | sim |
@@ -207,10 +234,10 @@ Soma dos partidos vs totais do próprio arquivo do TSE: `tvtn`=`vnom` (nominais 
 | AL | Senador | 6 | 7 | 3.286.601 | 3.286.601 | 0 | 0 | 3.286.601 | 0 | 100,00 | sim |
 | AL | Deputado Federal | 18 | 101 | 1.744.644 | 1.744.644 | 53.697 | 53.697 | 1.798.341 | 167 | 100,00 | sim |
 | AL | Deputado Estadual | 14 | 122 | 1.688.825 | 1.688.825 | 114.549 | 114.549 | 1.803.374 | 136 | 100,00 | sim |
-| AM | Governador | 7 | 7 | 2.071.653 | 2.071.653 | 0 | 0 | 2.071.653 | 0 | 99,99 | sim |
-| AM | Senador | 8 | 8 | 3.841.173 | 3.841.173 | 0 | 0 | 3.841.173 | 0 | 99,99 | sim |
-| AM | Deputado Federal | 22 | 136 | 2.063.556 | 2.063.556 | 55.341 | 55.341 | 2.118.897 | 966 | 99,99 | sim |
-| AM | Deputado Estadual | 18 | 278 | 2.032.868 | 2.032.868 | 91.897 | 91.897 | 2.124.765 | 493 | 99,99 | sim |
+| AM | Governador | 7 | 7 | 2.071.985 | 2.071.985 | 0 | 0 | 2.071.985 | 0 | 100,00 | sim |
+| AM | Senador | 8 | 8 | 3.841.845 | 3.841.845 | 0 | 0 | 3.841.845 | 0 | 100,00 | sim |
+| AM | Deputado Federal | 22 | 135 | 2.063.900 | 2.063.900 | 55.352 | 55.352 | 2.119.252 | 233 | 100,00 | sim |
+| AM | Deputado Estadual | 18 | 278 | 2.033.211 | 2.033.211 | 91.910 | 91.910 | 2.125.121 | 493 | 100,00 | sim |
 | AP | Governador | 5 | 5 | 448.747 | 448.747 | 0 | 0 | 448.747 | 0 | 100,00 | sim |
 | AP | Senador | 8 | 9 | 883.225 | 883.225 | 0 | 0 | 883.225 | 0 | 100,00 | sim |
 | AP | Deputado Federal | 16 | 84 | 447.950 | 447.950 | 11.730 | 11.730 | 459.680 | 1.016 | 100,00 | sim |
@@ -232,10 +259,10 @@ Soma dos partidos vs totais do próprio arquivo do TSE: `tvtn`=`vnom` (nominais 
 | GO | Senador | 10 | 11 | 6.681.994 | 6.681.994 | 0 | 0 | 6.681.994 | 0 | 100,00 | sim |
 | GO | Deputado Federal | 22 | 247 | 3.484.122 | 3.484.122 | 123.622 | 123.622 | 3.607.744 | 1.155 | 100,00 | sim |
 | GO | Deputado Estadual | 23 | 556 | 3.413.510 | 3.413.510 | 224.475 | 224.475 | 3.637.985 | 131 | 100,00 | sim |
-| MA | Governador | 8 | 8 | 3.845.276 | 3.845.276 | 0 | 0 | 3.845.276 | 48.920 | 99,97 | sim |
-| MA | Senador | 11 | 11 | 7.116.208 | 7.116.208 | 0 | 0 | 7.116.208 | 23.995 | 99,97 | sim |
-| MA | Deputado Federal | 25 | 266 | 3.856.179 | 3.856.179 | 113.869 | 113.869 | 3.970.048 | 1.018 | 99,97 | sim |
-| MA | Deputado Estadual | 18 | 271 | 3.649.966 | 3.649.966 | 271.107 | 271.107 | 3.921.073 | 2.294 | 99,97 | sim |
+| MA | Governador | 8 | 8 | 3.846.156 | 3.846.156 | 0 | 0 | 3.846.156 | 48.924 | 100,00 | sim |
+| MA | Senador | 11 | 11 | 7.117.850 | 7.117.850 | 0 | 0 | 7.117.850 | 23.995 | 100,00 | sim |
+| MA | Deputado Federal | 25 | 266 | 3.857.063 | 3.857.063 | 113.904 | 113.904 | 3.970.967 | 1.019 | 100,00 | sim |
+| MA | Deputado Estadual | 18 | 271 | 3.650.791 | 3.650.791 | 271.195 | 271.195 | 3.921.986 | 2.294 | 100,00 | sim |
 | MG | Governador | 11 | 11 | 11.410.371 | 11.410.371 | 0 | 0 | 11.410.371 | 1.464 | 100,00 | sim |
 | MG | Senador | 13 | 16 | 20.522.302 | 20.522.302 | 0 | 0 | 20.522.302 | 3.184 | 100,00 | sim |
 | MG | Deputado Federal | 26 | 710 | 11.049.070 | 11.049.070 | 331.081 | 331.081 | 11.380.151 | 90.067 | 100,00 | NÃO |
