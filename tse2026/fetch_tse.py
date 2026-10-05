@@ -2,7 +2,7 @@
 """Extrai do TSE os votos do 1º turno de 2026 e agrega por partido e cargo.
 
 Fontes, nesta ordem:
-  A) Portal de Dados Abertos (CKAN) - votacao_partido_munzona_2026 / votacao_candidato_munzona_2026
+  A) Portal de Dados Abertos - votacao_partido_munzona_2026 / votacao_candidato_munzona_2026
      -> agregado por tse2026_agrega.py (nominais + legenda)
   B) API de divulgação (resultados.tse.jus.br) - um JSON por UF x cargo, soma dos votos
      de cada candidato pelo partido (partido = 2 primeiros dígitos do número do candidato)
@@ -10,7 +10,7 @@ Fontes, nesta ordem:
 Só biblioteca padrão. Tudo que foi tentado fica registrado em raw/status.json.
 """
 import csv
-import glob
+import io
 import json
 import os
 import re
@@ -19,6 +19,7 @@ import sys
 import time
 import urllib.error
 import urllib.request
+import zipfile
 from collections import defaultdict
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -47,8 +48,9 @@ NUM_SIGLA = {
 }
 CARGO_GRUPO = {"3": "Governador", "5": "Senador", "6": "Dep. Federal",
                "7": "Dep. Estadual/Distrital", "8": "Dep. Estadual/Distrital"}
-UFS = ["AC", "AL", "AM", "AP", "BA", "CE", "DF", "ES", "GO", "MA", "MG", "MS", "MT", "PA", "PB",
-       "PE", "PI", "PR", "RJ", "RN", "RO", "RR", "RS", "SC", "SE", "SP", "TO"]
+UFS = ["ac", "al", "am", "ap", "ba", "ce", "df", "es", "go", "ma", "mg", "ms", "mt", "pa", "pb",
+       "pe", "pi", "pr", "rj", "rn", "ro", "rr", "rs", "sc", "se", "sp", "to"]
+SUFIXOS = ["u", "r", "e", "ab", "s", "p", "t", "c", "v"]
 
 
 def log(msg, **kw):
@@ -104,22 +106,28 @@ def dados_abertos():
               "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_candidato_munzona/votacao_candidato_munzona_2026.zip"]:
         if u not in found:
             found.append(u)
-    ok = []
-    for u in found:
-        code, _, hdr = http(u, method="HEAD", tries=2, timeout=60)
-        log(f"HEAD {u} -> {code} len={hdr.get('Content-Length')}")
-        if code == 200:
-            ok.append(u)
-    if not ok:
-        return False
     paths = []
-    for u in ok:
-        code, data, _ = http(u, binary=True, tries=2, timeout=900)
+    for u in found:
+        code, data, hdr = http(u, binary=True, tries=2, timeout=900)
+        log(f"GET {u} -> {code} bytes={len(data) if data else 0}")
         if code == 200 and data:
             p = os.path.join(TMP, os.path.basename(u))
             save(p, data, binary=True)
             paths.append(p)
-            log(f"baixado {u} ({len(data)} bytes)")
+            # registra conteúdo do zip e cabeçalho/1ª linha de cada CSV
+            try:
+                zf = zipfile.ZipFile(p)
+                info = []
+                for zi in zf.infolist():
+                    ent = {"nome": zi.filename, "bytes": zi.file_size}
+                    if zi.filename.lower().endswith(".csv"):
+                        with io.TextIOWrapper(zf.open(zi), encoding="latin-1") as f:
+                            ent["linhas_iniciais"] = [next(f, "").rstrip("\n")[:600] for _ in range(3)]
+                    info.append(ent)
+                save(os.path.join(RAW, os.path.basename(u) + ".listagem.json"),
+                     json.dumps(info, ensure_ascii=False, indent=1))
+            except Exception as e:
+                log(f"zip {p}: {e!r}")
     if not paths:
         return False
     out = os.path.join(SAIDA, "dadosabertos")
@@ -131,7 +139,6 @@ def dados_abertos():
 
 # ---------------------------------------------------------------- B) divulgação
 def walk(obj, path=()):
-    """Gera (path, dict) para todo dict dentro de obj."""
     if isinstance(obj, dict):
         yield path, obj
         for k, v in obj.items():
@@ -141,36 +148,71 @@ def walk(obj, path=()):
             yield from walk(v, path + (i,))
 
 
-def eleicoes_de(cfg):
-    """Lista (cd_eleicao, turno, nome, uf, cd_cargo, ds_cargo) a partir do ele-c.json."""
+def listas_de_dicts(j):
+    """[(caminho, tamanho, chaves do 1º item)] para toda lista de dicts no JSON."""
     out = []
-    for _, d in walk(cfg):
-        if "abr" in d and "cd" in d and isinstance(d.get("abr"), list):
-            cd = str(d.get("cd"))
-            turno = str(d.get("t", ""))
-            nome = str(d.get("nm", ""))
-            for abr in d["abr"]:
-                if not isinstance(abr, dict):
-                    continue
-                uf = str(abr.get("cd", "")).upper()
-                for cp in abr.get("cp", []) or []:
-                    if isinstance(cp, dict):
-                        out.append((cd, turno, nome, uf, str(cp.get("cd")), str(cp.get("ds", ""))))
+    for path, d in walk(j):
+        for k, v in d.items():
+            if isinstance(v, list) and v and isinstance(v[0], dict):
+                out.append(("/".join(map(str, path + (k,))), len(v), sorted(v[0].keys())))
     return out
 
 
 def candidatos_de(j):
-    """Extrai lista de candidatos de um JSON de resultado, tolerante a layout."""
-    for key in ("cand", "candidatos", "c"):
-        v = j.get(key)
+    """(lista de candidatos, dict pai) tolerante a layout (cand no topo ou dentro de abr[])."""
+    for path, d in walk(j):
+        v = d.get("cand")
         if isinstance(v, list) and v and isinstance(v[0], dict):
-            return v
-    # procura primeira lista de dicts com 'vap' ou 'n'
-    for _, d in walk(j):
+            return v, d
+    for path, d in walk(j):
         for k, v in d.items():
-            if isinstance(v, list) and v and isinstance(v[0], dict) and ("vap" in v[0] or "nm" in v[0]):
-                return v
-    return []
+            if isinstance(v, list) and v and isinstance(v[0], dict) and "vap" in v[0]:
+                return v, d
+    return [], j
+
+
+def eleicoes_2026(cfg):
+    """[(ciclo, cd_eleicao, nome, [ufs], [(cd_cargo, ds_cargo)])] do 1º turno 2026."""
+    out = []
+    for pl in cfg.get("pl", []):
+        ciclo = pl.get("c", "")
+        for e in pl.get("e", []):
+            if str(e.get("t", "")) != "1":
+                continue
+            cargos = []
+            ufs = []
+            for abr in e.get("abr", []) or []:
+                cd = str(abr.get("cd", "")).lower()
+                ufs += UFS if cd == "br" else [cd]
+                for cp in abr.get("cp", []) or []:
+                    if str(cp.get("cd")) in CARGO_GRUPO:
+                        cargos.append((str(cp.get("cd")), cp.get("ds", "")))
+            if cargos and ciclo == "ele2026":
+                out.append((ciclo, str(e.get("cd")), e.get("nm", ""), sorted(set(ufs)), sorted(set(cargos))))
+    return out
+
+
+def padroes_app():
+    """Lê o app de resultados do TSE e registra sufixos de arquivos .json usados."""
+    achados = {}
+    code, html, _ = http(f"{BASE}/app/index.html", tries=1, timeout=60)
+    achados["index.html"] = code
+    if code != 200 or not html:
+        return achados
+    scripts = re.findall(r'src="([^"]+\.js)"', html)
+    achados["scripts"] = scripts
+    pats = defaultdict(int)
+    for s in scripts[:12]:
+        u = s if s.startswith("http") else f"{BASE}/app/{s.lstrip('./')}"
+        code, js, _ = http(u, tries=1, timeout=120)
+        if code != 200 or not js:
+            continue
+        for m in re.findall(r'[-\w${}/.]{0,40}-[a-z]{1,3}\.json', js):
+            pats[m] += 1
+        for m in re.findall(r'dados-simplificados|arquivo-urna|/dados/|config/mun-', js):
+            pats[m] += 1
+    achados["padroes"] = sorted(pats.items(), key=lambda kv: -kv[1])[:80]
+    return achados
 
 
 def divulgacao():
@@ -180,84 +222,94 @@ def divulgacao():
         return False
     save(os.path.join(RAW, "ele-c.json"), txt)
     cfg = json.loads(txt)
-    todas = eleicoes_de(cfg)
-    log(f"ele-c.json: {len(todas)} combinações eleição/UF/cargo", amostra=todas[:5])
-    alvo = [e for e in todas if e[4] in CARGO_GRUPO and e[3] in UFS and e[1] in ("1", "")]
-    # mantém só 2026
-    alvo26 = [e for e in alvo if "2026" in e[2] or True]
-    cds = sorted({e[0] for e in alvo26})
-    log(f"alvo: {len(alvo26)} combinações; códigos de eleição: {cds}")
-    if not alvo26:
+    eleicoes = eleicoes_2026(cfg)
+    log("eleições 2026 1º turno com cargos-alvo",
+        eleicoes=[(c, cd, nm, len(u), cg) for c, cd, nm, u, cg in eleicoes])
+    if not eleicoes:
         return False
+    try:
+        app = padroes_app()
+        save(os.path.join(RAW, "app_padroes.json"), json.dumps(app, ensure_ascii=False, indent=1))
+        log("padrões do app", n=len(app.get("padroes", [])))
+    except Exception as e:
+        log(f"app: {e!r}")
 
-    # sonda de padrões de URL com a primeira combinação
-    cd0, _, _, uf0, cg0, _ = alvo26[0]
-    padroes = [
-        "{b}/ele2026/{cd}/dados-simplificados/{uf}/{uf}-c{cg:04d}-e{cd:06d}-r.json",
-        "{b}/ele2026/{cd}/dados/{uf}/{uf}-c{cg:04d}-e{cd:06d}-r.json",
-        "{b}/ele2026/{cd}/dados/{uf}/{uf}-c{cg:04d}-e{cd:06d}-u.json",
-        "{b}/ele2026/{cd}/dados-simplificados/{uf}/{uf}-c{cg:04d}-e{cd:06d}-p.json",
-    ]
+    ciclo, cd, nome, ufs, cargos = eleicoes[0]
+    cdi = int(cd)
+    # ---- sonda: UF pequena (ac), cargo majoritário (3) e proporcional (6)
     sonda = {}
-    for p in padroes:
-        u = p.format(b=BASE, cd=int(cd0), uf=uf0.lower(), cg=int(cg0))
-        code, txt, hdr = http(u, tries=1, timeout=60)
-        sonda[u] = {"http": code, "bytes": len(txt or "")}
+    candidatos_url = []
+    for cg in ("3", "6"):
+        for suf in SUFIXOS:
+            candidatos_url.append(f"{BASE}/{ciclo}/{cd}/dados/ac/ac-c{int(cg):04d}-e{cdi:06d}-{suf}.json")
+        candidatos_url.append(f"{BASE}/{ciclo}/{cd}/dados-simplificados/ac/ac-c{int(cg):04d}-e{cdi:06d}-r.json")
+        candidatos_url.append(f"{BASE}/{ciclo}/{cd}/dados/ac/ac01120-c{int(cg):04d}-e{cdi:06d}-u.json")
+    candidatos_url.append(f"{BASE}/{ciclo}/{cd}/config/mun-e{cdi:06d}-cm.json")
+    candidatos_url.append(f"{BASE}/{ciclo}/{cd}/config/ac/ac-e{cdi:06d}-cm.json")
+    padrao_ok = None
+    for u in candidatos_url:
+        code, txt, _ = http(u, tries=1, timeout=60)
+        ent = {"http": code, "bytes": len(txt or "")}
         if code == 200 and txt:
-            save(os.path.join(RAW, "samples", os.path.basename(u)), txt)
+            save(os.path.join(RAW, "samples", os.path.basename(u)), txt[:400000])
             try:
                 j = json.loads(txt)
-                sonda[u]["chaves_topo"] = sorted(j.keys()) if isinstance(j, dict) else type(j).__name__
-                c = candidatos_de(j)
-                sonda[u]["n_cand"] = len(c)
-                sonda[u]["chaves_cand"] = sorted(c[0].keys()) if c else []
+                ent["chaves_topo"] = sorted(j.keys()) if isinstance(j, dict) else type(j).__name__
+                ent["listas"] = listas_de_dicts(j)[:15]
+                c, pai = candidatos_de(j)
+                ent["n_cand"] = len(c)
+                ent["chaves_cand"] = sorted(c[0].keys()) if c else []
+                ent["chaves_pai"] = sorted(pai.keys())[:40]
+                if c and "/dados/ac/ac-c" in u and padrao_ok is None:
+                    padrao_ok = u.replace("/ac/ac-c0003-", "/{uf}/{uf}-c{cg:04d}-").replace("/ac/ac-c0006-", "/{uf}/{uf}-c{cg:04d}-")
             except Exception as e:
-                sonda[u]["erro"] = repr(e)
-    log("sonda de padrões", sonda=sonda)
+                ent["erro"] = repr(e)
+        sonda[u] = ent
+        print(f"sonda {u} -> {code} {ent.get('n_cand', '')}", flush=True)
     save(os.path.join(RAW, "schema.json"), json.dumps(sonda, ensure_ascii=False, indent=1))
-    usavel = [p for p in padroes
-              if sonda.get(p.format(b=BASE, cd=int(cd0), uf=uf0.lower(), cg=int(cg0)), {}).get("n_cand")]
-    if not usavel:
+    log("sonda concluída", padrao=padrao_ok)
+    if not padrao_ok:
         return False
-    padrao = usavel[0]
-    log(f"padrão escolhido: {padrao}")
 
     cand_rows = [["cd_eleicao", "uf", "cd_cargo", "cargo", "grupo", "numero", "nome", "num_partido",
-                  "partido", "partido_campo_json", "votos", "situacao"]]
+                  "partido", "campo_cc", "votos", "situacao"]]
     tot_rows = [["cd_eleicao", "uf", "cd_cargo", "cargo", "n_cand", "soma_votos_cand",
-                 "vv_json", "vn_json", "vb_json", "tv_json", "pst_json", "pea_json", "psi_json", "dg", "hg"]]
+                 "vv", "vn", "vb", "tv", "pst", "pea", "psi", "dg", "hg"]]
     agg = defaultdict(lambda: defaultdict(int))
     falhas = []
-    for cd, turno, nome, uf, cg, ds in alvo26:
-        u = padrao.format(b=BASE, cd=int(cd), uf=uf.lower(), cg=int(cg))
-        code, txt, _ = http(u, tries=3, timeout=120)
-        if code != 200 or not txt:
-            falhas.append({"url": u, "http": code})
-            continue
-        try:
-            j = json.loads(txt)
-        except Exception as e:
-            falhas.append({"url": u, "erro": repr(e)})
-            continue
-        if uf == "AC":
-            save(os.path.join(RAW, "samples", os.path.basename(u)), txt)
-        cands = candidatos_de(j)
-        grupo = CARGO_GRUPO[cg]
-        soma = 0
-        for c in cands:
-            n = str(c.get("n", "")).strip()
-            num_part = n[:2]
-            campo = c.get("sgp") or c.get("sg") or c.get("cc") or c.get("part") or c.get("partido") or ""
-            sigla = NUM_SIGLA.get(num_part, f"P{num_part}")
-            v = to_int_br(c.get("vap", c.get("v", c.get("votos"))))
-            soma += v
-            agg[grupo][sigla] += v
-            cand_rows.append([cd, uf, cg, ds, grupo, n, c.get("nm", ""), num_part, sigla, campo, v,
-                              c.get("st", "")])
-        tot_rows.append([cd, uf, cg, ds, len(cands), soma, j.get("vv"), j.get("vn"), j.get("vb"),
-                         j.get("tv"), j.get("pst"), j.get("pea"), j.get("psi"), j.get("dg"), j.get("hg")])
-        print(f"{uf} c{cg} {ds}: {len(cands)} cand, soma={soma}, vv={j.get('vv')}, pst={j.get('pst')}", flush=True)
-    log(f"divulgação: {len(tot_rows)-1} arquivos lidos, {len(falhas)} falhas", falhas=falhas[:20])
+    for uf in ufs:
+        for cg, ds in cargos:
+            if (cg == "8") != (uf == "df"):
+                continue  # distrital só no DF; estadual nos demais
+            u = padrao_ok.format(uf=uf, cg=int(cg))
+            code, txt, _ = http(u, tries=3, timeout=180)
+            if code != 200 or not txt:
+                falhas.append({"url": u, "http": code})
+                continue
+            try:
+                j = json.loads(txt)
+            except Exception as e:
+                falhas.append({"url": u, "erro": repr(e)})
+                continue
+            cands, pai = candidatos_de(j)
+            grupo = CARGO_GRUPO[cg]
+            soma = 0
+            for c in cands:
+                n = str(c.get("n", "")).strip()
+                num_part = n[:2]
+                sigla = NUM_SIGLA.get(num_part, f"P{num_part}")
+                v = to_int_br(c.get("vap", c.get("v", c.get("votos"))))
+                soma += v
+                agg[grupo][sigla] += v
+                cand_rows.append([cd, uf.upper(), cg, ds, grupo, n, c.get("nm", ""), num_part, sigla,
+                                  c.get("cc", c.get("sgp", "")), v, c.get("st", "")])
+            g = lambda k: pai.get(k, j.get(k))  # noqa: E731
+            tot_rows.append([cd, uf.upper(), cg, ds, len(cands), soma, g("vv"), g("vn"), g("vb"), g("tv"),
+                             g("pst"), g("pea"), g("psi"), j.get("dg"), j.get("hg")])
+            print(f"{uf} c{cg} {ds}: {len(cands)} cand, soma={soma}, vv={g('vv')}, pst={g('pst')}", flush=True)
+    log(f"divulgação: {len(tot_rows)-1} arquivos lidos, {len(falhas)} falhas", falhas=falhas[:30])
+    if len(tot_rows) <= 1:
+        return False
 
     out = os.path.join(SAIDA, "divulgacao")
     os.makedirs(out, exist_ok=True)
@@ -267,10 +319,10 @@ def divulgacao():
         csv.writer(f).writerows(tot_rows)
 
     md = ["# TSE – Eleições 2026, 1º turno – votos por partido e por cargo (API de divulgação)\n",
-          f"Fonte: {BASE} (Tribunal Superior Eleitoral). Padrão de arquivo: `{padrao}`.",
+          f"Fonte: {BASE} (Tribunal Superior Eleitoral). Eleição `{cd}` – {nome}. Padrão: `{padrao_ok}`.",
           f"Extraído em {time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime())}. "
           f"Arquivos lidos: {len(tot_rows)-1}; falhas: {len(falhas)}.",
-          "Base: votos nominais apurados por candidato (campo `vap`), somados pelo partido do candidato "
+          "Base: votos nominais apurados por candidato (`vap`), somados pelo partido do candidato "
           "(2 primeiros dígitos do número). Não inclui votos de legenda.",
           "Senador 2026: cada eleitor vota em 2 candidatos. Dep. Distrital (DF) junto com Dep. Estadual.\n",
           f"Direita: {', '.join(DIREITA)}  ", f"Centro-direita: {', '.join(CENTRO_DIREITA)}\n"]
@@ -298,20 +350,17 @@ def divulgacao():
     md += ["## Resumo por bloco\n",
            "| Cargo | Direita | Centro-direita | Direita + Centro-direita | Demais | Total | % Dir+CD |",
            "|---|---:|---:|---:|---:|---:|---:|"]
-    for g, d, cdv, rest, total in resumo:
-        md.append(f"| {g} | {fmt(d)} | {fmt(cdv)} | {fmt(d+cdv)} | {fmt(rest)} | {fmt(total)} | {pct(d+cdv, total)} |")
-    md += ["", "## Checagens\n"]
-    difs = []
+    for g_, d, cdv, rest, total in resumo:
+        md.append(f"| {g_} | {fmt(d)} | {fmt(cdv)} | {fmt(d+cdv)} | {fmt(rest)} | {fmt(total)} | {pct(d+cdv, total)} |")
+    md += ["", "## Checagens\n",
+           "- Por UF x cargo: soma dos candidatos vs `vv` (votos válidos) do JSON. "
+           "Diferença esperada em proporcionais = votos de legenda; em majoritários deve ser 0. "
+           "`pst` = % de seções totalizadas.", "",
+           "| UF | Cargo | N cand | Soma cand. | vv | Diferença | pst |", "|---|---|---:|---:|---:|---:|---:|"]
     for r in tot_rows[1:]:
         vv = to_int_br(r[6])
-        if vv:
-            difs.append((r[1], r[3], r[5], vv, vv - r[5]))
-    md.append("- Por UF x cargo: soma dos candidatos vs `vv` (votos válidos) do JSON. "
-              "Diferença esperada em proporcionais = votos de legenda; em majoritários deve ser 0.")
-    md += ["", "| UF | Cargo | Soma cand. | vv JSON | Diferença |", "|---|---|---:|---:|---:|"]
-    for uf, ds, s, vv, dif in difs:
-        md.append(f"| {uf} | {ds} | {fmt(s)} | {fmt(vv)} | {fmt(dif)} |")
-    desconhecidos = sorted({p for g in agg for p in agg[g] if p.startswith("P") and p[1:].isdigit()})
+        md.append(f"| {r[1]} | {r[3]} | {r[4]} | {fmt(r[5])} | {fmt(vv)} | {fmt(vv - r[5])} | {r[10]} |")
+    desconhecidos = sorted({p for g_ in agg for p in agg[g_] if p.startswith("P") and p[1:].isdigit()})
     md.append(f"\n- Números de partido sem sigla mapeada: {desconhecidos or 'nenhum'}")
     md.append(f"- Falhas de download: {len(falhas)}")
     save(os.path.join(out, "resultado.md"), "\n".join(md))
@@ -320,8 +369,8 @@ def divulgacao():
     with open(os.path.join(out, "resumo_blocos.csv"), "w", encoding="utf-8", newline="") as f:
         w = csv.writer(f)
         w.writerow(["cargo", "direita", "centro_direita", "direita_mais_centro_direita", "demais", "total", "pct_dir_cd"])
-        for g, d, cdv, rest, total in resumo:
-            w.writerow([g, d, cdv, d + cdv, rest, total, f"{100.0*(d+cdv)/total:.4f}" if total else ""])
+        for g_, d, cdv, rest, total in resumo:
+            w.writerow([g_, d, cdv, d + cdv, rest, total, f"{100.0*(d+cdv)/total:.4f}" if total else ""])
     return True
 
 
