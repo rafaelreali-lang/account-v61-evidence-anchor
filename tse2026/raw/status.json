@@ -1,0 +1,81 @@
+{
+ "inicio_utc": "2026-10-05T11:41:44Z",
+ "passos": [
+  {
+   "t": "11:41:45",
+   "msg": "CKAN package_show resultados-2026 -> HTTP 404"
+  },
+  {
+   "t": "11:41:46",
+   "msg": "GET https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_partido_munzona/votacao_partido_munzona_2026.zip -> 200 bytes=127521"
+  },
+  {
+   "t": "11:41:46",
+   "msg": "GET https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_candidato_munzona/votacao_candidato_munzona_2026.zip -> 200 bytes=350625"
+  },
+  {
+   "t": "11:41:46",
+   "msg": "tse2026_agrega.py rc=1",
+   "stderr": "lendo /tmp/tse2026_dl/votacao_partido_munzona_2026.zip::votacao_partido_munzona_2026_BRASIL.csv ...\nlendo /tmp/tse2026_dl/votacao_candidato_munzona_2026.zip::votacao_candidato_munzona_2026_BRASIL.csv ...\nNenhum dado do 1º turno nos cargos-alvo foi encontrado.\n"
+  },
+  {
+   "t": "11:41:46",
+   "msg": "ele-c.json -> HTTP 200"
+  },
+  {
+   "t": "11:41:46",
+   "msg": "eleições 2026 1º turno com cargos-alvo",
+   "eleicoes": [
+    [
+     "ele2026",
+     "6257",
+     "Eleição Ordinária Federal - 2026 1º Turno",
+     1,
+     [
+      [
+       "1",
+       "Presidente"
+      ]
+     ]
+    ],
+    [
+     "ele2026",
+     "6259",
+     "Eleição Ordinária Estadual - 2026 1º Turno",
+     27,
+     [
+      [
+       "3",
+       "Governador"
+      ],
+      [
+       "5",
+       "Senador"
+      ],
+      [
+       "6",
+       "Deputado Federal"
+      ],
+      [
+       "7",
+       "Deputado Estadual"
+      ],
+      [
+       "8",
+       "Deputado Distrital"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "t": "11:41:55",
+   "msg": "divulgação: 106 arquivos lidos, 0 falhas",
+   "falhas": [],
+   "pst_nao_100": []
+  }
+ ],
+ "fim_utc": "2026-10-05T11:41:55Z",
+ "ok_dados_abertos": false,
+ "ok_divulgacao": true
+}

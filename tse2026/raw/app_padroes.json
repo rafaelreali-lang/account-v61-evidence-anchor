@@ -1,0 +1,9 @@
+{
+ "index.html": 200,
+ "scripts": [
+  "runtime.87d49ceb4887a1d3.js",
+  "polyfills.45b15749fa958a1d.js",
+  "main.81f75da20de3cfaa.js"
+ ],
+ "padroes": []
+}

@@ -1,0 +1,126 @@
+cargo,partido,bloco,nominais_validos,legenda,total_validos,pct_total_validos
+Dep. Estadual/Distrital,PL,Direita,21424983,1338060,22763043,20.1909
+Dep. Estadual/Distrital,PT,Demais,13726416,1833796,15560212,13.8020
+Dep. Estadual/Distrital,PSD,Centro-direita,11069425,413669,11483094,10.1855
+Dep. Estadual/Distrital,MDB,Centro-direita,9765466,568626,10334092,9.1664
+Dep. Estadual/Distrital,REPUBLICANOS,Direita,6923498,368683,7292181,6.4682
+Dep. Estadual/Distrital,PP,Direita,6449245,474254,6923499,6.1412
+Dep. Estadual/Distrital,UNIAO,Direita,6048578,313793,6362371,5.6434
+Dep. Estadual/Distrital,PODE,Centro-direita,4697951,144304,4842255,4.2951
+Dep. Estadual/Distrital,PSB,Demais,4263327,377796,4641123,4.1167
+Dep. Estadual/Distrital,PSOL,Demais,4069130,177194,4246324,3.7665
+Dep. Estadual/Distrital,PSDB,Centro-direita,2899632,193197,3092829,2.7433
+Dep. Estadual/Distrital,PDT,Demais,2415382,270422,2685804,2.3823
+Dep. Estadual/Distrital,NOVO,Direita,2070874,158114,2228988,1.9771
+Dep. Estadual/Distrital,AVANTE,Centro-direita,2165093,58643,2223736,1.9725
+Dep. Estadual/Distrital,PV,Demais,1636799,54728,1691527,1.5004
+Dep. Estadual/Distrital,PRD,Direita,1106752,59944,1166696,1.0349
+Dep. Estadual/Distrital,PCDOB,Demais,1084108,43442,1127550,1.0001
+Dep. Estadual/Distrital,MISSAO,Direita,714512,91407,805919,0.7149
+Dep. Estadual/Distrital,AGIR,Centro-direita,712643,12988,725631,0.6436
+Dep. Estadual/Distrital,SOLIDARIEDADE,Centro-direita,623609,29779,653388,0.5796
+Dep. Estadual/Distrital,MOBILIZA,Centro-direita,526838,15725,542563,0.4813
+Dep. Estadual/Distrital,REDE,Demais,289299,196464,485763,0.4309
+Dep. Estadual/Distrital,DEMOCRATA,Demais,298875,10479,309354,0.2744
+Dep. Estadual/Distrital,CIDADANIA,Centro-direita,209213,35530,244743,0.2171
+Dep. Estadual/Distrital,DC,Direita,222637,6189,228826,0.2030
+Dep. Estadual/Distrital,UP,Demais,38576,8749,47325,0.0420
+Dep. Estadual/Distrital,PSTU,Demais,12560,9905,22465,0.0199
+Dep. Estadual/Distrital,PCB,Demais,2143,4098,6241,0.0055
+Dep. Estadual/Distrital,PCO,Demais,984,699,1683,0.0015
+Dep. Federal,PL,Direita,24765454,610418,25375872,22.6532
+Dep. Federal,PT,Demais,13601130,994706,14595836,13.0298
+Dep. Federal,PSD,Centro-direita,9195138,171856,9366994,8.3620
+Dep. Federal,UNIAO,Direita,7666327,124980,7791307,6.9553
+Dep. Federal,REPUBLICANOS,Direita,7586417,131681,7718098,6.8900
+Dep. Federal,MDB,Centro-direita,7500783,175378,7676161,6.8526
+Dep. Federal,PP,Direita,7351629,221246,7572875,6.7604
+Dep. Federal,PODE,Centro-direita,5802290,62775,5865065,5.2358
+Dep. Federal,PSOL,Demais,4962135,95429,5057564,4.5149
+Dep. Federal,PSB,Demais,4841653,95789,4937442,4.4077
+Dep. Federal,NOVO,Direita,2830672,57830,2888502,2.5786
+Dep. Federal,PSDB,Centro-direita,2760196,72694,2832890,2.5289
+Dep. Federal,PDT,Demais,1643149,209871,1853020,1.6542
+Dep. Federal,AVANTE,Centro-direita,1768370,30332,1798702,1.6057
+Dep. Federal,PCDOB,Demais,1271806,34334,1306140,1.1660
+Dep. Federal,PV,Demais,1237662,43113,1280775,1.1434
+Dep. Federal,MISSAO,Direita,1132386,70997,1203383,1.0743
+Dep. Federal,PRD,Direita,1143877,39558,1183435,1.0565
+Dep. Federal,SOLIDARIEDADE,Centro-direita,906727,19336,926063,0.8267
+Dep. Federal,CIDADANIA,Centro-direita,255074,34648,289722,0.2586
+Dep. Federal,REDE,Demais,212715,49525,262240,0.2341
+Dep. Federal,DC,Direita,106035,4017,110052,0.0982
+Dep. Federal,UP,Demais,38571,6014,44585,0.0398
+Dep. Federal,MOBILIZA,Centro-direita,23690,6580,30270,0.0270
+Dep. Federal,DEMOCRATA,Demais,20219,3246,23465,0.0209
+Dep. Federal,PSTU,Demais,12578,6118,18696,0.0167
+Dep. Federal,AGIR,Centro-direita,5296,1859,7155,0.0064
+Dep. Federal,PCO,Demais,1444,1209,2653,0.0024
+Senador,PL,Direita,56482749,0,56482749,27.7132
+Senador,PT,Demais,26696048,0,26696048,13.0984
+Senador,PP,Direita,21937416,0,21937416,10.7636
+Senador,PSB,Demais,14778809,0,14778809,7.2512
+Senador,MDB,Centro-direita,11881617,0,11881617,5.8297
+Senador,NOVO,Direita,10999961,0,10999961,5.3971
+Senador,REDE,Demais,10777999,0,10777999,5.2882
+Senador,PSD,Centro-direita,10522601,0,10522601,5.1629
+Senador,REPUBLICANOS,Direita,8911223,0,8911223,4.3723
+Senador,UNIAO,Direita,7968162,0,7968162,3.9096
+Senador,PSOL,Demais,7950538,0,7950538,3.9009
+Senador,PDT,Demais,4709094,0,4709094,2.3105
+Senador,PODE,Centro-direita,3951521,0,3951521,1.9388
+Senador,PSDB,Centro-direita,2776286,0,2776286,1.3622
+Senador,MISSAO,Direita,684138,0,684138,0.3357
+Senador,PRD,Direita,608874,0,608874,0.2987
+Senador,MOBILIZA,Centro-direita,526812,0,526812,0.2585
+Senador,UP,Demais,416221,0,416221,0.2042
+Senador,AVANTE,Centro-direita,400201,0,400201,0.1964
+Senador,PSTU,Demais,210467,0,210467,0.1033
+Senador,CIDADANIA,Centro-direita,205849,0,205849,0.1010
+Senador,DC,Direita,151247,0,151247,0.0742
+Senador,SOLIDARIEDADE,Centro-direita,134992,0,134992,0.0662
+Senador,PRTB,Direita,39609,0,39609,0.0194
+Senador,PCB,Demais,33330,0,33330,0.0164
+Senador,DEMOCRATA,Demais,29397,0,29397,0.0144
+Senador,PCO,Demais,12647,0,12647,0.0062
+Senador,AGIR,Centro-direita,10911,0,10911,0.0054
+Senador,PV,Demais,3202,0,3202,0.0016
+Governador,REPUBLICANOS,Direita,23685397,0,23685397,21.5120
+Governador,PT,Demais,22536695,0,22536695,20.4687
+Governador,PL,Direita,18229250,0,18229250,16.5565
+Governador,PSD,Centro-direita,13691657,0,13691657,12.4353
+Governador,MDB,Centro-direita,8163763,0,8163763,7.4146
+Governador,UNIAO,Direita,5499447,0,5499447,4.9948
+Governador,PSDB,Centro-direita,4236434,0,4236434,3.8477
+Governador,PDT,Demais,3786441,0,3786441,3.4390
+Governador,PP,Direita,3161307,0,3161307,2.8712
+Governador,PSB,Demais,3065797,0,3065797,2.7845
+Governador,PODE,Centro-direita,2345721,0,2345721,2.1305
+Governador,PSOL,Demais,450581,0,450581,0.4092
+Governador,MISSAO,Direita,328154,0,328154,0.2980
+Governador,UP,Demais,226584,0,226584,0.2058
+Governador,AVANTE,Centro-direita,218490,0,218490,0.1984
+Governador,NOVO,Direita,168051,0,168051,0.1526
+Governador,PSTU,Demais,122550,0,122550,0.1113
+Governador,PCB,Demais,71630,0,71630,0.0651
+Governador,MOBILIZA,Centro-direita,43014,0,43014,0.0391
+Governador,PRD,Direita,23431,0,23431,0.0213
+Governador,PCO,Demais,16387,0,16387,0.0149
+Governador,DC,Direita,13274,0,13274,0.0121
+Governador,REDE,Demais,11459,0,11459,0.0104
+Governador,AGIR,Centro-direita,4960,0,4960,0.0045
+Governador,DEMOCRATA,Demais,2623,0,2623,0.0024
+Governador,SOLIDARIEDADE,Centro-direita,213,0,213,0.0002
+Governador,PRTB,Direita,0,0,0,0.0000
+Presidente,PL,Direita,56104503,0,56104503,47.0278
+Presidente,PT,Demais,53879538,0,53879538,45.1628
+Presidente,AVANTE,Centro-direita,3448569,0,3448569,2.8907
+Presidente,MISSAO,Direita,2675887,0,2675887,2.2430
+Presidente,PSD,Centro-direita,2605148,0,2605148,2.1837
+Presidente,NOVO,Direita,326488,0,326488,0.2737
+Presidente,UP,Demais,122911,0,122911,0.1030
+Presidente,PSTU,Demais,43103,0,43103,0.0361
+Presidente,DC,Direita,40043,0,40043,0.0336
+Presidente,PCB,Demais,22693,0,22693,0.0190
+Presidente,DEMOCRATA,Demais,16881,0,16881,0.0141
+Presidente,PCO,Demais,15024,0,15024,0.0126
