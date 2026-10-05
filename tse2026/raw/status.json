@@ -1,109 +1,78 @@
 {
- "inicio_utc": "2026-10-05T03:43:54Z",
+ "inicio_utc": "2026-10-05T03:47:41Z",
  "passos": [
   {
-   "t": "03:43:54",
+   "t": "03:47:42",
    "msg": "CKAN package_show resultados-2026 -> HTTP 404"
   },
   {
-   "t": "03:43:54",
-   "msg": "HEAD https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_partido_munzona/votacao_partido_munzona_2026.zip -> 200 len=127521"
+   "t": "03:47:42",
+   "msg": "GET https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_partido_munzona/votacao_partido_munzona_2026.zip -> 200 bytes=127521"
   },
   {
-   "t": "03:43:55",
-   "msg": "HEAD https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_candidato_munzona/votacao_candidato_munzona_2026.zip -> 200 len=350625"
+   "t": "03:47:42",
+   "msg": "GET https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_candidato_munzona/votacao_candidato_munzona_2026.zip -> 200 bytes=350625"
   },
   {
-   "t": "03:43:55",
-   "msg": "baixado https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_partido_munzona/votacao_partido_munzona_2026.zip (127521 bytes)"
-  },
-  {
-   "t": "03:43:55",
-   "msg": "baixado https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_candidato_munzona/votacao_candidato_munzona_2026.zip (350625 bytes)"
-  },
-  {
-   "t": "03:43:55",
+   "t": "03:47:42",
    "msg": "tse2026_agrega.py rc=1",
    "stderr": "lendo /tmp/tse2026_dl/votacao_partido_munzona_2026.zip::votacao_partido_munzona_2026_BRASIL.csv ...\nlendo /tmp/tse2026_dl/votacao_candidato_munzona_2026.zip::votacao_candidato_munzona_2026_BRASIL.csv ...\nNenhum dado do 1º turno nos cargos-alvo foi encontrado.\n"
   },
   {
-   "t": "03:43:55",
+   "t": "03:47:42",
    "msg": "ele-c.json -> HTTP 200"
   },
   {
-   "t": "03:43:55",
-   "msg": "ele-c.json: 74 combinações eleição/UF/cargo",
-   "amostra": [
+   "t": "03:47:42",
+   "msg": "eleições 2026 1º turno com cargos-alvo",
+   "eleicoes": [
     [
-     "619",
-     "1",
-     "Eleição Ordinária Municipal - 2024 - 06/10/2024 1º Turno",
-     "BR",
-     "11",
-     "Prefeito"
-    ],
-    [
-     "619",
-     "1",
-     "Eleição Ordinária Municipal - 2024 - 06/10/2024 1º Turno",
-     "BR",
-     "13",
-     "Vereador"
-    ],
-    [
-     "635",
-     "1",
-     "Consulta Popular - São Luís",
-     "MA",
-     "51",
-     "Você é a favor da implantação do passe livre estudantil no Município de São Luís?"
-    ],
-    [
-     "636",
-     "1",
-     "Consulta Popular - Governador Edison Lobão",
-     "MA",
-     "54",
-     "Você é a favor da mudança do nome do Município de Governador Edison Lobão para Ribeirãozinho do Maranhão?"
-    ],
-    [
-     "634",
-     "1",
-     "Consulta Popular - Belo Horizonte",
-     "MG",
-     "53",
-     "    Você aprova a alteração da bandeira  de Belo Horizonte?"
+     "ele2026",
+     "6259",
+     "Eleição Ordinária Estadual - 2026 1º Turno",
+     27,
+     [
+      [
+       "3",
+       "Governador"
+      ],
+      [
+       "5",
+       "Senador"
+      ],
+      [
+       "6",
+       "Deputado Federal"
+      ],
+      [
+       "7",
+       "Deputado Estadual"
+      ],
+      [
+       "8",
+       "Deputado Distrital"
+      ]
+     ]
     ]
    ]
   },
   {
-   "t": "03:43:55",
-   "msg": "alvo: 1 combinações; códigos de eleição: ['6278']"
+   "t": "03:47:42",
+   "msg": "padrões do app",
+   "n": 0
   },
   {
-   "t": "03:43:57",
-   "msg": "sonda de padrões",
-   "sonda": {
-    "https://resultados.tse.jus.br/oficial/ele2026/6278/dados-simplificados/rr/rr-c0003-e006278-r.json": {
-     "http": 404,
-     "bytes": 0
-    },
-    "https://resultados.tse.jus.br/oficial/ele2026/6278/dados/rr/rr-c0003-e006278-r.json": {
-     "http": 404,
-     "bytes": 0
-    },
-    "https://resultados.tse.jus.br/oficial/ele2026/6278/dados/rr/rr-c0003-e006278-u.json": {
-     "http": 404,
-     "bytes": 0
-    },
-    "https://resultados.tse.jus.br/oficial/ele2026/6278/dados-simplificados/rr/rr-c0003-e006278-p.json": {
-     "http": 404,
-     "bytes": 0
-    }
-   }
+   "t": "03:47:51",
+   "msg": "sonda concluída",
+   "padrao": "https://resultados.tse.jus.br/oficial/ele2026/6259/dados/{uf}/{uf}-c{cg:04d}-e006259-u.json"
+  },
+  {
+   "t": "03:47:57",
+   "msg": "divulgação: 105 arquivos lidos, 0 falhas",
+   "falhas": []
   }
  ],
- "fim_utc": "2026-10-05T03:43:57Z",
+ "fim_utc": "2026-10-05T03:47:57Z",
  "ok_dados_abertos": false,
- "ok_divulgacao": false
+ "ok_divulgacao": true
 }

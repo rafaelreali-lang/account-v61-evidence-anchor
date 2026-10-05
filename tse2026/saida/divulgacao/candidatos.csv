@@ -1,0 +1,1004 @@
+cd_eleicao,uf,cd_cargo,cargo,grupo,numero,nome,num_partido,partido,campo_cc,votos,situacao
+6259,AC,3,Governador,Governador,11,MAILZA ASSIS CAMELI,11,PP,,218760,2º turno
+6259,AC,5,Senador,Senador,277,RIBAMAR DE SOUSA FEITOZA JÚNIOR,27,DC,,19283,Não eleito
+6259,AC,6,Deputado Federal,Dep. Federal,7070,ROSA MARIA DE LIMA,70,AVANTE,,450,Não eleito
+6259,AC,6,Deputado Federal,Dep. Federal,7033,NAUAN DA COSTA ARAGÃO FREIRES,70,AVANTE,,10,Não eleito
+6259,AC,6,Deputado Federal,Dep. Federal,7012,DAIANE FONTINELE COELHO,70,AVANTE,,6,Não eleito
+6259,AC,6,Deputado Federal,Dep. Federal,7000,CLAUDEMIR VICENTE FERREIRA JUNIOR PARFAN,70,AVANTE,,148,Não eleito
+6259,AC,7,Deputado Estadual,Dep. Estadual/Distrital,44333,PABLO THYAGO BREGENSE DE SOUZA,44,UNIAO,,9981,Eleito por QP
+6259,AC,7,Deputado Estadual,Dep. Estadual/Distrital,44555,WHENDY SNANKY PRAXEDES PONCIANO DA SILVA LIMA,44,UNIAO,,9531,Suplente
+6259,AC,7,Deputado Estadual,Dep. Estadual/Distrital,44777,FAGNER CALEGARIO DO NASCIMENTO,44,UNIAO,,13640,Eleito por QP
+6259,AC,7,Deputado Estadual,Dep. Estadual/Distrital,44022,RILHAENE APARECIDA JIALDI FREZE,44,UNIAO,,136,Suplente
+6259,AC,7,Deputado Estadual,Dep. Estadual/Distrital,44190,TASSIA ROGERIO NOBRE,44,UNIAO,,283,Suplente
+6259,AC,7,Deputado Estadual,Dep. Estadual/Distrital,44800,RUTÊNIO SÁ DE OLIVEIRA,44,UNIAO,,3004,Suplente
+6259,AC,7,Deputado Estadual,Dep. Estadual/Distrital,44444,GILBERTO LIRA DE ALMEIDA,44,UNIAO,,9173,Suplente
+6259,AC,7,Deputado Estadual,Dep. Estadual/Distrital,44000,MICHELLE DE OLIVEIRA MELO,44,UNIAO,,9049,Suplente
+6259,AC,7,Deputado Estadual,Dep. Estadual/Distrital,44123,JOSE AFONSO VASCONCELOS FERNANDES,44,UNIAO,,9593,Eleito por média
+6259,AC,7,Deputado Estadual,Dep. Estadual/Distrital,44111,MARTA DE FIGUEIREDO,44,UNIAO,,147,Suplente
+6259,AC,7,Deputado Estadual,Dep. Estadual/Distrital,44222,JOSE ADAILTON CRUZ PEREIRA,44,UNIAO,,11476,Eleito por QP
+6259,AC,7,Deputado Estadual,Dep. Estadual/Distrital,44121,ERIKE RAILAN SANTOS DE MORAIS,44,UNIAO,,356,Suplente
+6259,AL,3,Governador,Governador,15,JOSÉ RENAN VASCONCELOS CALHEIROS FILHO,15,MDB,,809796,Não eleito
+6259,AL,5,Senador,Senador,151,JOSE RENAN VASCONCELOS CALHEIROS,15,MDB,,731045,Não eleito
+6259,AL,5,Senador,Senador,156,JOSE WANDERLEY NETO,15,MDB,,358478,Não eleito
+6259,AL,6,Deputado Federal,Dep. Federal,5522,RUI SOARES PALMEIRA,55,PSD,,25584,Suplente
+6259,AL,6,Deputado Federal,Dep. Federal,5566,JULIO CEZAR DA SILVA,55,PSD,,20099,Suplente
+6259,AL,6,Deputado Federal,Dep. Federal,5588,JULIA NUNES BENTES LEAL,55,PSD,,71825,Eleito por QP
+6259,AL,6,Deputado Federal,Dep. Federal,5599,THAIS VIANA DE MENDONCA CANUTO,55,PSD,,12196,Suplente
+6259,AL,6,Deputado Federal,Dep. Federal,5544,LIDIA SAMYRA DO NASCIMENTO BARROS SILVA,55,PSD,,52204,Suplente
+6259,AL,6,Deputado Federal,Dep. Federal,5555,LUCIANO SURUAGY DO AMARAL FILHO,55,PSD,,155915,Eleito por QP
+6259,AL,6,Deputado Federal,Dep. Federal,5577,SILVANIA BATINGA DE OLIVEIRA BARBOSA,55,PSD,,18110,Suplente
+6259,AL,6,Deputado Federal,Dep. Federal,5511,RUTINEIDE PEREIRA MELO DE LIRA,55,PSD,,28875,Suplente
+6259,AL,6,Deputado Federal,Dep. Federal,5500,DAVID MAIA DE VASCONCELOS LIMA,55,PSD,,48070,Suplente
+6259,AL,6,Deputado Federal,Dep. Federal,5533,MARIA GABRIELLA MARTINS COELHO DA PAZ MACHADO,55,PSD,,7238,Suplente
+6259,AL,7,Deputado Estadual,Dep. Estadual/Distrital,25333,JOSÉ LUIS DOS SANTOS,25,PRD,,13,Não eleito
+6259,AL,7,Deputado Estadual,Dep. Estadual/Distrital,25666,JANIERI FERREIRA DE SOUZA,25,PRD,,8,Não eleito
+6259,AL,7,Deputado Estadual,Dep. Estadual/Distrital,25678,DELAN OLIVEIRA CAMPOS,25,PRD,,109,Não eleito
+6259,AL,7,Deputado Estadual,Dep. Estadual/Distrital,25000,IVANILDO GOMES DO NASCIMENTO,25,PRD,,249,Não eleito
+6259,AL,7,Deputado Estadual,Dep. Estadual/Distrital,25225,ERICK VIEIRA DE BRITO,25,PRD,,105,Não eleito
+6259,AL,7,Deputado Estadual,Dep. Estadual/Distrital,25025,JOSE GOMES ALVES,25,PRD,,86,Não eleito
+6259,AL,7,Deputado Estadual,Dep. Estadual/Distrital,25444,LYARA PATRICIA DA SILVA SALUSTIANO,25,PRD,,51,Não eleito
+6259,AM,3,Governador,Governador,55,OMAR JOSE ABDELAZIZ,55,PSD,,841567,
+6259,AM,5,Senador,Senador,333,MILTON ROGÉRIO MOREIRA PINTO,33,MOBILIZA,,46757,
+6259,AM,6,Deputado Federal,Dep. Federal,5555,SIDNEY RICARDO DE OLIVEIRA LEITE,55,PSD,,138444,
+6259,AM,6,Deputado Federal,Dep. Federal,5512,ANA PAULA MESQUITA DE ARAUJO,55,PSD,,6026,
+6259,AM,6,Deputado Federal,Dep. Federal,5511,AMAURI GOMES DOS SANTOS,55,PSD,,13587,
+6259,AM,6,Deputado Federal,Dep. Federal,5580,DÉBORA CRISTINA PEREIRA MAFRA,55,PSD,,9191,
+6259,AM,6,Deputado Federal,Dep. Federal,5500,JORGE ELIAS COSTA DE OLIVEIRA,55,PSD,,10694,
+6259,AM,6,Deputado Federal,Dep. Federal,5544,NATHALIA RACHEL SILVA NASCIMENTO,55,PSD,,9132,
+6259,AM,6,Deputado Federal,Dep. Federal,5525,ATILA SIDNEY LINS DE ALBUQUERQUE,55,PSD,,118154,
+6259,AM,6,Deputado Federal,Dep. Federal,5522,PAUDERNEY TOMAZ AVELINO,55,PSD,,38282,
+6259,AM,6,Deputado Federal,Dep. Federal,5588,LAZARO SEBASTIAO SANTIAGO MENDES NETO,55,PSD,,28306,
+6259,AM,7,Deputado Estadual,Dep. Estadual/Distrital,18765,EVENALDO DE OLIVEIRA BRAGA,18,REDE,,311,
+6259,AM,7,Deputado Estadual,Dep. Estadual/Distrital,18321,YURA NIWA WANI NI NAWAVO MARUBO COMAPA FRANCO,18,REDE,,114,
+6259,AM,7,Deputado Estadual,Dep. Estadual/Distrital,18111,MARIA RAIMUNDA GOMES,18,REDE,,171,
+6259,AM,7,Deputado Estadual,Dep. Estadual/Distrital,18418,FRANCISCO MORAIARE ROMANO,18,REDE,,424,
+6259,AM,7,Deputado Estadual,Dep. Estadual/Distrital,18018,HUMBERTO VALÊNCIO GOMES,18,REDE,,91,
+6259,AM,7,Deputado Estadual,Dep. Estadual/Distrital,18123,DANIELLE DELGADO GONÇALVES,18,REDE,,400,
+6259,AP,3,Governador,Governador,44,CLÉCIO LUÍS VILHENA VIEIRA,44,UNIAO,,165900,Não eleito
+6259,AP,5,Senador,Senador,130,RANDOLPH FREDERICH RODRIGUES ALVES,13,PT,,163857,Não eleito
+6259,AP,6,Deputado Federal,Dep. Federal,2212,JORGE ELSON SILVA DE SOUZA,22,PL,,2631,Suplente
+6259,AP,6,Deputado Federal,Dep. Federal,2280,MANOEL CAETANO BENTES MONTEIRO NETO,22,PL,,13576,Suplente
+6259,AP,6,Deputado Federal,Dep. Federal,2222,VINICIUS DE AZEVEDO GURGEL,22,PL,,19625,Eleito por média
+6259,AP,6,Deputado Federal,Dep. Federal,2220,PALMIRA DAS NEVES BITTENCOURT,22,PL,,1029,Suplente
+6259,AP,6,Deputado Federal,Dep. Federal,2277,GESIEL DE SOUZA OLIVEIRA,22,PL,,4268,Suplente
+6259,AP,6,Deputado Federal,Dep. Federal,2211,HUELMA MEDEIROS NOGUEIRA LIMA,22,PL,,1472,Suplente
+6259,AP,6,Deputado Federal,Dep. Federal,2255,ANA BEATRIZ CORREA DA COSTA,22,PL,,6198,Suplente
+6259,AP,6,Deputado Federal,Dep. Federal,2223,ELIAS REAL DA SILVA,22,PL,,956,Suplente
+6259,AP,6,Deputado Federal,Dep. Federal,2225,RONDINELE MARQUES DOS SANTOS,22,PL,,6071,Suplente
+6259,AP,7,Deputado Estadual,Dep. Estadual/Distrital,10789,JAIME DA SILVA PEREZ,10,REPUBLICANOS,,8222,Eleito por QP
+6259,AP,7,Deputado Estadual,Dep. Estadual/Distrital,10100,JOSE BENEDITO MOREIRA,10,REPUBLICANOS,,772,Suplente
+6259,AP,7,Deputado Estadual,Dep. Estadual/Distrital,10777,RENAN DA SILVA ROSAS,10,REPUBLICANOS,,1812,Suplente
+6259,AP,7,Deputado Estadual,Dep. Estadual/Distrital,10699,ENNIO DANILO DE ALMEIDA CAVALCANTE,10,REPUBLICANOS,,1929,Suplente
+6259,AP,7,Deputado Estadual,Dep. Estadual/Distrital,10110,EDINOELSON PEREIRA DA TRINDADE,10,REPUBLICANOS,,2801,Suplente
+6259,AP,7,Deputado Estadual,Dep. Estadual/Distrital,10369,CARLOS EDUARDO PIMENTEL BARBOSA,10,REPUBLICANOS,,6107,Suplente
+6259,AP,7,Deputado Estadual,Dep. Estadual/Distrital,10333,HUGO BARROSO SILVA,10,REPUBLICANOS,,397,Não eleito
+6259,AP,7,Deputado Estadual,Dep. Estadual/Distrital,10580,EDUARDO DOS SANTOS TAVARES,10,REPUBLICANOS,,2826,Suplente
+6259,AP,7,Deputado Estadual,Dep. Estadual/Distrital,10700,DIEGO JOSE MORPHEU FERREIRA MENDES,10,REPUBLICANOS,,868,Suplente
+6259,AP,7,Deputado Estadual,Dep. Estadual/Distrital,10144,ESTEFANE PINHEIRO DOS SANTOS,10,REPUBLICANOS,,29,Suplente
+6259,AP,7,Deputado Estadual,Dep. Estadual/Distrital,10678,RAYFRAN MACEDO BARROSO,10,REPUBLICANOS,,7301,Suplente
+6259,AP,7,Deputado Estadual,Dep. Estadual/Distrital,10000,TELMA ADRIANA NERY PAIVA,10,REPUBLICANOS,,8545,Eleito por QP
+6259,AP,7,Deputado Estadual,Dep. Estadual/Distrital,10010,DEBORA MARTINS SARMENTO,10,REPUBLICANOS,,139,Suplente
+6259,AP,7,Deputado Estadual,Dep. Estadual/Distrital,10111,ODILSON SERRA NUNES,10,REPUBLICANOS,,2678,Suplente
+6259,AP,7,Deputado Estadual,Dep. Estadual/Distrital,10321,KARLA SAMILA GOMES SILVA,10,REPUBLICANOS,,193,Suplente
+6259,AP,7,Deputado Estadual,Dep. Estadual/Distrital,10123,MARCOS PAULO BERTOLO,10,REPUBLICANOS,,928,Suplente
+6259,AP,7,Deputado Estadual,Dep. Estadual/Distrital,10800,HILDEGARD DE AZEVEDO GURGEL,10,REPUBLICANOS,,12357,Eleito por QP
+6259,AP,7,Deputado Estadual,Dep. Estadual/Distrital,10999,KINOVAK MARQUES TOURINHO,10,REPUBLICANOS,,9978,Eleito por QP
+6259,AP,7,Deputado Estadual,Dep. Estadual/Distrital,10555,JEOVANA DA CONCEICAO PEREIRA,10,REPUBLICANOS,,146,Suplente
+6259,AP,7,Deputado Estadual,Dep. Estadual/Distrital,10300,ALDICLEIA LIRA GOES,10,REPUBLICANOS,,7977,Suplente
+6259,AP,7,Deputado Estadual,Dep. Estadual/Distrital,10190,ANDRE LUIZ DIAS DA COSTA,10,REPUBLICANOS,,1048,Suplente
+6259,AP,7,Deputado Estadual,Dep. Estadual/Distrital,10500,ARNÓBIO FLEXA NASCIMENTO,10,REPUBLICANOS,,8098,Eleito por média
+6259,BA,3,Governador,Governador,13,JERONIMO RODRIGUES SOUZA,13,PT,,4626509,
+6259,BA,5,Senador,Senador,133,RUI COSTA DOS SANTOS,13,PT,,4335196,
+6259,BA,5,Senador,Senador,130,JAQUES WAGNER,13,PT,,3986690,
+6259,BA,6,Deputado Federal,Dep. Federal,1473,MAX GABRIEL ARAÚJO REIS SILVA,14,PTB,,338,
+6259,BA,6,Deputado Federal,Dep. Federal,1432,WANDERLEY NEVES DE MACEDO NETO,14,PTB,,234,
+6259,BA,6,Deputado Federal,Dep. Federal,1434,MARCELO AUGUSTO SAÚDE SOUZA,14,PTB,,137,
+6259,BA,6,Deputado Federal,Dep. Federal,1421,MARCELO MUZZI CARDOZO,14,PTB,,74,
+6259,BA,6,Deputado Federal,Dep. Federal,1420,HELENA EGLI ALMEIDA GUSMÃO,14,PTB,,117,
+6259,BA,6,Deputado Federal,Dep. Federal,1450,CAROLINA MOURÃO VERDADEIRO DO AMARAL,14,PTB,,178,
+6259,BA,6,Deputado Federal,Dep. Federal,1494,LUIS VINICIUS GONCALVES TRINDADE,14,PTB,,98,
+6259,BA,6,Deputado Federal,Dep. Federal,1422,GUILHERME SANTOS TEDGUE,14,PTB,,521,
+6259,BA,6,Deputado Federal,Dep. Federal,1400,MATHEUS CRUZ ROSA DE JESUS,14,PTB,,842,
+6259,BA,6,Deputado Federal,Dep. Federal,1467,ROQUES JOSÉ PEREIRA,14,PTB,,536,
+6259,BA,6,Deputado Federal,Dep. Federal,1499,ANGELICA MATOS AMORIM,14,PTB,,300,
+6259,BA,6,Deputado Federal,Dep. Federal,1477,JONATHAS DE JESUS PEREIRA,14,PTB,,271,
+6259,BA,6,Deputado Federal,Dep. Federal,1433,YLAN PABLO DA SILVA CAMPOS,14,PTB,,325,
+6259,BA,6,Deputado Federal,Dep. Federal,1413,LUZIANE SOUZA PEREIRA,14,PTB,,96,
+6259,BA,6,Deputado Federal,Dep. Federal,1444,IGOR MIRANDA NOVAES,14,PTB,,2379,
+6259,BA,6,Deputado Federal,Dep. Federal,1415,RAILA SOIRAN DA SILVA MAGALHÃES,14,PTB,,105,
+6259,BA,6,Deputado Federal,Dep. Federal,1414,QUÉCIA REIS DOS SANTOS BASTOS,14,PTB,,22870,
+6259,BA,6,Deputado Federal,Dep. Federal,1411,VINICIUS DA SILVA CHAGAS,14,PTB,,322,
+6259,BA,6,Deputado Federal,Dep. Federal,1410,JOCELI SANTANA DE JESUS JUNIOR,14,PTB,,226,
+6259,BA,6,Deputado Federal,Dep. Federal,1412,VITOR TEODOZIO BANDEIRA,14,PTB,,197,
+6259,BA,6,Deputado Federal,Dep. Federal,1455,JAMILLE DE JESUS SANTOS DIAS,14,PTB,,175,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70770,WELLINGTON SANTOS DE ARAUJO,70,AVANTE,,980,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70055,MARCO AURELIO SILVA FARIAS,70,AVANTE,,5741,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70070,DANIEL SANTOS DO NASCIMENTO,70,AVANTE,,2610,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70500,WANGLES GLICERIO SANTOS,70,AVANTE,,456,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70701,TAMIS GORETE SANTOS DO SACRAMENTO,70,AVANTE,,528,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70333,VITOR VIANA PARANHOS DE AZEVEDO,70,AVANTE,,68806,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70501,LEANDRO CUSTODIO SIQUEIRA,70,AVANTE,,90,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70707,MARCOS PIRES GUEDES,70,AVANTE,,459,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70075,PAULO CESAR AMORIM SILVA,70,AVANTE,,106,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70000,TANCREDO ISIDORIO CELESTINO DE SANTANA,70,AVANTE,,82883,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70123,PATRICK GILBERTO RODRIGUES LOPES,70,AVANTE,,47064,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70567,SUELI SOARES DA SILVA,70,AVANTE,,195,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70654,DEVANICE SILVA DOS SANTOS,70,AVANTE,,412,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70010,ROZANGELA DE SOUZA SANTOS CARDOSO,70,AVANTE,,201,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70133,CÍCERO DE CARVALHO MONTEIRO,70,AVANTE,,11047,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70456,JOÃO PEDRO LABRIOLA CARDOZO,70,AVANTE,,58510,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70771,ESTELITA DE CRISTO DOS SANTOS,70,AVANTE,,855,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70130,AIDIL CRISTINA MOREIRA DE SOUZA,70,AVANTE,,141,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70666,ANSELMO MENDES DA SILVA,70,AVANTE,,514,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70190,SILAS SILVA PINHEIRO,70,AVANTE,,240,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70111,FELIPE GABRIEL DUARTE,70,AVANTE,,51921,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70987,JANECLEIDE DE OLIVEIRA RIBEIRO,70,AVANTE,,126,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70900,PABLO RODRIGO BARROZO DOS ANJOS VALE,70,AVANTE,,34539,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70700,LEONARDO BARBOSA CARDOSO,70,AVANTE,,81903,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70777,LUCIANO ARAUJO DE OLIVEIRA,70,AVANTE,,43855,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70924,BEATRIZ SOUZA DOS SANTOS,70,AVANTE,,141,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70007,KLEBER CRISTIAN ESCOLANO DE ALMEIDA,70,AVANTE,,23474,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70224,MARCIA DE JESUS NERI,70,AVANTE,,566,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70579,GABRIELA ROSA LIMA,70,AVANTE,,737,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70999,FERNANDA SILVA SA TELES,70,AVANTE,,32409,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70002,JANETE SILVA SANTOS DE JESUS,70,AVANTE,,235,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70800,JULIO CÉSAR MASCARENHAS DOS SANTOS,70,AVANTE,,573,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70565,IRACEMA SANTOS DIAS,70,AVANTE,,186,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70969,EDSON SANTOS FERREIRA,70,AVANTE,,343,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70074,JESSIKA DE OLIVEIRA SOUSA,70,AVANTE,,367,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70090,JUSSILVIO QUEIROZ PENA,70,AVANTE,,2390,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70444,ANTONIO CARVALHO DA SILVA NETO,70,AVANTE,,66967,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70788,SIMARA RODRIGUES SOARES,70,AVANTE,,1820,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70345,HELIO BARRETO DOS SANTOS,70,AVANTE,,1286,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70321,VALTER SANTOS DE ARAUJO,70,AVANTE,,2027,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70888,LAERTE LEANDRO DE ARAÚJO FERNANDES,70,AVANTE,,48580,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70555,MARIO ALEXANDRE CORREA DE SOUSA,70,AVANTE,,18419,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70001,TEONILDO SOARES DOS SANTOS,70,AVANTE,,327,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70789,MIRELE DOS SANTOS BRAGA,70,AVANTE,,709,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70100,ANTONIO FERNANDO SILVA DE JESUS,70,AVANTE,,529,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70553,MARDEN DOS SANTOS LESSA,70,AVANTE,,13,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70222,RAFAEL FERREIRA LIMA,70,AVANTE,,3465,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70077,JARBAS PINHEIRO MEIRA,70,AVANTE,,945,
+6259,BA,7,Deputado Estadual,Dep. Estadual/Distrital,70013,DAVI SOBRAL REIS,70,AVANTE,,1931,
+6259,CE,3,Governador,Governador,45,CIRO FERREIRA GOMES,45,PSDB,,2498891,Não eleito
+6259,CE,5,Senador,Senador,290,LINO ALVES DE ALMEIDA,29,PCO,,2677,Não eleito
+6259,CE,6,Deputado Federal,Dep. Federal,7077,MONICA SILVA SANTOS DE SOUSA,70,AVANTE,,237,Não eleito
+6259,CE,6,Deputado Federal,Dep. Federal,7010,DIMAS JOSÉ DE SOUZA,70,AVANTE,,77,Não eleito
+6259,CE,6,Deputado Federal,Dep. Federal,7055,JOÃO CLEANO BEZERRA MARTINS,70,AVANTE,,83,Não eleito
+6259,CE,6,Deputado Federal,Dep. Federal,7030,FRANCISCA SULIANE SILVA ALVES DOS SANTOS,70,AVANTE,,266,Não eleito
+6259,CE,6,Deputado Federal,Dep. Federal,7045,RAIMUNDO BALBINO DE ALBUQUERQUE,70,AVANTE,,91,Não eleito
+6259,CE,6,Deputado Federal,Dep. Federal,7000,KLEYTON LIMA BATISTA,70,AVANTE,,409,Não eleito
+6259,CE,7,Deputado Estadual,Dep. Estadual/Distrital,10222,JOSÉ ANDERSON CALIXTO FEITOSA,10,REPUBLICANOS,,29588,Suplente
+6259,CE,7,Deputado Estadual,Dep. Estadual/Distrital,10020,RENATO DA SILVA ISIDIO,10,REPUBLICANOS,,236,Suplente
+6259,CE,7,Deputado Estadual,Dep. Estadual/Distrital,10001,LEILA MARIA DA SILVA BRITO,10,REPUBLICANOS,,180,Suplente
+6259,CE,7,Deputado Estadual,Dep. Estadual/Distrital,10005,LUZIA DE GUADALUPE LINDA MASCARENHAS,10,REPUBLICANOS,,224,Suplente
+6259,CE,7,Deputado Estadual,Dep. Estadual/Distrital,10099,GILBERTO FELIX DA SILVA,10,REPUBLICANOS,,466,Suplente
+6259,CE,7,Deputado Estadual,Dep. Estadual/Distrital,10321,VIRGINIA FARIAS NERY LIMA,10,REPUBLICANOS,,305,Suplente
+6259,CE,7,Deputado Estadual,Dep. Estadual/Distrital,10478,PEDRO PAULO SALDANHA NOGUEIRA DE ALMEIDA,10,REPUBLICANOS,,1796,Suplente
+6259,CE,7,Deputado Estadual,Dep. Estadual/Distrital,10800,GILVAN DO NASCIMENTO COSTA,10,REPUBLICANOS,,1274,Suplente
+6259,CE,7,Deputado Estadual,Dep. Estadual/Distrital,10999,KLEITON ALVES DE ANDRADE,10,REPUBLICANOS,,16120,Suplente
+6259,CE,7,Deputado Estadual,Dep. Estadual/Distrital,10111,RAIMUNDO ROBERTO FILHO,10,REPUBLICANOS,,1279,Suplente
+6259,CE,7,Deputado Estadual,Dep. Estadual/Distrital,10879,FRANCISCO ANTONIO DE SOUSA SILVA,10,REPUBLICANOS,,374,Suplente
+6259,CE,7,Deputado Estadual,Dep. Estadual/Distrital,10456,NIVALDO MAURO DOS SANTOS,10,REPUBLICANOS,,1092,Suplente
+6259,CE,7,Deputado Estadual,Dep. Estadual/Distrital,10123,DAVID DE ALBUQUERQUE DURAND,10,REPUBLICANOS,,49051,Eleito por QP
+6259,CE,7,Deputado Estadual,Dep. Estadual/Distrital,10070,CELINA FERNANDES ALVES,10,REPUBLICANOS,,554,Suplente
+6259,CE,7,Deputado Estadual,Dep. Estadual/Distrital,10345,CARLOS HENRIQUE DE SOUSA SANTOS,10,REPUBLICANOS,,118,Suplente
+6259,CE,7,Deputado Estadual,Dep. Estadual/Distrital,10333,GARDEL FERREIRA ROLIM,10,REPUBLICANOS,,36236,Eleito por QP
+6259,CE,7,Deputado Estadual,Dep. Estadual/Distrital,10444,FRANCISCO MARCIO MARTINS BARBOSA,10,REPUBLICANOS,,32145,Suplente
+6259,CE,7,Deputado Estadual,Dep. Estadual/Distrital,10011,MARIA ELIMAR MENDONCA ARAGAO AZEVEDO SIDOU,10,REPUBLICANOS,,599,Suplente
+6259,CE,7,Deputado Estadual,Dep. Estadual/Distrital,10678,FERNANDO HUGO DA SILVA COLARES,10,REPUBLICANOS,,31224,Suplente
+6259,CE,7,Deputado Estadual,Dep. Estadual/Distrital,10777,JOSE ELILIANO DA SILVA SOUSA,10,REPUBLICANOS,,1496,Suplente
+6259,CE,7,Deputado Estadual,Dep. Estadual/Distrital,10007,SAMUEL DANTAS FALCAO,10,REPUBLICANOS,,830,Suplente
+6259,CE,7,Deputado Estadual,Dep. Estadual/Distrital,10015,CÉLIA LIÉGIA EVANGELISTA DA COSTA,10,REPUBLICANOS,,261,Suplente
+6259,CE,7,Deputado Estadual,Dep. Estadual/Distrital,10100,PEDRO NETO LOBO SOARES,10,REPUBLICANOS,,16048,Suplente
+6259,CE,7,Deputado Estadual,Dep. Estadual/Distrital,10369,MARIA DE FATIMA GOMES COSTA,10,REPUBLICANOS,,326,Suplente
+6259,CE,7,Deputado Estadual,Dep. Estadual/Distrital,10000,SILVIO DE ALENCAR MARTINS,10,REPUBLICANOS,,8476,Suplente
+6259,CE,7,Deputado Estadual,Dep. Estadual/Distrital,10110,JOSÉ DENIS BRITO DA SILVA,10,REPUBLICANOS,,2364,Suplente
+6259,CE,7,Deputado Estadual,Dep. Estadual/Distrital,10888,CRISTIANE COLARES MUNIZ,10,REPUBLICANOS,,262,Suplente
+6259,CE,7,Deputado Estadual,Dep. Estadual/Distrital,10010,IGOR LEITÃO CHAVES CRUZ,10,REPUBLICANOS,,1421,Suplente
+6259,CE,7,Deputado Estadual,Dep. Estadual/Distrital,10234,DIEGO BARRETO MOREIRA,10,REPUBLICANOS,,29374,Suplente
+6259,CE,7,Deputado Estadual,Dep. Estadual/Distrital,10700,FRANCISCO RUBENS DA SILVA,10,REPUBLICANOS,,50,Suplente
+6259,CE,7,Deputado Estadual,Dep. Estadual/Distrital,10600,MARIA ELZILENE DE OLIVEIRA LIMA,10,REPUBLICANOS,,95,Suplente
+6259,CE,7,Deputado Estadual,Dep. Estadual/Distrital,10121,WILEINA DE SOUSA FRANCA,10,REPUBLICANOS,,109,Suplente
+6259,CE,7,Deputado Estadual,Dep. Estadual/Distrital,10101,ANTONIO DIEGO AVELINO BARBOSA,10,REPUBLICANOS,,834,Suplente
+6259,DF,8,Deputado Distrital,Dep. Estadual/Distrital,33133,GISLAINE APARECIDA SOARES,33,MOBILIZA,,269,Não eleito
+6259,DF,8,Deputado Distrital,Dep. Estadual/Distrital,33123,REGINALDO ROCHA SARDINHA GOES,33,MOBILIZA,,11996,Não eleito
+6259,DF,8,Deputado Distrital,Dep. Estadual/Distrital,33190,ULISSES DA COSTA DIAS,33,MOBILIZA,,2095,Não eleito
+6259,DF,8,Deputado Distrital,Dep. Estadual/Distrital,33456,ITALO DA SILVA MIRANDA,33,MOBILIZA,,1917,Não eleito
+6259,DF,8,Deputado Distrital,Dep. Estadual/Distrital,33323,FRANCIMAR NAVA VILARINDO,33,MOBILIZA,,396,Não eleito
+6259,DF,8,Deputado Distrital,Dep. Estadual/Distrital,33355,ALEXANDRE DA SILVA PEREIRA,33,MOBILIZA,,142,Não eleito
+6259,DF,8,Deputado Distrital,Dep. Estadual/Distrital,33733,AGENILDO NERI DA SILVA,33,MOBILIZA,,1373,Não eleito
+6259,DF,8,Deputado Distrital,Dep. Estadual/Distrital,33337,FRANCISCA JUSCICLEIA ARAUJO BRITO,33,MOBILIZA,,105,Não eleito
+6259,DF,8,Deputado Distrital,Dep. Estadual/Distrital,33122,LÉTICIA SAMPAIO JUSTINO,33,MOBILIZA,,2236,Não eleito
+6259,DF,8,Deputado Distrital,Dep. Estadual/Distrital,33192,WENDEL ANTONIO ALVES MOREIRA,33,MOBILIZA,,1373,Não eleito
+6259,DF,8,Deputado Distrital,Dep. Estadual/Distrital,33100,RAAD MTANIOS MASSOUH,33,MOBILIZA,,8641,Não eleito
+6259,DF,8,Deputado Distrital,Dep. Estadual/Distrital,33700,GUTEMBERG FARIA RIOS,33,MOBILIZA,,329,Não eleito
+6259,DF,8,Deputado Distrital,Dep. Estadual/Distrital,33001,FRANCISCO ROKSINAIDY SALES GARÇÃO,33,MOBILIZA,,2029,Não eleito
+6259,DF,8,Deputado Distrital,Dep. Estadual/Distrital,33088,EMANUELL HENRIQUE DA SILVA,33,MOBILIZA,,355,Não eleito
+6259,DF,8,Deputado Distrital,Dep. Estadual/Distrital,33007,ADIVALDO JOSE NOGUEIRA,33,MOBILIZA,,591,Não eleito
+6259,DF,8,Deputado Distrital,Dep. Estadual/Distrital,33111,JORGE DE FARIAS PATROCINIO,33,MOBILIZA,,3716,Não eleito
+6259,DF,8,Deputado Distrital,Dep. Estadual/Distrital,33000,EUDES JUDITH MERCES DE OLIVEIRA FELIX,33,MOBILIZA,,397,Não eleito
+6259,DF,8,Deputado Distrital,Dep. Estadual/Distrital,33789,PEDRO ANTONIO DOS SANTOS,33,MOBILIZA,,464,Não eleito
+6259,DF,8,Deputado Distrital,Dep. Estadual/Distrital,33033,ÉVERTON MOTA RESENDE,33,MOBILIZA,,3012,Não eleito
+6259,DF,8,Deputado Distrital,Dep. Estadual/Distrital,33222,CARLOS ALBERTO RODRIGUES TABANEZ,33,MOBILIZA,,5715,Não eleito
+6259,DF,8,Deputado Distrital,Dep. Estadual/Distrital,33777,CRICIA APARECIDA MARTINS DA MATA DE ALMEIDA,33,MOBILIZA,,10966,Não eleito
+6259,DF,8,Deputado Distrital,Dep. Estadual/Distrital,33003,ANA CAROLINY DA COSTA CARVALHO NUNES,33,MOBILIZA,,38,Não eleito
+6259,DF,8,Deputado Distrital,Dep. Estadual/Distrital,33663,THAYS HELENA SILVA MORAES,33,MOBILIZA,,198,Não eleito
+6259,DF,8,Deputado Distrital,Dep. Estadual/Distrital,33333,NUCHE MENINO FIGUEIREDO DE CAMARGO,33,MOBILIZA,,6367,Não eleito
+6259,DF,8,Deputado Distrital,Dep. Estadual/Distrital,33180,DEISE LUCI BELEM DE ANDRADE,33,MOBILIZA,,482,Não eleito
+6259,ES,3,Governador,Governador,10,LORENZO SILVA DE PAZOLINI,10,REPUBLICANOS,,1048633,2º turno
+6259,ES,5,Senador,Senador,400,JOSÉ RENATO CASAGRANDE,40,PSB,,995361,Eleito
+6259,ES,6,Deputado Federal,Dep. Federal,4004,VITOR AMORIM DE ANGELO,40,PSB,,19000,Suplente
+6259,ES,6,Deputado Federal,Dep. Federal,4000,VICTOR GAROZI LINHALIS,40,PSB,,24547,Suplente
+6259,ES,6,Deputado Federal,Dep. Federal,4001,CRISLAYNE ZEFERINO PEREIRA,40,PSB,,1810,Suplente
+6259,ES,6,Deputado Federal,Dep. Federal,4015,MARIA EMANUELA ALVES PEDROSO,40,PSB,,69398,Eleito por QP
+6259,ES,6,Deputado Federal,Dep. Federal,4033,JADIR JOSE PELA,40,PSB,,4956,Suplente
+6259,ES,6,Deputado Federal,Dep. Federal,4022,RAFAEL RODRIGO PACHECO SALAROLI,40,PSB,,6995,Suplente
+6259,ES,6,Deputado Federal,Dep. Federal,4010,JOSE EUSTAQUIO DE FREITAS,40,PSB,,49840,Suplente
+6259,ES,6,Deputado Federal,Dep. Federal,4044,FELIPE RIGONI LOPES,40,PSB,,35705,Suplente
+6259,ES,6,Deputado Federal,Dep. Federal,4040,TYAGO RIBEIRO HOFFMANN,40,PSB,,68915,Suplente
+6259,ES,6,Deputado Federal,Dep. Federal,4020,DILCEA MARVILA DE OLIVEIRA,40,PSB,,2676,Suplente
+6259,ES,6,Deputado Federal,Dep. Federal,4056,LORENA VASQUES SILVEIRA,40,PSB,,4333,Suplente
+6259,ES,7,Deputado Estadual,Dep. Estadual/Distrital,45400,THIAGO OLIVEIRA HILARIO,45,PSDB,,861,Não eleito
+6259,ES,7,Deputado Estadual,Dep. Estadual/Distrital,45100,ANDERSON JUNIO RIBEIRO FERREIRA,45,PSDB,,2238,Não eleito
+6259,ES,7,Deputado Estadual,Dep. Estadual/Distrital,45007,EDUARDO MARQUES AFONSO,45,PSDB,,291,Não eleito
+6259,ES,7,Deputado Estadual,Dep. Estadual/Distrital,45190,ROSEANA DO CARMO GOMES,45,PSDB,,911,Não eleito
+6259,ES,7,Deputado Estadual,Dep. Estadual/Distrital,45500,ERNY MARIA DA SILVA,45,PSDB,,101,Não eleito
+6259,ES,7,Deputado Estadual,Dep. Estadual/Distrital,45105,ALDO DE ALMEIDA VIEIRA MACHADO JUNIOR,45,PSDB,,1144,Não eleito
+6259,ES,7,Deputado Estadual,Dep. Estadual/Distrital,45600,LILIAN SOUZA SANTOS,45,PSDB,,1169,Não eleito
+6259,ES,7,Deputado Estadual,Dep. Estadual/Distrital,45123,LUIZ PAULO VELLOZO LUCAS,45,PSDB,,2476,Não eleito
+6259,ES,7,Deputado Estadual,Dep. Estadual/Distrital,45122,JOAO BATISTA BARBOZA,45,PSDB,,1021,Não eleito
+6259,ES,7,Deputado Estadual,Dep. Estadual/Distrital,45700,EVAN HALEI NOVAES DOS SANTOS,45,PSDB,,3729,Não eleito
+6259,ES,7,Deputado Estadual,Dep. Estadual/Distrital,45020,CICERO EDUARDO BACELAR RIBEIRO,45,PSDB,,692,Não eleito
+6259,ES,7,Deputado Estadual,Dep. Estadual/Distrital,45678,EVANDRO MIRANDA,45,PSDB,,5843,Não eleito
+6259,ES,7,Deputado Estadual,Dep. Estadual/Distrital,45000,LYZA KELY DE OLIVEIRA,45,PSDB,,13879,Não eleito
+6259,ES,7,Deputado Estadual,Dep. Estadual/Distrital,45121,ANA PAULA SIMÕES MACHADO FERNANDES,45,PSDB,,511,Não eleito
+6259,ES,7,Deputado Estadual,Dep. Estadual/Distrital,45200,ANTONIO CEZAR LAZARO,45,PSDB,,1817,Não eleito
+6259,ES,7,Deputado Estadual,Dep. Estadual/Distrital,45777,OSEIAS DE MOURA,45,PSDB,,2837,Não eleito
+6259,ES,7,Deputado Estadual,Dep. Estadual/Distrital,45333,THIAGO TEIXEIRA DA SILVA,45,PSDB,,1555,Não eleito
+6259,ES,7,Deputado Estadual,Dep. Estadual/Distrital,45111,MARKETY ALOCHIO,45,PSDB,,3198,Não eleito
+6259,ES,7,Deputado Estadual,Dep. Estadual/Distrital,45222,MARCIO POLCHEIRA ZANETI,45,PSDB,,1012,Não eleito
+6259,ES,7,Deputado Estadual,Dep. Estadual/Distrital,45800,EVELYN LUCIANE NETO,45,PSDB,,1294,Não eleito
+6259,ES,7,Deputado Estadual,Dep. Estadual/Distrital,45555,ROGER DE OLIVEIRA ALMEIDA,45,PSDB,,1689,Não eleito
+6259,ES,7,Deputado Estadual,Dep. Estadual/Distrital,45444,ANADELSO PEREIRA,45,PSDB,,6151,Não eleito
+6259,ES,7,Deputado Estadual,Dep. Estadual/Distrital,45888,SUELEN MARQUES NASCIMENTO,45,PSDB,,125,Não eleito
+6259,ES,7,Deputado Estadual,Dep. Estadual/Distrital,45133,ANTONIO SERGIO BATISTA,45,PSDB,,1825,Não eleito
+6259,GO,3,Governador,Governador,22,WILDER PEDRO DE MORAIS,22,PL,,797141,Não eleito
+6259,GO,5,Senador,Senador,251,GUSTAVO MENDANHA MELO,25,PRD,,578418,Não eleito
+6259,GO,6,Deputado Federal,Dep. Federal,1536,BRAULIO CANCADO FLORES,15,MDB,,3781,Suplente
+6259,GO,6,Deputado Federal,Dep. Federal,1522,PAULO SERGIO DE SOUZA,15,MDB,,15444,Suplente
+6259,GO,6,Deputado Federal,Dep. Federal,1533,JOAO FERREIRA GUIMARAES,15,MDB,,4570,Suplente
+6259,GO,6,Deputado Federal,Dep. Federal,1530,GLEIMO MARTINS DOS ANJOS,15,MDB,,1999,Suplente
+6259,GO,6,Deputado Federal,Dep. Federal,1577,FRANCISCO DE ASSIS MAGALHAES DE SA JUNIOR,15,MDB,,1098,Suplente
+6259,GO,6,Deputado Federal,Dep. Federal,1599,CELIO ANTONIO DA SILVEIRA,15,MDB,,105256,Eleito por média
+6259,GO,6,Deputado Federal,Dep. Federal,1520,CLAUDIO DOS SANTOS NOGUEIRA,15,MDB,,995,Suplente
+6259,GO,6,Deputado Federal,Dep. Federal,1515,FLAVIA CARREIRO ALBUQUERQUE MORAIS,15,MDB,,143497,Eleito por QP
+6259,GO,6,Deputado Federal,Dep. Federal,1511,REGINA CELIA,15,MDB,,1738,Suplente
+6259,GO,6,Deputado Federal,Dep. Federal,1588,NAILDE TEIXEIRA DE SOUZA E SILVA,15,MDB,,2553,Suplente
+6259,GO,6,Deputado Federal,Dep. Federal,1517,MIRIÃ PIRES BARBOSA,15,MDB,,1071,Suplente
+6259,GO,6,Deputado Federal,Dep. Federal,1510,LUCAS DE CASTRO SANTOS,15,MDB,,72442,Suplente
+6259,GO,6,Deputado Federal,Dep. Federal,1544,ELISSANDRO EDENIR PEDROSO,15,MDB,,2378,Suplente
+6259,GO,6,Deputado Federal,Dep. Federal,1557,ELISÂNGELA ARAÚJO DOS SANTOS,15,MDB,,70,Suplente
+6259,GO,6,Deputado Federal,Dep. Federal,1593,LOUIZA RAMIRO DA COSTA,15,MDB,,1869,Suplente
+6259,GO,6,Deputado Federal,Dep. Federal,1555,DOMINGAS OLIVEIRA DE SOUSA,15,MDB,,5088,Suplente
+6259,GO,6,Deputado Federal,Dep. Federal,1500,MIZAIR JEFFERSON DA SILVA,15,MDB,,6267,Suplente
+6259,GO,7,Deputado Estadual,Dep. Estadual/Distrital,25700,SANTIAGO PEREIRA GOMES,25,PRD,,1612,Suplente
+6259,GO,7,Deputado Estadual,Dep. Estadual/Distrital,25150,ERNESTO ALVES DIAS,25,PRD,,139,Suplente
+6259,GO,7,Deputado Estadual,Dep. Estadual/Distrital,25321,IRINEU CANDIDO DA SILVA,25,PRD,,13,Suplente
+6259,GO,7,Deputado Estadual,Dep. Estadual/Distrital,25444,FLORISVALDO RIBEIRO DA SILVA,25,PRD,,104,Suplente
+6259,GO,7,Deputado Estadual,Dep. Estadual/Distrital,25200,MAURO SERGIO GOMES,25,PRD,,207,Suplente
+6259,GO,7,Deputado Estadual,Dep. Estadual/Distrital,25111,ALESSANDRO MOREIRA DOS SANTOS,25,PRD,,36300,Eleito por QP
+6259,GO,7,Deputado Estadual,Dep. Estadual/Distrital,25025,ROSILENE COELHO BATISTA,25,PRD,,46,Suplente
+6259,GO,7,Deputado Estadual,Dep. Estadual/Distrital,25900,ADRICIELE FATIMA SPELIER DALACORTE,25,PRD,,165,Suplente
+6259,GO,7,Deputado Estadual,Dep. Estadual/Distrital,25145,MICHELE DINIZ BELTRÃO,25,PRD,,44,Suplente
+6259,GO,7,Deputado Estadual,Dep. Estadual/Distrital,25044,ASTRIDE DE CARVALHO MAGALHAES ALCANTARA,25,PRD,,257,Suplente
+6259,GO,7,Deputado Estadual,Dep. Estadual/Distrital,25777,ELAINE RODRIGUES SANTOS CIRINO,25,PRD,,130,Suplente
+6259,GO,7,Deputado Estadual,Dep. Estadual/Distrital,25127,JHANECLEIA LEOPOLDINA,25,PRD,,265,Suplente
+6259,GO,7,Deputado Estadual,Dep. Estadual/Distrital,25789,ANDERSON TEODORO DA CUNHA DOURADO,25,PRD,,39424,Eleito por QP
+6259,GO,7,Deputado Estadual,Dep. Estadual/Distrital,25007,CARLOS AUGUSTO OZORIO DOURADO,25,PRD,,35,Suplente
+6259,GO,7,Deputado Estadual,Dep. Estadual/Distrital,25190,PAULO ADRIANO NUNES MIRANDA,25,PRD,,113,Suplente
+6259,GO,7,Deputado Estadual,Dep. Estadual/Distrital,25100,MONICLEITON JESUS PEREIRA,25,PRD,,10836,Suplente
+6259,GO,7,Deputado Estadual,Dep. Estadual/Distrital,25015,RAISLA MARCELINA DE SOUZA,25,PRD,,29,Suplente
+6259,GO,7,Deputado Estadual,Dep. Estadual/Distrital,25678,ROSANGELA JUBE DOS SANTOS,25,PRD,,215,Suplente
+6259,GO,7,Deputado Estadual,Dep. Estadual/Distrital,25333,CRISTOVAO VAZ TORMIN,25,PRD,,31454,Suplente
+6259,GO,7,Deputado Estadual,Dep. Estadual/Distrital,25500,ALVARO JOSE DE RESENDE CARDOSO,25,PRD,,505,Suplente
+6259,GO,7,Deputado Estadual,Dep. Estadual/Distrital,25123,JOÃO ALBERTO VIEIRA RODRIGUES,25,PRD,,21245,Suplente
+6259,GO,7,Deputado Estadual,Dep. Estadual/Distrital,25156,PERPETUA FERNANDES BARBOSA DE FREITAS,25,PRD,,297,Suplente
+6259,GO,7,Deputado Estadual,Dep. Estadual/Distrital,25555,PAULO RENATO SILVA,25,PRD,,33588,Eleito por média
+6259,MA,3,Governador,Governador,28,ROBERTO COELHO ROCHA,28,PRTB,,48920,
+6259,MA,5,Senador,Senador,151,ROSEANA SARNEY MURAD,15,MDB,,1171252,
+6259,MA,6,Deputado Federal,Dep. Federal,3340,GRACILENE SILVA FONSECA,33,MOBILIZA,,42,
+6259,MA,6,Deputado Federal,Dep. Federal,3302,FATIMA MARIA DO NASCIMENTO E SILVA,33,MOBILIZA,,30,
+6259,MA,6,Deputado Federal,Dep. Federal,3391,JOSE RIBAMAR LIMA DOS SANTOS,33,MOBILIZA,,83,
+6259,MA,6,Deputado Federal,Dep. Federal,3300,FERNANDO ANTONIO CALDAS SIQUEIRA,33,MOBILIZA,,82,
+6259,MA,6,Deputado Federal,Dep. Federal,3312,JULIO SIMOES FILHO,33,MOBILIZA,,43,
+6259,MA,6,Deputado Federal,Dep. Federal,3333,JOSE DE RIBAMAR JANSEN PENHA,33,MOBILIZA,,592,
+6259,MA,7,Deputado Estadual,Dep. Estadual/Distrital,70987,LUIS ANDRE SILVA DOS SANTOS,70,AVANTE,,91,
+6259,MA,7,Deputado Estadual,Dep. Estadual/Distrital,70444,MARIA DAS DORES RIOS SILVA,70,AVANTE,,520,
+6259,MA,7,Deputado Estadual,Dep. Estadual/Distrital,70258,MARIA DA LUZ DA CONCEIÇAO RAMOS,70,AVANTE,,6,
+6259,MA,7,Deputado Estadual,Dep. Estadual/Distrital,70001,RAIMUNDO JOSÉ MENDES FILHO,70,AVANTE,,240,
+6259,MA,7,Deputado Estadual,Dep. Estadual/Distrital,70171,SANDRA MARIA DUARTE CRUZ,70,AVANTE,,160,
+6259,MA,7,Deputado Estadual,Dep. Estadual/Distrital,70232,JOSENBERG FERREIRA DE OLIVEIRA RAMOS,70,AVANTE,,41,
+6259,MA,7,Deputado Estadual,Dep. Estadual/Distrital,70111,FRANCISCO REIS DA SILVA,70,AVANTE,,121,
+6259,MA,7,Deputado Estadual,Dep. Estadual/Distrital,70777,NAYARA BASTOS DE CARVALHO,70,AVANTE,,162,
+6259,MA,7,Deputado Estadual,Dep. Estadual/Distrital,70033,TASSIA MARINHO MENDONCA,70,AVANTE,,8,
+6259,MA,7,Deputado Estadual,Dep. Estadual/Distrital,70456,ENZO DI LAMARTINE DA SILVA MILHOMEM,70,AVANTE,,17,
+6259,MA,7,Deputado Estadual,Dep. Estadual/Distrital,70116,WALDEMAR RIBEIRO BOTTENTUIT NETO,70,AVANTE,,91,
+6259,MA,7,Deputado Estadual,Dep. Estadual/Distrital,70654,JOSE ANTONIO CAMPOS,70,AVANTE,,380,
+6259,MA,7,Deputado Estadual,Dep. Estadual/Distrital,70852,JARDSON SILVA,70,AVANTE,,56,
+6259,MA,7,Deputado Estadual,Dep. Estadual/Distrital,70555,JOÃO LIMA DIAS DO LAGO,70,AVANTE,,458,
+6259,MA,7,Deputado Estadual,Dep. Estadual/Distrital,70100,THIAGO HENRIQUE MONTEIRO LOBATO FIDELES,70,AVANTE,,157,
+6259,MA,7,Deputado Estadual,Dep. Estadual/Distrital,70123,MARIA DA CONCEICAO RODRIGUES BELFORT,70,AVANTE,,51,
+6259,MA,7,Deputado Estadual,Dep. Estadual/Distrital,70222,IKARO GUILHERME SILVA BARBOSA,70,AVANTE,,3073,
+6259,MA,7,Deputado Estadual,Dep. Estadual/Distrital,70221,FRANCISCO QUIRINO SOBRINHO,70,AVANTE,,97,
+6259,MA,7,Deputado Estadual,Dep. Estadual/Distrital,70190,RAUL RIBEIRO BATISTA II,70,AVANTE,,2464,
+6259,MA,7,Deputado Estadual,Dep. Estadual/Distrital,70333,MARIA DALVA COSTA,70,AVANTE,,91,
+6259,MA,7,Deputado Estadual,Dep. Estadual/Distrital,70070,ANTONIO LUIS RODRIGUES COSTA,70,AVANTE,,362,
+6259,MA,7,Deputado Estadual,Dep. Estadual/Distrital,70707,JUVÊNCIO LUSTOSA DE FARIAS JÚNIOR,70,AVANTE,,1129,
+6259,MA,7,Deputado Estadual,Dep. Estadual/Distrital,70192,AGNALDO FERNANDO COSTA SERRA,70,AVANTE,,177,
+6259,MA,7,Deputado Estadual,Dep. Estadual/Distrital,70789,JANIEL FERREIRA LIMA,70,AVANTE,,157,
+6259,MA,7,Deputado Estadual,Dep. Estadual/Distrital,70321,MARCIA REGINA CABRAL MATOS,70,AVANTE,,56,
+6259,MG,3,Governador,Governador,16,RAFAEL RIBEIRO DE ÁVILA,16,PSTU,,4764,
+6259,MG,5,Senador,Senador,277,RAMON MOREIRA,27,DC,,14463,
+6259,MG,6,Deputado Federal,Dep. Federal,2226,CARLA SOARES DE ANDRADE,22,PL,,3211,
+6259,MG,6,Deputado Federal,Dep. Federal,2206,LAIZA LIMA AVELAR DO ESPÍRITO SANTO,22,PL,,1303,
+6259,MG,6,Deputado Federal,Dep. Federal,2240,EMIDIO ALVES MADEIRA JUNIOR,22,PL,,94812,
+6259,MG,6,Deputado Federal,Dep. Federal,2277,EROS FERREIRA BIONDINI,22,PL,,81650,
+6259,MG,6,Deputado Federal,Dep. Federal,2258,GILSON DANIEL DE OLIVEIRA,22,PL,,1570,
+6259,MG,6,Deputado Federal,Dep. Federal,2269,EDSON MOREIRA DA SILVA,22,PL,,3080,
+6259,MG,6,Deputado Federal,Dep. Federal,2207,LETICIA MIRANDA SANTIAGO DE JESUS,22,PL,,727,
+6259,MG,6,Deputado Federal,Dep. Federal,2227,IGOR PEREIRA DOS SANTOS,22,PL,,70572,
+6259,MG,6,Deputado Federal,Dep. Federal,2212,CRISTIANO CAPOREZZO ARAUJO PIRES FERREIRA,22,PL,,57878,
+6259,MG,6,Deputado Federal,Dep. Federal,2244,MARCELO HENRIQUE TEIXEIRA DIAS,22,PL,,56958,
+6259,MG,6,Deputado Federal,Dep. Federal,2270,GREYCE DE QUEIROZ ELIAS,22,PL,,66395,
+6259,MG,6,Deputado Federal,Dep. Federal,2290,CHARLLES THOMACELLI EVANGELISTA,22,PL,,19034,
+6259,MG,6,Deputado Federal,Dep. Federal,2202,GLADSTON GABRIEL DA SILVA,22,PL,,10989,
+6259,MG,6,Deputado Federal,Dep. Federal,2215,ROSANGELA DE OLIVEIRA CAMPOS REIS,22,PL,,57063,
+6259,MG,6,Deputado Federal,Dep. Federal,2223,FARLEY FREDERICO DE OLIVEIRA SOUZA,22,PL,,8042,
+6259,MG,6,Deputado Federal,Dep. Federal,2245,CARLOS ALBERTO DE MELLO,22,PL,,25090,
+6259,MG,6,Deputado Federal,Dep. Federal,2230,GLAUCIA MARIA SANTIAGO RODRIGUES,22,PL,,9123,
+6259,MG,6,Deputado Federal,Dep. Federal,2288,HERMANO BERNARDES DE ANDRADE FREITAS,22,PL,,18295,
+6259,MG,6,Deputado Federal,Dep. Federal,2221,CAROLINE FIGUEIREDO COSTA,22,PL,,5227,
+6259,MG,6,Deputado Federal,Dep. Federal,2216,VITOR PENIDO DE BARROS,22,PL,,6379,
+6259,MG,6,Deputado Federal,Dep. Federal,2282,ANIELE ANDRADE FONSECA MENDES,22,PL,,1604,
+6259,MG,6,Deputado Federal,Dep. Federal,2234,IRLAN CHAVES DE OLIVEIRA MELO,22,PL,,24369,
+6259,MG,6,Deputado Federal,Dep. Federal,2211,WILI DOS SANTOS,22,PL,,17547,
+6259,MG,6,Deputado Federal,Dep. Federal,2252,FREDERICO DE CASTRO ESCALEIRA,22,PL,,60625,
+6259,MG,6,Deputado Federal,Dep. Federal,2280,VINICIUS ABREU DINIZ,22,PL,,80567,
+6259,MG,6,Deputado Federal,Dep. Federal,2232,IONE MARIA MOREIRA DIAS BARBOSA,22,PL,,39275,
+6259,MG,6,Deputado Federal,Dep. Federal,2214,MARLISE BARROSO DE OLIVEIRA,22,PL,,694,
+6259,MG,6,Deputado Federal,Dep. Federal,2219,LUIZ GONZAGA RIBEIRO,22,PL,,35958,
+6259,MG,6,Deputado Federal,Dep. Federal,2217,IVANEIDE GONCALVES PIMENTA,22,PL,,500,
+6259,MG,6,Deputado Federal,Dep. Federal,2200,JOSE VITOR DE RESENDE AGUIAR,22,PL,,145006,
+6259,MG,6,Deputado Federal,Dep. Federal,2278,ANDRE NUNES COSTA,22,PL,,10886,
+6259,MG,6,Deputado Federal,Dep. Federal,2298,SILVANA EPIFANIO DE ARAUJO,22,PL,,95,
+6259,MG,6,Deputado Federal,Dep. Federal,2272,PERICLES D'AVILA BARTHOLOMEU,22,PL,,3477,
+6259,MG,6,Deputado Federal,Dep. Federal,2299,GERALDO JUNIO DO AMARAL,22,PL,,33762,
+6259,MG,6,Deputado Federal,Dep. Federal,2236,FABIANO LOPES FERREIRA CAZECA,22,PL,,12680,
+6259,MG,6,Deputado Federal,Dep. Federal,2250,LAFAYETTE LUIZ DOORGAL DE ANDRADA,22,PL,,61773,
+6259,MG,6,Deputado Federal,Dep. Federal,2233,LINCOLN DINIZ PORTELA,22,PL,,37162,
+6259,MG,6,Deputado Federal,Dep. Federal,2255,CLAUDIA ARAUJO ROMUALDO,22,PL,,22941,
+6259,MG,6,Deputado Federal,Dep. Federal,2201,SIMONIA MARIA DE JESUS MAGALHAES,22,PL,,3888,
+6259,MG,6,Deputado Federal,Dep. Federal,2235,SERGIO ANTONIO CARVALHO DE AZEVEDO,22,PL,,14086,
+6259,MG,6,Deputado Federal,Dep. Federal,2242,EVANDRO ALESSIO RODRIGUES PEREIRA,22,PL,,3100,
+6259,MG,6,Deputado Federal,Dep. Federal,2256,REGINALDO FERREIRA TIAGO,22,PL,,7957,
+6259,MG,6,Deputado Federal,Dep. Federal,2260,MARCOS VINICIUS DA SILVA BIZARRO,22,PL,,67371,
+6259,MG,6,Deputado Federal,Dep. Federal,2262,CIBELLE RODOVALHO GUERRA ALCANTARA,22,PL,,580,
+6259,MG,6,Deputado Federal,Dep. Federal,2203,CRISTIANO GERALDO DA SILVA,22,PL,,4002,
+6259,MG,6,Deputado Federal,Dep. Federal,2266,SUELI CAMPOS MEDEIROS,22,PL,,486,
+6259,MG,6,Deputado Federal,Dep. Federal,2210,MAURICIO LUIZ DE SOUZA,22,PL,,16122,
+6259,MG,6,Deputado Federal,Dep. Federal,2275,THIAGO MARTINS MILHIM,22,PL,,42718,
+6259,MG,6,Deputado Federal,Dep. Federal,2222,NIKOLAS FERREIRA DE OLIVEIRA,22,PL,,3119314,
+6259,MG,6,Deputado Federal,Dep. Federal,2225,FABIO AUGUSTO RAMALHO DOS SANTOS,22,PL,,43908,
+6259,MG,6,Deputado Federal,Dep. Federal,2231,CLEUSA BERNADETH LARA CORREA,22,PL,,12779,
+6259,MG,6,Deputado Federal,Dep. Federal,2204,RODRIGO RODRIGUES TAVARES,22,PL,,37534,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15800,DALTON PESSOA SOARES,15,MDB,,476,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15002,MILTON JOSE DOS SANTOS BOARETO,15,MDB,,87,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15077,JOSE AUGUSTO ATHAYDE MONTANDON,15,MDB,,202,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15110,ANA CAROLINA ALMEIDA DAMASCENO,15,MDB,,4566,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15115,APARECIDA MOREIRA DE OLIVEIRA PAIVA,15,MDB,,132,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15130,ANDREIA GOMES SOUZA,15,MDB,,355,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15815,LEANDRO VICTOR BRANCO RAMOS,15,MDB,,632,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15000,WILIAN DE CAMPOS,15,MDB,,4015,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15896,RONALDO AZEVEDO TEIXEIRA,15,MDB,,107,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15060,ROSANA HENRIQUE DE ASSIS,15,MDB,,35,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15777,GABRIELA FERNANDA CAMPOS,15,MDB,,259,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15147,RENATO PEREIRA DOS SANTOS,15,MDB,,312,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15202,COSSIMO BALTAZAR DE FREITAS FILHO,15,MDB,,311,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15022,ESTEFANIA PEREIRA DE PAULA,15,MDB,,176,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15001,GERALDINA DE FATIMA GENEROSO PEGO,15,MDB,,78,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15900,GABRIEL LUCAS DA SILVA PEREIRA,15,MDB,,436,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15150,SONIA MARIA VIEIRA DA CUNHA PINHEIRO,15,MDB,,1120,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15455,MARIA APARECIDA MARTINS,15,MDB,,133,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15067,PEDRO SIMÃO CORREA SOUSA E SILVA,15,MDB,,162,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15789,SALVADOR DE SOUZA GOMES,15,MDB,,907,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15111,ARLEN DE PAULO SANTIAGO FILHO,15,MDB,,70756,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15601,CASSIA CRISTINA DA SILVA SOUZA,15,MDB,,57,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15405,KARLA CRISTINA DIAS,15,MDB,,189,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15500,JURACY LUCIA,15,MDB,,325,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15555,JULIANA JABER QUEIROZ,15,MDB,,2040,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15444,CARINE LOURENCO,15,MDB,,214,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15600,LISETE BEATRIZ RIBEIRO DE SOUZA,15,MDB,,185,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15891,LUCINEIA DE JESUS SOUZA RODRIGUES,15,MDB,,123,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15146,ROMER RUTREN LA SANTRER,15,MDB,,81,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15051,DIOGO DE ASSIS DOS SANTOS,15,MDB,,18,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15551,JULIO ERNESTO DE GRAMMONT MACHADO DE ARAUJO,15,MDB,,1850,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15999,ELIANE DIAS DA ROCHA,15,MDB,,758,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15015,CONRADO AUGUSTO FERREIRA DE OLIVEIRA,15,MDB,,6106,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15300,MAIRA DOS SANTOS CARLOS,15,MDB,,317,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15888,JOSIMAR SILVA CARDOSO,15,MDB,,1793,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15456,ADILSON DE OLIVEIRA,15,MDB,,412,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15025,JOAO VITOR MACEDO FRAGOSO,15,MDB,,173,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15142,MARIA CONSTANÇA FERREIRA,15,MDB,,70,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15678,MARTHA ISABEL ARTETA ALBA,15,MDB,,1246,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15151,JUAN ANGEL VIDAL VELASCO,15,MDB,,422,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15123,CLAYTON RODRIGUES DE FIGUEIREDO,15,MDB,,9984,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15700,ROQUE MACHADO SILVA,15,MDB,,109,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15120,LEONARDO LOPES DE ANDRADE,15,MDB,,340,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15200,FLAVIO TOGNI DE LIMA E SILVA,15,MDB,,2010,
+6259,MG,7,Deputado Estadual,Dep. Estadual/Distrital,15018,LOURENE ALVES FERREIRA,15,MDB,,133,
+6259,MS,3,Governador,Governador,13,FABIO RICARDO TRAD,13,PT,,322807,Não eleito
+6259,MS,5,Senador,Senador,222,REINALDO AZAMBUJA SILVA,22,PL,,903554,Eleito
+6259,MS,5,Senador,Senador,221,RENAN BARBOSA CONTAR,22,PL,,856045,Eleito
+6259,MS,6,Deputado Federal,Dep. Federal,3666,JURANDIR ALVES MACHADO,36,AGIR,,53,Não eleito
+6259,MS,6,Deputado Federal,Dep. Federal,3677,ANA CAROLINA AJALA RAMOS,36,AGIR,,53,Não eleito
+6259,MS,6,Deputado Federal,Dep. Federal,3636,CLAUDINEI FARIAS LEANDRO,36,AGIR,,93,Não eleito
+6259,MS,6,Deputado Federal,Dep. Federal,3688,EDNA PAIXÃO RODRIGUES,36,AGIR,,17,Não eleito
+6259,MS,7,Deputado Estadual,Dep. Estadual/Distrital,10601,VAGNER LOPES MARTINIANO DE AQUINO,10,REPUBLICANOS,,796,Suplente
+6259,MS,7,Deputado Estadual,Dep. Estadual/Distrital,10190,ALISON AUGUSTO COSTA SIMÕES,10,REPUBLICANOS,,1401,Suplente
+6259,MS,7,Deputado Estadual,Dep. Estadual/Distrital,10022,ROSEMILSON JOSE DA ROCHA FERREIRA,10,REPUBLICANOS,,639,Suplente
+6259,MS,7,Deputado Estadual,Dep. Estadual/Distrital,10150,RENATO PIERETTI CAMARA,10,REPUBLICANOS,,20976,Eleito por QP
+6259,MS,7,Deputado Estadual,Dep. Estadual/Distrital,10000,PEDRO PEDROSSIAN NETO,10,REPUBLICANOS,,19516,Eleito por média
+6259,MS,7,Deputado Estadual,Dep. Estadual/Distrital,10777,LUIS FRANCISCO DE ALMEIDA VIANNA,10,REPUBLICANOS,,6742,Suplente
+6259,MS,7,Deputado Estadual,Dep. Estadual/Distrital,10800,ISMAEL DA SILVA GOMES,10,REPUBLICANOS,,780,Suplente
+6259,MS,7,Deputado Estadual,Dep. Estadual/Distrital,10456,MARIA LUCIA NOGUEIRA FERNANDES,10,REPUBLICANOS,,4944,Suplente
+6259,MS,7,Deputado Estadual,Dep. Estadual/Distrital,10122,NILVA DA SILVA RAMOS OLIVEIRA,10,REPUBLICANOS,,642,Suplente
+6259,MS,7,Deputado Estadual,Dep. Estadual/Distrital,10111,ABEL IVAR GONZALEZ DERENE,10,REPUBLICANOS,,877,Suplente
+6259,MS,7,Deputado Estadual,Dep. Estadual/Distrital,10100,VALCIRA BORGES DA SILVA,10,REPUBLICANOS,,574,Suplente
+6259,MS,7,Deputado Estadual,Dep. Estadual/Distrital,10555,JOSE FERNANDES DA SILVA NETO,10,REPUBLICANOS,,91,Suplente
+6259,MS,7,Deputado Estadual,Dep. Estadual/Distrital,10102,ALESSANDRA ROSSELLI ALENCAR BOERI,10,REPUBLICANOS,,2866,Suplente
+6259,MS,7,Deputado Estadual,Dep. Estadual/Distrital,10789,MARINES DE OLIVEIRA COSTA,10,REPUBLICANOS,,779,Suplente
+6259,MS,7,Deputado Estadual,Dep. Estadual/Distrital,10123,ANTONIO VAZ NETO,10,REPUBLICANOS,,19101,Suplente
+6259,MS,7,Deputado Estadual,Dep. Estadual/Distrital,10333,VANDERSON CARDOSO DOS REIS,10,REPUBLICANOS,,1427,Suplente
+6259,MS,7,Deputado Estadual,Dep. Estadual/Distrital,10888,HERCULANO BORGES DANIEL,10,REPUBLICANOS,,12781,Suplente
+6259,MS,7,Deputado Estadual,Dep. Estadual/Distrital,10444,FERNANDO ROBERTO BATISTA DE SOUZA,10,REPUBLICANOS,,705,Suplente
+6259,MS,7,Deputado Estadual,Dep. Estadual/Distrital,10322,SAYURI AHAGON BAEZ,10,REPUBLICANOS,,1119,Suplente
+6259,MS,7,Deputado Estadual,Dep. Estadual/Distrital,10181,CYNTHIA RIBEIRO PEREIRA,10,REPUBLICANOS,,422,Suplente
+6259,MS,7,Deputado Estadual,Dep. Estadual/Distrital,10222,BRUNO ORTIZ BARBOSA,10,REPUBLICANOS,,9780,Suplente
+6259,MT,3,Governador,Governador,55,NATASHA SLHESSARENKO FRAIFE BARRETO,55,PSD,,281548,Não eleito
+6259,MT,5,Senador,Senador,150,JANAINA GREYCE RIVA FAGUNDES,15,MDB,,519434,Não eleito
+6259,MT,6,Deputado Federal,Dep. Federal,1414,BERNARDO SABINO DE SOUZA MATOS,14,PTB,,5359,Não eleito
+6259,MT,6,Deputado Federal,Dep. Federal,1477,RADMAN GADIEL LOPES FAUSTINO,14,PTB,,1788,Não eleito
+6259,MT,6,Deputado Federal,Dep. Federal,1400,JÚLIA GALDINO DE MELO E SILVA,14,PTB,,614,Não eleito
+6259,MT,6,Deputado Federal,Dep. Federal,1433,LEONARDO LANDOVOIGT TEODORO DA SILVA,14,PTB,,172,Não eleito
+6259,MT,6,Deputado Federal,Dep. Federal,1421,NATALI FERNANDA PEREIRA LIMA,14,PTB,,355,Não eleito
+6259,MT,6,Deputado Federal,Dep. Federal,1444,MURILO VIEIRA MARTINS,14,PTB,,442,Não eleito
+6259,MT,7,Deputado Estadual,Dep. Estadual/Distrital,22989,ROSANE BALKE,22,PL,,238,Suplente
+6259,MT,7,Deputado Estadual,Dep. Estadual/Distrital,22007,OTAVIO DE ALBUQUERQUE TEIXEIRA DA SILVA,22,PL,,8907,Suplente
+6259,MT,7,Deputado Estadual,Dep. Estadual/Distrital,22999,GILMAR MIRANDA DE ALMEIDA,22,PL,,3970,Suplente
+6259,MT,7,Deputado Estadual,Dep. Estadual/Distrital,22444,FAISSAL JORGE CALIL FILHO,22,PL,,41039,Eleito por QP
+6259,MT,7,Deputado Estadual,Dep. Estadual/Distrital,22022,ABMAEL BORGES DA SILVEIRA,22,PL,,9949,Suplente
+6259,MT,7,Deputado Estadual,Dep. Estadual/Distrital,22233,JERÔNIMO GONÇALVES PEREIRA,22,PL,,2946,Suplente
+6259,MT,7,Deputado Estadual,Dep. Estadual/Distrital,22123,ALCINO PEREIRA BARCELOS,22,PL,,22624,Eleito por média
+6259,MT,7,Deputado Estadual,Dep. Estadual/Distrital,22163,JANE DELALIBERA,22,PL,,1291,Suplente
+6259,MT,7,Deputado Estadual,Dep. Estadual/Distrital,22000,MAURICIO JOSE ESCOBAR,22,PL,,8641,Suplente
+6259,MT,7,Deputado Estadual,Dep. Estadual/Distrital,22002,MARCELO SANTANA,22,PL,,339,Suplente
+6259,MT,7,Deputado Estadual,Dep. Estadual/Distrital,22222,GILBERTO MOACIR CATTANI,22,PL,,69672,Eleito por QP
+6259,MT,7,Deputado Estadual,Dep. Estadual/Distrital,22122,JOSE MARCIO SILVA GUEDES,22,PL,,2498,Suplente
+6259,MT,7,Deputado Estadual,Dep. Estadual/Distrital,22777,DAISE MARTINS DE SOUZA,22,PL,,2173,Suplente
+6259,MT,7,Deputado Estadual,Dep. Estadual/Distrital,22321,ELAINE SEIBEL,22,PL,,699,Suplente
+6259,MT,7,Deputado Estadual,Dep. Estadual/Distrital,22111,GEREMIAS DA SILVA LIMA,22,PL,,2038,Suplente
+6259,MT,7,Deputado Estadual,Dep. Estadual/Distrital,22322,MARIA JOSE DE OLIVEIRA ARRUDA,22,PL,,405,Suplente
+6259,MT,7,Deputado Estadual,Dep. Estadual/Distrital,22001,SONIA DE FATIMA CASSOL ABRAÇOS,22,PL,,183,Suplente
+6259,MT,7,Deputado Estadual,Dep. Estadual/Distrital,22555,ALEX GOMES CARDOZO,22,PL,,465,Suplente
+6259,MT,7,Deputado Estadual,Dep. Estadual/Distrital,22888,LUCIANA ABREU HORTA,22,PL,,10956,Suplente
+6259,MT,7,Deputado Estadual,Dep. Estadual/Distrital,22727,MANOEL CAETANO FERREIRA,22,PL,,209,Suplente
+6259,MT,7,Deputado Estadual,Dep. Estadual/Distrital,22300,SAMANTHA IRIS BELARMINO CRISTOVAO BRUNINI MOUMER,22,PL,,57900,Eleito por QP
+6259,MT,7,Deputado Estadual,Dep. Estadual/Distrital,22345,CLEUZIJAN NEVES DE SOUZA,22,PL,,199,Suplente
+6259,MT,7,Deputado Estadual,Dep. Estadual/Distrital,22220,VITOR GABRIEL SANTOS SOUZA,22,PL,,2376,Suplente
+6259,MT,7,Deputado Estadual,Dep. Estadual/Distrital,22789,PABLO SAGE JR KAMAIURA,22,PL,,116,Suplente
+6259,MT,7,Deputado Estadual,Dep. Estadual/Distrital,22722,RAFAEL DA SILVA YONEKUBO,22,PL,,1592,Suplente
+6259,PA,3,Governador,Governador,16,WELLINGTA JOSYANE SIQUEIRA MACEDO,16,PSTU,,2676,Não eleito
+6259,PA,5,Senador,Senador,222,EDER MAURO CARDOSO BARRA,22,PL,,1997768,Não eleito
+6259,PA,6,Deputado Federal,Dep. Federal,4080,FLAVIO MARQUES NOBRE,40,PSB,,4229,Suplente
+6259,PA,6,Deputado Federal,Dep. Federal,4020,UBIRAJARA NAZARENO SOMPRE,40,PSB,,10964,Suplente
+6259,PA,6,Deputado Federal,Dep. Federal,4044,ANDERSON CAMPOREZ,40,PSB,,13513,Suplente
+6259,PA,6,Deputado Federal,Dep. Federal,4077,FABIO JORGE CARVALHO DE SOUZA,40,PSB,,12239,Suplente
+6259,PA,6,Deputado Federal,Dep. Federal,4050,FLAVIA LUCIANA GUIMARARES MARCAL,40,PSB,,2494,Suplente
+6259,PA,6,Deputado Federal,Dep. Federal,4055,PAULO ANDRE SILVA ALVES,40,PSB,,1330,Suplente
+6259,PA,6,Deputado Federal,Dep. Federal,4000,HELOISA MARIA MELO E SILVA GUIMARÃES,40,PSB,,12255,Suplente
+6259,PA,6,Deputado Federal,Dep. Federal,4033,LUIS ANTÔNIO DA COSTA PINHEIRO JUNIOR,40,PSB,,8872,Suplente
+6259,PA,6,Deputado Federal,Dep. Federal,4022,THIAGO MACIEL NEVES,40,PSB,,11917,Suplente
+6259,PA,6,Deputado Federal,Dep. Federal,4011,CLAUDIO LOBATO CORREA,40,PSB,,12115,Suplente
+6259,PA,6,Deputado Federal,Dep. Federal,4099,ANDERSON MADSON OLIVEIRA MAIA,40,PSB,,3221,Suplente
+6259,PA,6,Deputado Federal,Dep. Federal,4004,CAROLINA RESQUE CHAVES,40,PSB,,52072,Suplente
+6259,PA,6,Deputado Federal,Dep. Federal,4001,AGENOR DE JESUS SIQUEIRA SANTOS,40,PSB,,2604,Suplente
+6259,PA,6,Deputado Federal,Dep. Federal,4045,CARLA DULCIRENE PARENTE NOVAES,40,PSB,,20603,Suplente
+6259,PA,6,Deputado Federal,Dep. Federal,4032,JOSE MIGUEL SILVA DA ROCHA,40,PSB,,4168,Suplente
+6259,PA,6,Deputado Federal,Dep. Federal,4010,ANDREIA BRITO GONCALVES SIQUEIRA,40,PSB,,155473,Eleito por QP
+6259,PA,6,Deputado Federal,Dep. Federal,4015,ELIETH DE FATIMA DA SILVA BRAGA,40,PSB,,21702,Suplente
+6259,PA,6,Deputado Federal,Dep. Federal,4040,URSULA VIDAL SANTIAGO DE MENDONÇA,40,PSB,,19729,Suplente
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22190,JAIME LUIZ SILVA DE BRITO,22,PL,,584,Suplente
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22022,LANUZIA LOBO COSTA,22,PL,,87182,Eleito por QP
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22777,JUSCELINO KUBITSCHEK CAMPOS DE SOUZA,22,PL,,69719,Eleito por QP
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22990,FABIO VELOSO DE CASTRO,22,PL,,1841,Suplente
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22227,MARIA DA CONCEICAO DA SILVA LIMA,22,PL,,486,Suplente
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22345,MARCELA MARIA COLARES CARDOSO,22,PL,,519,Suplente
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22522,JOSE RENATO DA COSTA OLIVEIRA,22,PL,,399,Suplente
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22221,ROSANGELA DE LIMA SALES,22,PL,,214,Suplente
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22300,NEIL ARMSTRONG DA SILVA SOARES,22,PL,,3548,Suplente
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22007,NILZETE FERREIRA BARROS,22,PL,,366,Suplente
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22117,EMANOEL DE OLIVEIRA MOREIRA,22,PL,,1469,Suplente
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22321,LAIS KEMELLY LIMA DE ARAUJO,22,PL,,764,Suplente
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22000,MAYKY TAYLY GUIMARAES FRANCO,22,PL,,53979,Eleito por QP
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22322,EUDE DA COSTA LEITE,22,PL,,4687,Suplente
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22100,HIPOLITO DO NASCIMENTO GOMES,22,PL,,33628,Suplente
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22700,PEDRO COSTA BARRA,22,PL,,1374,Suplente
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22002,BRUNA RAPHAELA ALVES DE FREITAS,22,PL,,3319,Suplente
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22789,ANTONIO MARCOS MUNIZ SENA,22,PL,,2284,Suplente
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22200,HERCULES BENTES DE SOUZA,22,PL,,1644,Suplente
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22220,PAULO HENRIQUE RIBEIRO SOARES JUNIOR,22,PL,,18388,Suplente
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22279,JERRY ADRIANO ARAUJO DOS SANTOS,22,PL,,5282,Suplente
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22163,MARI CLAUDIA RODRIGUES,22,PL,,2579,Suplente
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22444,LEANDRO DOS SANTOS MARAMALDO,22,PL,,11716,Suplente
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22116,CARLOS JOSE DA SILVA ROLIM,22,PL,,540,Suplente
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22077,NILO EMANOEL RENDEIRO DE NORONHA,22,PL,,83,Suplente
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22230,MAZIO BANDEIRA SOARES,22,PL,,37656,Suplente
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22245,ODILEIDA MARIA SOUSA SAMPAIO,22,PL,,2420,Suplente
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22231,SIDNEY WILLIAMS CARNEIRO BARATA,22,PL,,1460,Suplente
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22377,WANDERLEY DIAS VIEIRA,22,PL,,1401,Suplente
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22020,DAVI CARVALHO ROCHA,22,PL,,2629,Suplente
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22123,KATIA DO SOCORRO MELO DOS SANTOS,22,PL,,615,Suplente
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22400,ANTONIA CARDOSO COSTA,22,PL,,168,Suplente
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22333,RENATA ABREU DO NASCIMENTO FONSECA,22,PL,,75841,Eleito por QP
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22500,ARIVALDO SANTOS NASCIMENTO,22,PL,,14834,Suplente
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22678,JOSÉ LUIS ALVES DA SILVA,22,PL,,422,Suplente
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22555,TATIANE CALABRIA COELHO,22,PL,,78986,Eleito por QP
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22122,FERNANDO HENRIQUE PEREIRA DA SILVA,22,PL,,36070,Suplente
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22111,MARIZA ALMEIDA SOUSA MENDONCA,22,PL,,84354,Eleito por QP
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22212,JOSÉ MARIA DO SOCORRO CRUZ DOS SANTOS,22,PL,,302,Suplente
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22888,JOSE RUFINO COSTA DOS SANTOS,22,PL,,868,Suplente
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22222,NEIL DUARTE DE SOUZA,22,PL,,51832,Eleito por média
+6259,PA,7,Deputado Estadual,Dep. Estadual/Distrital,22456,JEFFERSON ELY VALE DE LIMA,22,PL,,18465,Suplente
+6259,PB,3,Governador,Governador,15,CICERO DE LUCENA FILHO,15,MDB,,252884,Não eleito
+6259,PB,5,Senador,Senador,400,JOÃO AZEVÊDO LINS FILHO,40,PSB,,1391994,Eleito
+6259,PB,6,Deputado Federal,Dep. Federal,1066,MAÍSA FREIRE CARTAXO PIRES DE SÁ,10,REPUBLICANOS,,7419,Suplente
+6259,PB,6,Deputado Federal,Dep. Federal,1015,ROBERTO RANIERY DE AQUINO PAULINO,10,REPUBLICANOS,,24114,Suplente
+6259,PB,6,Deputado Federal,Dep. Federal,1001,RENAN ANDRADE OLIVEIRA,10,REPUBLICANOS,,15029,Suplente
+6259,PB,6,Deputado Federal,Dep. Federal,1044,CÁSSIO MURILLO GALDINO DE ARAÚJO,10,REPUBLICANOS,,149302,Eleito por QP
+6259,PB,6,Deputado Federal,Dep. Federal,1088,CAIO MARCIO ANGELO DE SOUSA,10,REPUBLICANOS,,1767,Suplente
+6259,PB,6,Deputado Federal,Dep. Federal,1077,VALDIR TRINDADE DOS SANTOS,10,REPUBLICANOS,,14355,Suplente
+6259,PB,6,Deputado Federal,Dep. Federal,1022,SILVIA FERNANDA AIRES BENJAMIN,10,REPUBLICANOS,,3248,Suplente
+6259,PB,6,Deputado Federal,Dep. Federal,1011,HUGO MOTTA WANDERLEY DA NOBREGA,10,REPUBLICANOS,,124339,Eleito por QP
+6259,PB,6,Deputado Federal,Dep. Federal,1033,SEBASTIAO TIÃO GOMES PEREIRA,10,REPUBLICANOS,,45380,Suplente
+6259,PB,6,Deputado Federal,Dep. Federal,1010,JOSE WILSON SANTIAGO,10,REPUBLICANOS,,112050,Eleito por média
+6259,PB,6,Deputado Federal,Dep. Federal,1020,JANNYLEYDE DA SILVA MILANES,10,REPUBLICANOS,,2439,Suplente
+6259,PB,6,Deputado Federal,Dep. Federal,1045,JOSE IVANILSON SOARES DE LACERDA,10,REPUBLICANOS,,5647,Suplente
+6259,PB,6,Deputado Federal,Dep. Federal,1000,REBECA LOPES DE SOUZA BARROS,10,REPUBLICANOS,,23589,Suplente
+6259,PB,7,Deputado Estadual,Dep. Estadual/Distrital,11138,MARCIA CAVALCANTI MENEZES,11,PP,,349,Suplente
+6259,PB,7,Deputado Estadual,Dep. Estadual/Distrital,11022,GLEIDSON LUCAS RIBEIRO LUCENA,11,PP,,292,Suplente
+6259,PB,7,Deputado Estadual,Dep. Estadual/Distrital,11444,LUCAS CAÇULA DE MOURA,11,PP,,18187,Suplente
+6259,PB,7,Deputado Estadual,Dep. Estadual/Distrital,11007,LUIZ EDUARDO DE MENEZES SOARES,11,PP,,24680,Suplente
+6259,PB,7,Deputado Estadual,Dep. Estadual/Distrital,11211,ANNA LORENA LEITE NÓBREGA LAGO,11,PP,,46138,Eleito por QP
+6259,PB,7,Deputado Estadual,Dep. Estadual/Distrital,11789,TANILSON TARSO NOBREGA SOARES,11,PP,,37561,Eleito por QP
+6259,PB,7,Deputado Estadual,Dep. Estadual/Distrital,11100,VALDILENE QUEIROZ DE LIMA GONÇALVES,11,PP,,396,Suplente
+6259,PB,7,Deputado Estadual,Dep. Estadual/Distrital,11113,JOÃO BOSCO CARNEIRO JUNIOR,11,PP,,23723,Suplente
+6259,PB,7,Deputado Estadual,Dep. Estadual/Distrital,11999,ANDRÉ VICTOR DA SILVA MATIAS,11,PP,,879,Suplente
+6259,PB,7,Deputado Estadual,Dep. Estadual/Distrital,11321,RUAN CARLOS NÓBREGA MARTINS,11,PP,,2077,Suplente
+6259,PB,7,Deputado Estadual,Dep. Estadual/Distrital,11222,JACI SEVERINO DE SOUZA,11,PP,,25216,Suplente
+6259,PB,7,Deputado Estadual,Dep. Estadual/Distrital,11456,MARICELIA ALVES,11,PP,,614,Suplente
+6259,PB,7,Deputado Estadual,Dep. Estadual/Distrital,11177,JOSÉ LUIZ PEREIRA GONÇALVES,11,PP,,596,Suplente
+6259,PB,7,Deputado Estadual,Dep. Estadual/Distrital,11083,ANTONIO PAULO DE OLIVEIRA FERREIRA,11,PP,,4061,Suplente
+6259,PB,7,Deputado Estadual,Dep. Estadual/Distrital,11000,MARCIO DIEGO FERNANDES TAVARES DE ALBUQUERQUE,11,PP,,29245,Eleito por média
+6259,PB,7,Deputado Estadual,Dep. Estadual/Distrital,11611,JOÃO GONÇALVES DE AMORIM SOBRINHO,11,PP,,43720,Eleito por QP
+6259,PB,7,Deputado Estadual,Dep. Estadual/Distrital,11400,ROSALIA BORGES LUCAS,11,PP,,2604,Suplente
+6259,PB,7,Deputado Estadual,Dep. Estadual/Distrital,11011,MICHEL SILVESTRE HENRIQUE,11,PP,,39790,Eleito por QP
+6259,PB,7,Deputado Estadual,Dep. Estadual/Distrital,11500,JAKELINE MARIA DA SILVA,11,PP,,189,Suplente
+6259,PB,7,Deputado Estadual,Dep. Estadual/Distrital,11190,FERNANDO DIAS DE MELO,11,PP,,230,Suplente
+6259,PB,7,Deputado Estadual,Dep. Estadual/Distrital,11123,LINDOLFO PIRES NETO,11,PP,,28141,Suplente
+6259,PB,7,Deputado Estadual,Dep. Estadual/Distrital,11111,EDJANE SILVA ALVINO PANTA,11,PP,,21359,Suplente
+6259,PB,7,Deputado Estadual,Dep. Estadual/Distrital,11369,JOAO PAULO BARBOSA LEAL SEGUNDO,11,PP,,47492,Eleito por QP
+6259,PB,7,Deputado Estadual,Dep. Estadual/Distrital,11333,EDUARDO JORGE SOARES CARNEIRO,11,PP,,52291,Eleito por QP
+6259,PB,7,Deputado Estadual,Dep. Estadual/Distrital,11200,EDANIELLE DE ALENCAR,11,PP,,83,Suplente
+6259,PB,7,Deputado Estadual,Dep. Estadual/Distrital,11555,FABÍOLA LEVI MEIRA,11,PP,,3238,Suplente
+6259,PB,7,Deputado Estadual,Dep. Estadual/Distrital,11234,JADER SOARES PIMENTEL FILHO,11,PP,,1935,Suplente
+6259,PB,7,Deputado Estadual,Dep. Estadual/Distrital,11888,JOÃO BATISTA DA SILVA,11,PP,,124,Suplente
+6259,PB,7,Deputado Estadual,Dep. Estadual/Distrital,11666,JOSÉ ALDEMIR MEIRELES DE ALMEIDA,11,PP,,18691,Suplente
+6259,PB,7,Deputado Estadual,Dep. Estadual/Distrital,11777,FRANCISCO GOMES DE ARAÚJO JÚNIOR,11,PP,,33850,Eleito por QP
+6259,PE,3,Governador,Governador,55,RAQUEL TEIXEIRA LYRA LUCENA,55,PSD,,2805438,Eleito
+6259,PE,5,Senador,Senador,801,MARIA GORETT BITU,80,UP,,6945,Não eleito
+6259,PE,5,Senador,Senador,800,SAMUEL TIMOTEO DA SILVA,80,UP,,3744,Não eleito
+6259,PE,6,Deputado Federal,Dep. Federal,1156,ANTONIO BATISTA DE MOURA FILHO,11,PP,,3739,Suplente
+6259,PE,6,Deputado Federal,Dep. Federal,1122,ERICA CLARISSA BORBA CORDEIRO DE MOURA,11,PP,,110608,Eleito por QP
+6259,PE,6,Deputado Federal,Dep. Federal,1155,JOSÉ CARLOS DA SILVA,11,PP,,5125,Suplente
+6259,PE,6,Deputado Federal,Dep. Federal,1120,ESDRAS CABRAL DE MELO,11,PP,,5854,Suplente
+6259,PE,6,Deputado Federal,Dep. Federal,1144,EDUARDO HONORIO CARNEIRO,11,PP,,17558,Suplente
+6259,PE,6,Deputado Federal,Dep. Federal,1161,DAIZE MICHELE DE AGUIAR GONÇALVES,11,PP,,31777,Suplente
+6259,PE,6,Deputado Federal,Dep. Federal,1111,LUIZ EDUARDO DE QUEIROZ CAMPOS DA FONTE ALBUQUERQUE,11,PP,,147913,Eleito por QP
+6259,PE,6,Deputado Federal,Dep. Federal,1130,ISRAEL DOURADO GUERRA FILHO,11,PP,,5119,Suplente
+6259,PE,6,Deputado Federal,Dep. Federal,1141,JOÃO BOSCO GONCALVES DA SILVA,11,PP,,2665,Suplente
+6259,PE,6,Deputado Federal,Dep. Federal,1123,ERIVÂNIA MARIA RIBEIRO,11,PP,,5145,Suplente
+6259,PE,6,Deputado Federal,Dep. Federal,1100,EDILSON TAVARES DE LIMA,11,PP,,71471,Suplente
+6259,PE,6,Deputado Federal,Dep. Federal,1177,CRISTIANO TEIXEIRA DANTAS,11,PP,,2940,Suplente
+6259,PE,6,Deputado Federal,Dep. Federal,1112,ARMANDO JOSE DA SILVA FILHO,11,PP,,1014,Suplente
+6259,PE,6,Deputado Federal,Dep. Federal,1115,JACIENE MARIA CÂNDIDO DE FREITAS,11,PP,,944,Suplente
+6259,PE,6,Deputado Federal,Dep. Federal,1190,NAYLLIS CYBELLE SOARES SILVA DE ALMEIDA,11,PP,,217,Suplente
+6259,PE,6,Deputado Federal,Dep. Federal,1151,MARY MAGDALA EUGENIO MUDO GOMES,11,PP,,3215,Suplente
+6259,PE,7,Deputado Estadual,Dep. Estadual/Distrital,29999,DORGIVAL JOSÉ DE SALES,29,PCO,,192,Não eleito
+6259,PE,7,Deputado Estadual,Dep. Estadual/Distrital,29029,GENILDA MARIA PEREIRA DA SILVA,29,PCO,,59,Não eleito
+6259,PI,3,Governador,Governador,30,ELIZEU MORAIS DE AGUIAR,30,NOVO,,5141,Não eleito
+6259,PI,5,Senador,Senador,800,PEDRO LAURENTINO REIS PEREIRA,80,UP,,5909,Não eleito
+6259,PI,6,Deputado Federal,Dep. Federal,1212,JOSE VAGNER LEAL,12,PDT,,938,Não eleito
+6259,PI,6,Deputado Federal,Dep. Federal,1233,ANA LINA NERES DA SILVA PINTO,12,PDT,,943,Não eleito
+6259,PI,6,Deputado Federal,Dep. Federal,1273,ARTÊNIO FERREIRA DA SILVA,12,PDT,,411,Não eleito
+6259,PI,6,Deputado Federal,Dep. Federal,1200,JULIO CESAR PEREIRA LEITE,12,PDT,,593,Não eleito
+6259,PI,6,Deputado Federal,Dep. Federal,1207,MARIA DO SOCORRO CARDOSO DOS SANTOS,12,PDT,,1637,Não eleito
+6259,PI,6,Deputado Federal,Dep. Federal,1222,LÍVIA MARA ARAUJO CRUZ,12,PDT,,593,Não eleito
+6259,PI,6,Deputado Federal,Dep. Federal,1234,MÁRCIA FERNANDA DE ARAÚJO,12,PDT,,1475,Não eleito
+6259,PI,7,Deputado Estadual,Dep. Estadual/Distrital,15233,GEDERLANIO RODRIGUES DE OLIVEIRA,15,MDB,,22083,Suplente
+6259,PI,7,Deputado Estadual,Dep. Estadual/Distrital,15000,DOGIVAL VIDAL DOS REIS NETO,15,MDB,,17330,Suplente
+6259,PI,7,Deputado Estadual,Dep. Estadual/Distrital,15101,SEVERO MARIA EULALIO NETO,15,MDB,,90728,Eleito por QP
+6259,PI,7,Deputado Estadual,Dep. Estadual/Distrital,15567,VALDENE BRITO LEAL,15,MDB,,104,Suplente
+6259,PI,7,Deputado Estadual,Dep. Estadual/Distrital,15222,JOSE HELIO DE CARVALHO OLIVEIRA,15,MDB,,33391,Eleito por QP
+6259,PI,7,Deputado Estadual,Dep. Estadual/Distrital,15999,LUIZ HENRIQUE SOUSA DE CARVALHO,15,MDB,,27117,Suplente
+6259,PI,7,Deputado Estadual,Dep. Estadual/Distrital,15789,GESSIVALDO ISAIAS DE CARVALHO SILVA,15,MDB,,16017,Suplente
+6259,PI,7,Deputado Estadual,Dep. Estadual/Distrital,15444,CARLOS AUGUSTO GOMES DE SOUZA,15,MDB,,55829,Eleito por QP
+6259,PI,7,Deputado Estadual,Dep. Estadual/Distrital,15111,THEMISTOCLES DE SAMPAIO PEREIRA FILHO,15,MDB,,46638,Eleito por QP
+6259,PI,7,Deputado Estadual,Dep. Estadual/Distrital,15678,JOSENILDE ALVES DA SILVA NUNES,15,MDB,,803,Suplente
+6259,PI,7,Deputado Estadual,Dep. Estadual/Distrital,15520,POLIANA DOS SANTOS AGUIAR,15,MDB,,187,Suplente
+6259,PI,7,Deputado Estadual,Dep. Estadual/Distrital,15555,JOÃO MADISON NOGUEIRA,15,MDB,,47539,Eleito por QP
+6259,PI,7,Deputado Estadual,Dep. Estadual/Distrital,15777,MARIA DEUSA DA PAZ OLIVEIRA,15,MDB,,182,Suplente
+6259,PI,7,Deputado Estadual,Dep. Estadual/Distrital,15888,SÁVIA WALDEJANE FERREIRA DE CASTRO,15,MDB,,164,Suplente
+6259,PI,7,Deputado Estadual,Dep. Estadual/Distrital,15190,WALDY PEREIRA DA SILVA JUNIOR,15,MDB,,372,Suplente
+6259,PI,7,Deputado Estadual,Dep. Estadual/Distrital,15112,MAURO EXPEDITO REIS DE FREITAS TAPETY,15,MDB,,3010,Suplente
+6259,PI,7,Deputado Estadual,Dep. Estadual/Distrital,15123,ANTONIO HENRIQUE DE CARVALHO PIRES,15,MDB,,40058,Eleito por QP
+6259,PI,7,Deputado Estadual,Dep. Estadual/Distrital,15677,FRANCISCO BORGES MONTEIRO,15,MDB,,40,Suplente
+6259,PI,7,Deputado Estadual,Dep. Estadual/Distrital,15132,AVELAR DE CASTRO FERREIRA,15,MDB,,14922,Suplente
+6259,PI,7,Deputado Estadual,Dep. Estadual/Distrital,15199,ANYARA SOARES AIRES SANTOS,15,MDB,,51919,Eleito por QP
+6259,PI,7,Deputado Estadual,Dep. Estadual/Distrital,15110,ANA PAULA MENDES DE ARAUJO,15,MDB,,47356,Eleito por QP
+6259,PI,7,Deputado Estadual,Dep. Estadual/Distrital,15333,ENÉAS MAIA DOS SANTOS,15,MDB,,1382,Suplente
+6259,PI,7,Deputado Estadual,Dep. Estadual/Distrital,15130,MARIA DAS GRACAS DE MORAES SOUZA NUNES,15,MDB,,13659,Suplente
+6259,PR,3,Governador,Governador,55,SANDRO ALEX CRUZ DE OLIVEIRA,55,PSD,,1583764,Não eleito
+6259,PR,5,Senador,Senador,290,MARCELO GONCALVES MARCELINO,29,PCO,,9194,Não eleito
+6259,PR,6,Deputado Federal,Dep. Federal,8000,JULIA DE SOUZA MARINHO,80,UP,,1728,Não eleito
+6259,PR,6,Deputado Federal,Dep. Federal,8080,GIOVANNY DE OLIVEIRA GODOI,80,UP,,398,Não eleito
+6259,PR,7,Deputado Estadual,Dep. Estadual/Distrital,33999,MOISES DO AMARAL,33,MOBILIZA,,365,
+6259,PR,7,Deputado Estadual,Dep. Estadual/Distrital,33012,VANESSA AGUIAR,33,MOBILIZA,,258,
+6259,PR,7,Deputado Estadual,Dep. Estadual/Distrital,33190,ARTUR RIBEIRO PEREIRA DE SOUZA,33,MOBILIZA,,111,
+6259,PR,7,Deputado Estadual,Dep. Estadual/Distrital,33448,MARCIA REGINA MOTTA,33,MOBILIZA,,94,
+6259,PR,7,Deputado Estadual,Dep. Estadual/Distrital,33321,VICTOR HUGO SAMPAIO CORREA,33,MOBILIZA,,168,
+6259,PR,7,Deputado Estadual,Dep. Estadual/Distrital,33153,SELMA APARECIDA GALDINO,33,MOBILIZA,,37,
+6259,PR,7,Deputado Estadual,Dep. Estadual/Distrital,33011,FRANCISCO JOSE DE SOUZA,33,MOBILIZA,,774,
+6259,PR,7,Deputado Estadual,Dep. Estadual/Distrital,33333,JOÃO CARLOS DO NASCIMENTO,33,MOBILIZA,,475,
+6259,PR,7,Deputado Estadual,Dep. Estadual/Distrital,33033,DEOCLECIO ACHRE,33,MOBILIZA,,63,
+6259,PR,7,Deputado Estadual,Dep. Estadual/Distrital,33123,EDILSON APARECIDO GOES,33,MOBILIZA,,469,
+6259,PR,7,Deputado Estadual,Dep. Estadual/Distrital,33456,ALEXANDRE FRANCA TETTO,33,MOBILIZA,,1142,
+6259,PR,7,Deputado Estadual,Dep. Estadual/Distrital,33444,LARISSA GONCALVES COSTA,33,MOBILIZA,,459,
+6259,PR,7,Deputado Estadual,Dep. Estadual/Distrital,33987,ODAIR GUILHEN,33,MOBILIZA,,74,
+6259,PR,7,Deputado Estadual,Dep. Estadual/Distrital,33300,ADRIANA FRAZÃO BRANCO,33,MOBILIZA,,139,
+6259,PR,7,Deputado Estadual,Dep. Estadual/Distrital,33733,JOSE APARECIDO DOS SANTOS,33,MOBILIZA,,140,
+6259,RJ,3,Governador,Governador,22,DOUGLAS RUAS DOS SANTOS,22,PL,,4271199,2º turno
+6259,RJ,5,Senador,Senador,144,HELIO KINAST CRUZ SECCO,14,PTB,,131065,Não eleito
+6259,RJ,6,Deputado Federal,Dep. Federal,1107,ALCIO PEREIRA,11,PP,,880,Suplente
+6259,RJ,6,Deputado Federal,Dep. Federal,1190,MARLON CRISTIANO JORGE,11,PP,,459,Suplente
+6259,RJ,6,Deputado Federal,Dep. Federal,1188,LUAN LENNON CAMACHO BRAGA OLIVEIRA,11,PP,,15440,Suplente
+6259,RJ,6,Deputado Federal,Dep. Federal,1170,LUIZ HENRIQUE RODRIGUES GALVÃO,11,PP,,1094,Suplente
+6259,RJ,6,Deputado Federal,Dep. Federal,1199,CHRISTIANO COSTA VILELA ALVERNAZ,11,PP,,2301,Suplente
+6259,RJ,6,Deputado Federal,Dep. Federal,1111,JULIO LUIZ BAPTISTA LOPES,11,PP,,48998,Suplente
+6259,RJ,6,Deputado Federal,Dep. Federal,1180,CRISTIANE FONTES VIEGAS,11,PP,,261,Suplente
+6259,RJ,6,Deputado Federal,Dep. Federal,1101,RENATO COZZOLINO HARB,11,PP,,84516,Eleito por QP
+6259,RJ,6,Deputado Federal,Dep. Federal,1133,CARLOS ROBERTO RODRIGUES,11,PP,,52761,Eleito por média
+6259,RJ,6,Deputado Federal,Dep. Federal,1123,LEONARDO MENDES DE ABRANTES,11,PP,,2790,Suplente
+6259,RJ,6,Deputado Federal,Dep. Federal,1121,NATCHA DIAS BHERING,11,PP,,2338,Suplente
+6259,RJ,6,Deputado Federal,Dep. Federal,1155,DILSON MALHEIROS DRUMOND,11,PP,,1569,Suplente
+6259,RJ,6,Deputado Federal,Dep. Federal,1132,LENIR MORAIS FERREIRA,11,PP,,3434,Suplente
+6259,RJ,6,Deputado Federal,Dep. Federal,1112,SANCLER RODRIGUES DE MELLO,11,PP,,2895,Suplente
+6259,RJ,6,Deputado Federal,Dep. Federal,1108,ROSILENE GONÇALVES DA SILVA,11,PP,,168,Suplente
+6259,RJ,6,Deputado Federal,Dep. Federal,1177,LUIZ ANTONIO DE SOUZA TEIXEIRA JUNIOR,11,PP,,213904,Eleito por QP
+6259,RJ,6,Deputado Federal,Dep. Federal,1116,ALEXANDRA DA CONCEIÇÃO FERRO DE SOUZA,11,PP,,3237,Suplente
+6259,RJ,6,Deputado Federal,Dep. Federal,1147,MARIANA DE SOUZA,11,PP,,4466,Não eleito
+6259,RJ,6,Deputado Federal,Dep. Federal,1134,MAURICIO PINHEIRO DE CARVALHO,11,PP,,2005,Suplente
+6259,RJ,6,Deputado Federal,Dep. Federal,1110,VIVIANE FERNANDES,11,PP,,710,Suplente
+6259,RJ,6,Deputado Federal,Dep. Federal,1144,ISABEL GOMES RIBEIRO DOS SANTOS,11,PP,,30876,Suplente
+6259,RJ,6,Deputado Federal,Dep. Federal,1120,ISOLDA BATISTA ALEIXO,11,PP,,311,Suplente
+6259,RJ,6,Deputado Federal,Dep. Federal,1100,LENIEL BOREL DE ALMEIDA JUNIOR,11,PP,,72658,Eleito por QP
+6259,RJ,6,Deputado Federal,Dep. Federal,1122,FELIPE LOBATO CURI,11,PP,,133626,Eleito por QP
+6259,RJ,7,Deputado Estadual,Dep. Estadual/Distrital,43400,BRUNO COSTA SILVA,43,PV,,815,Suplente
+6259,RJ,7,Deputado Estadual,Dep. Estadual/Distrital,43333,TANIA MARA RIBEIRO LIMA DIMA,43,PV,,1264,Suplente
+6259,RJ,7,Deputado Estadual,Dep. Estadual/Distrital,43177,ALEX SANDRA DE JESUS ALVES,43,PV,,134,Suplente
+6259,RJ,7,Deputado Estadual,Dep. Estadual/Distrital,43334,FELIPE ALVES DE SOUZA,43,PV,,2335,Suplente
+6259,RJ,7,Deputado Estadual,Dep. Estadual/Distrital,43456,MAICON SILVA DA CRUZ,43,PV,,27621,Suplente
+6259,RJ,7,Deputado Estadual,Dep. Estadual/Distrital,43937,ANDRE DEL PINO GUERRA TAVARES,43,PV,,81,Suplente
+6259,RJ,7,Deputado Estadual,Dep. Estadual/Distrital,43621,ANA PAULA DIAS HIRT,43,PV,,439,Suplente
+6259,RJ,7,Deputado Estadual,Dep. Estadual/Distrital,43111,WALLACE PEREIRA DA SILVA,43,PV,,1246,Suplente
+6259,RJ,7,Deputado Estadual,Dep. Estadual/Distrital,43000,PAULO CESAR GONCALVES LADEIRA,43,PV,,1516,Não eleito
+6259,RN,3,Governador,Governador,36,KARLO RODRIGO LUCIO VIEIRA,36,AGIR,,434,Não eleito
+6259,RN,5,Senador,Senador,166,ROSALIA MARIA FERNANDES,16,PSTU,,3795,Não eleito
+6259,RN,5,Senador,Senador,161,LUCIANA LIMA DA SILVA,16,PSTU,,2486,Não eleito
+6259,RN,6,Deputado Federal,Dep. Federal,2730,CLARICE TEIXEIRA MAIA,27,DC,,115,Não eleito
+6259,RN,6,Deputado Federal,Dep. Federal,2724,ERINALDO MOISES ALVES DE SOUZA,27,DC,,297,Não eleito
+6259,RN,6,Deputado Federal,Dep. Federal,2722,MELQUISEDEC DE MELO LIRA,27,DC,,95,Não eleito
+6259,RN,7,Deputado Estadual,Dep. Estadual/Distrital,50013,GEORGE STEVENSON GOMES,50,PSOL,,77,Não eleito
+6259,RN,7,Deputado Estadual,Dep. Estadual/Distrital,50000,IRAMA BARBOSA DA SILVA,50,PSOL,,190,Não eleito
+6259,RN,7,Deputado Estadual,Dep. Estadual/Distrital,50005,ALEXANDRA DE ASSIS BARBOSA,50,PSOL,,179,Não eleito
+6259,RN,7,Deputado Estadual,Dep. Estadual/Distrital,50024,JESSICA ELIAS DE SOUZA,50,PSOL,,66,Não eleito
+6259,RN,7,Deputado Estadual,Dep. Estadual/Distrital,50050,CARLOS ANTONIO DOS SANTOS DIAS,50,PSOL,,409,Não eleito
+6259,RN,7,Deputado Estadual,Dep. Estadual/Distrital,50222,WILSON DUARTE COSTA,50,PSOL,,456,Não eleito
+6259,RN,7,Deputado Estadual,Dep. Estadual/Distrital,50100,LOURENÇO QUEIROZ CAPRIGLIONE,50,PSOL,,14272,Não eleito
+6259,RN,7,Deputado Estadual,Dep. Estadual/Distrital,50123,ANA JANARA ALVES DA SILVA ARAUJO,50,PSOL,,1780,Não eleito
+6259,RN,7,Deputado Estadual,Dep. Estadual/Distrital,50555,AURÉLIO CASSIANO DE OLIVEIRA,50,PSOL,,152,Não eleito
+6259,RO,3,Governador,Governador,55,ADAILTON ANTUNES FERREIRA,55,PSD,,189547,Não eleito
+6259,RO,5,Senador,Senador,221,FERNANDO RODRIGUES MÁXIMO,22,PL,,570799,Eleito
+6259,RO,5,Senador,Senador,222,BRUNO SCHEID,22,PL,,474226,Eleito
+6259,RO,6,Deputado Federal,Dep. Federal,1010,MAURO NAZIF RASUL,10,REPUBLICANOS,,8154,Não eleito
+6259,RO,6,Deputado Federal,Dep. Federal,1044,EDERSON MOREIRA DEIRO,10,REPUBLICANOS,,2215,Não eleito
+6259,RO,6,Deputado Federal,Dep. Federal,1023,MONICA DE CASTRO MELO DA SILVA,10,REPUBLICANOS,,6133,Não eleito
+6259,RO,6,Deputado Federal,Dep. Federal,1022,ELIENAI DA SILVA,10,REPUBLICANOS,,5309,Não eleito
+6259,RO,6,Deputado Federal,Dep. Federal,1001,VERA LUCIA PAIXÃO,10,REPUBLICANOS,,6615,Não eleito
+6259,RO,6,Deputado Federal,Dep. Federal,1020,JONATAS DE FRANÇA PAIVA,10,REPUBLICANOS,,20296,Não eleito
+6259,RO,6,Deputado Federal,Dep. Federal,1099,MARIA AUXILIADORA DE OLIVEIRA SILVA,10,REPUBLICANOS,,1140,Não eleito
+6259,RO,6,Deputado Federal,Dep. Federal,1000,REGIS WELLINGTON BRAGUIN SILVERIO,10,REPUBLICANOS,,13152,Não eleito
+6259,RO,6,Deputado Federal,Dep. Federal,1011,ANDERSON DA SILVA PEREIRA,10,REPUBLICANOS,,4960,Não eleito
+6259,RO,7,Deputado Estadual,Dep. Estadual/Distrital,50518,ALEXIA RANANDA BRITO DE OLIVEIRA,50,PSOL,,103,Não eleito
+6259,RO,7,Deputado Estadual,Dep. Estadual/Distrital,50222,SERGIO FERREIRA DA SILVA,50,PSOL,,115,Não eleito
+6259,RO,7,Deputado Estadual,Dep. Estadual/Distrital,50364,FRANCISCO DE ASSIS CUNHA DA SILVA,50,PSOL,,53,Não eleito
+6259,RO,7,Deputado Estadual,Dep. Estadual/Distrital,50123,OTACILIO DA SILVA MAIA,50,PSOL,,101,Não eleito
+6259,RO,7,Deputado Estadual,Dep. Estadual/Distrital,50500,JOSE IRONILDO RODRIGUES NASCIMENTO,50,PSOL,,63,Não eleito
+6259,RO,7,Deputado Estadual,Dep. Estadual/Distrital,50321,DAVID FRANCISCO DE OLIVEIRA,50,PSOL,,117,Não eleito
+6259,RO,7,Deputado Estadual,Dep. Estadual/Distrital,50655,JOELMA LEANDRO FERREIRA,50,PSOL,,70,Não eleito
+6259,RO,7,Deputado Estadual,Dep. Estadual/Distrital,50444,HUMBERTO DIOGO DOS SANTOS ALMEIDA,50,PSOL,,64,Não eleito
+6259,RO,7,Deputado Estadual,Dep. Estadual/Distrital,50204,JAIR KADATZ,50,PSOL,,65,Não eleito
+6259,RO,7,Deputado Estadual,Dep. Estadual/Distrital,50112,PAULA DELGADO,50,PSOL,,33,Não eleito
+6259,RR,3,Governador,Governador,77,FARAH MESQUITA,77,SOLIDARIEDADE,,213,Não eleito
+6259,RR,5,Senador,Senador,155,MARIA TERESA SAENZ SURITA GUIMARÃES,15,MDB,,117270,Eleito
+6259,RR,6,Deputado Federal,Dep. Federal,5057,LARISSA CRISTINA DE SOUZA VIEIRA,50,PSOL,,12,Não eleito
+6259,RR,6,Deputado Federal,Dep. Federal,5067,LINDOMAR ALVES ALENCAR,50,PSOL,,64,Não eleito
+6259,RR,6,Deputado Federal,Dep. Federal,5066,RONILSON LOPES DOS SANTOS,50,PSOL,,13,Não eleito
+6259,RR,6,Deputado Federal,Dep. Federal,5071,JOSE DE SOUZA VIEIRA,50,PSOL,,43,Não eleito
+6259,RR,6,Deputado Federal,Dep. Federal,5005,ROBERT DAGON DA SILVA,50,PSOL,,88,Não eleito
+6259,RR,6,Deputado Federal,Dep. Federal,5035,CRISHIMA OLIVEIRA RODRIGUES,50,PSOL,,42,Não eleito
+6259,RR,6,Deputado Federal,Dep. Federal,5000,MERILANE SALDANHA,50,PSOL,,36,Não eleito
+6259,RR,7,Deputado Estadual,Dep. Estadual/Distrital,11222,MARIA DA GUIA SOUSA MENDES,11,PP,,3868,Suplente
+6259,RR,7,Deputado Estadual,Dep. Estadual/Distrital,11120,ANGELA AGUIDA PORTELLA ALVES,11,PP,,7281,Eleito por QP
+6259,RR,7,Deputado Estadual,Dep. Estadual/Distrital,11111,FRANCISCO MOZART HOLANDA PINHEIRO,11,PP,,6100,Suplente
+6259,RR,7,Deputado Estadual,Dep. Estadual/Distrital,11122,FERNANDO DALLA NORA FILHO,11,PP,,287,Suplente
+6259,RR,7,Deputado Estadual,Dep. Estadual/Distrital,11123,ADAM HARISSON SILVA DE FRANCA,11,PP,,212,Suplente
+6259,RR,7,Deputado Estadual,Dep. Estadual/Distrital,11444,ANTÔNIO SÉRGIO NUNES CUNHA,11,PP,,64,Suplente
+6259,RS,3,Governador,Governador,15,GABRIEL VIEIRA DE SOUZA,15,MDB,,510698,Não eleito
+6259,RS,5,Senador,Senador,131,PAULO ROBERTO SEVERO PIMENTA,13,PT,,1870301,Não eleito
+6259,RS,6,Deputado Federal,Dep. Federal,1600,MARLISE JANETE FERREIRA,16,PSTU,,307,Não eleito
+6259,RS,6,Deputado Federal,Dep. Federal,1616,ÍCARO FANTINEL MADALENA,16,PSTU,,401,Não eleito
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10101,NIVEA NUNES SARAIVA,10,REPUBLICANOS,,562,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10192,CLAUDIA LUIZ DOS SANTOS,10,REPUBLICANOS,,875,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10555,PAULO CEZAR ZINN,10,REPUBLICANOS,,1072,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10522,ADRIANE GARCIA RODRIGUES,10,REPUBLICANOS,,2182,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10600,LUCIANO VIEIRA BATISTA,10,REPUBLICANOS,,2230,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10234,LUIZ VALMOR DA SILVA FRANCA,10,REPUBLICANOS,,2550,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10777,ELIZANDRO SILVA DE FREITAS SABINO,10,REPUBLICANOS,,35727,Eleito por QP
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10510,MARIA DE FATIMA MARTINS FORTUNA,10,REPUBLICANOS,,1137,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10200,SIMONE CRISTINA WINTER FANTINEL BILO,10,REPUBLICANOS,,552,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10107,MARLI RIBEIRO SERPA,10,REPUBLICANOS,,2954,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10666,VALMIR LAND,10,REPUBLICANOS,,2765,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10505,EMERSON KUHN CORNELIUS,10,REPUBLICANOS,,2337,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10400,JESSÉ MARTINS,10,REPUBLICANOS,,628,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10789,DANIELA BROCCA LIMA,10,REPUBLICANOS,,1105,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10007,ÉDERSON MOISÉS OLIVEIRA DO AMARAL,10,REPUBLICANOS,,2019,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10045,EZEQUIEL DA ROCHA QUADROS,10,REPUBLICANOS,,608,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10444,JOSE AIRTON RIBEIRO DE LIMA,10,REPUBLICANOS,,14417,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10808,CASSIO FERNANDO GIACCHIN DA SILVEIRA,10,REPUBLICANOS,,3693,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10333,RODRIGO RABUSKE,10,REPUBLICANOS,,26712,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10022,VALÉSKA MACHADO DA SILVA WALBER,10,REPUBLICANOS,,2209,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10123,FERNANDA DE OLIVEIRA LIMA,10,REPUBLICANOS,,508,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10120,ELIANA DO NASCIMENTO NARVAIS BAYER,10,REPUBLICANOS,,29135,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10121,ALESSANDRO NUNES DA COSTA,10,REPUBLICANOS,,3544,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10710,GRASIELA ARAGÃO MAUER,10,REPUBLICANOS,,413,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10011,MAURO DE ALMEIDA,10,REPUBLICANOS,,380,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10112,GILBERTO KERBER,10,REPUBLICANOS,,872,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10272,ROBERTO PINTO MACIEL,10,REPUBLICANOS,,1053,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10005,DANUSA SULZBACHER,10,REPUBLICANOS,,281,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10122,MARTIM TODESCO ADREANI,10,REPUBLICANOS,,37589,Eleito por QP
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10775,FERNANDA BIDIGARAY,10,REPUBLICANOS,,387,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10425,ABEL GRAVE,10,REPUBLICANOS,,9771,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10770,VANESSA DE BORTOLI POUEY,10,REPUBLICANOS,,1979,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10088,CLAUDINEI JOSE RODRIGUES DE MOURA,10,REPUBLICANOS,,1213,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10603,JOAO JOCEMAR UEZ PEZZI,10,REPUBLICANOS,,17992,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10567,ORLEI JOSE BARBIERI,10,REPUBLICANOS,,562,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10077,JOSE OSEAS DA COSTA,10,REPUBLICANOS,,971,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10810,ANDRESSA VIEIRA DA SILVA,10,REPUBLICANOS,,233,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10110,ADELMO ANTONIO DE SOUZA,10,REPUBLICANOS,,449,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10456,CHOU TSING YI,10,REPUBLICANOS,,1145,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10357,FELIPE VARGAS MEDINA,10,REPUBLICANOS,,1311,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10000,MARCELO HARTEMINK,10,REPUBLICANOS,,6249,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10250,CARLOS ROBERTO MACHADO MONTEIRO,10,REPUBLICANOS,,3381,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10220,LEANDRO RAZERA DE VARGAS,10,REPUBLICANOS,,310,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10111,JOÃO CARLOS MENDONÇA RODRIGUES,10,REPUBLICANOS,,691,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10190,KLEUVIS ROGERIO PIERRE DORNELLES,10,REPUBLICANOS,,9123,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10610,ALVARO MANZONI,10,REPUBLICANOS,,1811,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10999,CAMILO LENTZ BAPTISTA,10,REPUBLICANOS,,511,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10193,JOÃO BATISTA PIRES MARTINS,10,REPUBLICANOS,,13652,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10500,UBAIARA LANGE CORREA DA SILVA,10,REPUBLICANOS,,158,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10210,MOACIR ASCARI,10,REPUBLICANOS,,3566,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10888,CARLA BEATRIZ LOPES BRUM,10,REPUBLICANOS,,1119,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10222,RODRIGO LORENZINI ZUCCO,10,REPUBLICANOS,,128599,Eleito por QP
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10322,PAULO FERNANDO CURI ESTIMA,10,REPUBLICANOS,,2215,Suplente
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10300,SERGIO PERES ALOS,10,REPUBLICANOS,,52879,Eleito por QP
+6259,RS,7,Deputado Estadual,Dep. Estadual/Distrital,10010,ANDREA CARLA RAMME,10,REPUBLICANOS,,619,Suplente
+6259,SC,3,Governador,Governador,55,JOAO RODRIGUES,55,PSD,,569263,Não eleito
+6259,SC,5,Senador,Senador,144,TÚLIO DE AMORIM PFUETZENREITER,14,PTB,,59365,Não eleito
+6259,SC,6,Deputado Federal,Dep. Federal,2552,MICHELLE SCHWANKE,25,PRD,,195,Não eleito
+6259,SC,6,Deputado Federal,Dep. Federal,2577,MARIA ANGELITA BURGEL FRANKE,25,PRD,,285,Não eleito
+6259,SC,6,Deputado Federal,Dep. Federal,2500,FABIANO DA SILVA,25,PRD,,316,Não eleito
+6259,SC,6,Deputado Federal,Dep. Federal,2526,VAGNER BRAGA TEBALDE,25,PRD,,537,Não eleito
+6259,SC,6,Deputado Federal,Dep. Federal,2525,ROSANGELA CARMINATTI,25,PRD,,650,Não eleito
+6259,SC,6,Deputado Federal,Dep. Federal,2520,GUILHERME HENRIQUE DE OLIVEIRA,25,PRD,,616,Não eleito
+6259,SC,6,Deputado Federal,Dep. Federal,2555,DECIO ANTONIO MOSER,25,PRD,,287,Não eleito
+6259,SC,6,Deputado Federal,Dep. Federal,2510,MARCOS ROGERIO COLARES,25,PRD,,90,Não eleito
+6259,SC,6,Deputado Federal,Dep. Federal,2522,ALEXSANDRO BURNIER,25,PRD,,7916,Não eleito
+6259,SC,6,Deputado Federal,Dep. Federal,2575,DINARA CAROLINE DE OLIVEIRA,25,PRD,,143,Não eleito
+6259,SC,7,Deputado Estadual,Dep. Estadual/Distrital,15100,EMERSON LUCIANO STEIN,15,MDB,,20685,Suplente
+6259,SC,7,Deputado Estadual,Dep. Estadual/Distrital,15010,JERRY EDSON COMPER,15,MDB,,45603,Eleito por QP
+6259,SC,7,Deputado Estadual,Dep. Estadual/Distrital,15000,JORGE LUIZ KOCH,15,MDB,,25208,Suplente
+6259,SC,7,Deputado Estadual,Dep. Estadual/Distrital,15115,MARCOS RAFAEL PIACENTINI BOTH,15,MDB,,2842,Suplente
+6259,SC,7,Deputado Estadual,Dep. Estadual/Distrital,15700,MARIA CRISTINA CORREA CLEMENTE,15,MDB,,425,Suplente
+6259,SC,7,Deputado Estadual,Dep. Estadual/Distrital,15220,MAURO DE NADAL,15,MDB,,65369,Eleito por QP
+6259,SC,7,Deputado Estadual,Dep. Estadual/Distrital,15215,MARINEZ CASAGRANDE,15,MDB,,86,Suplente
+6259,SC,7,Deputado Estadual,Dep. Estadual/Distrital,15715,LUCIANE GOMES DE LIMA COOPER,15,MDB,,60,Suplente
+6259,SC,7,Deputado Estadual,Dep. Estadual/Distrital,15180,INAJARA RODRIGUES DOS SANTOS,15,MDB,,422,Suplente
+6259,SC,7,Deputado Estadual,Dep. Estadual/Distrital,15022,TÚLIO TAVARES SANTOS,15,MDB,,1961,Suplente
+6259,SC,7,Deputado Estadual,Dep. Estadual/Distrital,15655,FERNANDO KRELLING,15,MDB,,70506,Eleito por QP
+6259,SC,7,Deputado Estadual,Dep. Estadual/Distrital,15111,MONICA SILVA,15,MDB,,430,Suplente
+6259,SC,7,Deputado Estadual,Dep. Estadual/Distrital,15789,TIAGO ZILLI,15,MDB,,41548,Eleito por média
+6259,SC,7,Deputado Estadual,Dep. Estadual/Distrital,15670,EMERSON MAAS,15,MDB,,26474,Suplente
+6259,SC,7,Deputado Estadual,Dep. Estadual/Distrital,15777,ELCIO ROGERIO KUHNEN,15,MDB,,8286,Suplente
+6259,SC,7,Deputado Estadual,Dep. Estadual/Distrital,15015,VILMAR ASTROGILDO TUTA DE SOUZA,15,MDB,,2447,Suplente
+6259,SC,7,Deputado Estadual,Dep. Estadual/Distrital,15234,ISAURA CANDIDA PROVIN,15,MDB,,1248,Suplente
+6259,SC,7,Deputado Estadual,Dep. Estadual/Distrital,15055,JOAO NATEL POLLONIO MACHADO,15,MDB,,2189,Suplente
+6259,SC,7,Deputado Estadual,Dep. Estadual/Distrital,15104,LEATRICE MENDONCA BEZ DE OLIVEIRA GOMES,15,MDB,,4281,Suplente
+6259,SC,7,Deputado Estadual,Dep. Estadual/Distrital,15001,ELIZEU MATTOS,15,MDB,,80,Não eleito
+6259,SC,7,Deputado Estadual,Dep. Estadual/Distrital,15555,SIRLEI TERESINHA MULLER,15,MDB,,651,Suplente
+6259,SC,7,Deputado Estadual,Dep. Estadual/Distrital,15077,PAULO COELHO,15,MDB,,147,Suplente
+6259,SC,7,Deputado Estadual,Dep. Estadual/Distrital,15123,ADILSON LUIZ GIRARDI,15,MDB,,12626,Suplente
+6259,SC,7,Deputado Estadual,Dep. Estadual/Distrital,15600,JOAO LUIZ AUGUSTO COBALCHINI,15,MDB,,28403,Suplente
+6259,SC,7,Deputado Estadual,Dep. Estadual/Distrital,15844,JOSIANE FREITAS NETO MENESTRINA,15,MDB,,984,Suplente
+6259,SE,3,Governador,Governador,27,TATIANA CRISTINA SANTOS DE JESUS,27,DC,,2728,Não eleito
+6259,SE,5,Senador,Senador,101,ANDRÉ DAVID CALDAS ROSA RODRIGUES,10,REPUBLICANOS,,378710,Não eleito
+6259,SE,5,Senador,Senador,100,EDUARDO ALVES DO AMORIM,10,REPUBLICANOS,,222727,Não eleito
+6259,SE,6,Deputado Federal,Dep. Federal,2727,MICHELI SILVA DOS SANTOS,27,DC,,154,Não eleito
+6259,SE,6,Deputado Federal,Dep. Federal,2789,GILMAR ROCHA CRUZ,27,DC,,45,Não eleito
+6259,SE,6,Deputado Federal,Dep. Federal,2788,MARCOS ANTONIO ARAUJO,27,DC,,183,Não eleito
+6259,SE,6,Deputado Federal,Dep. Federal,2722,MARIA RAIMUNDA DA CONCEICAO,27,DC,,33,Não eleito
+6259,SE,6,Deputado Federal,Dep. Federal,2772,TAMARA GARDÊNIA ALVES SANTOS DE OLIVEIRA,27,DC,,71,Não eleito
+6259,SE,7,Deputado Estadual,Dep. Estadual/Distrital,55192,GIVANEIDE FERNANDES LUIZ,55,PSD,,969,Suplente
+6259,SE,7,Deputado Estadual,Dep. Estadual/Distrital,55456,BRUNO VASCONCELOS SOUZA,55,PSD,,80,Suplente
+6259,SE,7,Deputado Estadual,Dep. Estadual/Distrital,55190,ALEXSANDRO RIBEIRO DE SOUZA,55,PSD,,27711,Eleito por média
+6259,SE,7,Deputado Estadual,Dep. Estadual/Distrital,55713,ALEX SANDRA PRADO DE OLIVEIRA,55,PSD,,223,Suplente
+6259,SE,7,Deputado Estadual,Dep. Estadual/Distrital,55200,SAMIRA DOS SANTOS DAUD,55,PSD,,855,Suplente
+6259,SE,7,Deputado Estadual,Dep. Estadual/Distrital,55555,MAISA CRUZ MITIDIERI,55,PSD,,41559,Eleito por QP
+6259,SE,7,Deputado Estadual,Dep. Estadual/Distrital,55111,MARCELL MOADE RIBEIRO SOUZA,55,PSD,,21728,Suplente
+6259,SE,7,Deputado Estadual,Dep. Estadual/Distrital,55123,ADAILTON MARTINS DE OLIVEIRA FILHO,55,PSD,,38977,Eleito por QP
+6259,SE,7,Deputado Estadual,Dep. Estadual/Distrital,55255,CARLOS AUGUSTO FERREIRA,55,PSD,,25043,Suplente
+6259,SE,7,Deputado Estadual,Dep. Estadual/Distrital,55015,LUCIANO BISPO DE LIMA,55,PSD,,29088,Eleito por QP
+6259,SE,7,Deputado Estadual,Dep. Estadual/Distrital,55444,GABRYELLA GARIBALDE SANTANA ROCHA,55,PSD,,608,Suplente
+6259,SE,7,Deputado Estadual,Dep. Estadual/Distrital,55888,ADROALDO ALVES DA SILVA JUNIOR,55,PSD,,3637,Suplente
+6259,SE,7,Deputado Estadual,Dep. Estadual/Distrital,55999,SIDICLEI FONSECA ALVES,55,PSD,,107,Suplente
+6259,SE,7,Deputado Estadual,Dep. Estadual/Distrital,55000,ALICE CAROLINE CARDOSO SANTOS MAGALHÃES,55,PSD,,1672,Suplente
+6259,SE,7,Deputado Estadual,Dep. Estadual/Distrital,55100,DIEGO SANTOS MOTA,55,PSD,,415,Suplente
+6259,SE,7,Deputado Estadual,Dep. Estadual/Distrital,55777,JORGE ARAUJO FILHO,55,PSD,,49550,Eleito por QP
+6259,SP,3,Governador,Governador,10,TARCISIO GOMES DE FREITAS,10,REPUBLICANOS,,14491874,Eleito
+6259,SP,5,Senador,Senador,222,ANDRE LUIS DO PRADO,22,PL,,12703089,Eleito
+6259,SP,6,Deputado Federal,Dep. Federal,1421,ANDRÉ DE OLIVEIRA SANTANA JUNIOR,14,PTB,,230,
+6259,SP,6,Deputado Federal,Dep. Federal,1418,HÉLIO FRAZZATTI NETO,14,PTB,,308,
+6259,SP,6,Deputado Federal,Dep. Federal,1415,YASMIN TAMIRES SARRAF,14,PTB,,795,
+6259,SP,6,Deputado Federal,Dep. Federal,1490,BEATRIZ RODRIGUES DA CUNHA COIMBRA,14,PTB,,332,
+6259,SP,6,Deputado Federal,Dep. Federal,1424,JULIANA CONSTANTINO DE OLIVEIRA,14,PTB,,154,
+6259,SP,6,Deputado Federal,Dep. Federal,1466,PAULO CÉSAR DE OLIVEIRA COELHO,14,PTB,,499,
+6259,SP,6,Deputado Federal,Dep. Federal,1492,DANIELE ANTONIA CARVALHO,14,PTB,,123,
+6259,SP,6,Deputado Federal,Dep. Federal,1404,PYETRO HENRICO MARTINS PATERNO,14,PTB,,1223,
+6259,SP,6,Deputado Federal,Dep. Federal,1427,ANDRE DOMINGOS DA PAZ,14,PTB,,114,
+6259,SP,6,Deputado Federal,Dep. Federal,1486,CARLOS SOARES DA SILVA JUNIOR,14,PTB,,117,
+6259,SP,6,Deputado Federal,Dep. Federal,1416,ISABEL CRISTINA ELIAS DE SOUZA OLIVEIRA,14,PTB,,274,
+6259,SP,6,Deputado Federal,Dep. Federal,1471,ROGÉRIO CHIMIONATO,14,PTB,,584,
+6259,SP,6,Deputado Federal,Dep. Federal,1400,ANA CAROLINA HERING,14,PTB,,51768,
+6259,SP,6,Deputado Federal,Dep. Federal,1411,RICARDO AUGUSTO HONÓRIO ALVES,14,PTB,,557,
+6259,SP,6,Deputado Federal,Dep. Federal,1402,VANESSA PALMIRO,14,PTB,,147,
+6259,SP,6,Deputado Federal,Dep. Federal,1442,MARIANO HIROAKI SHIROMA,14,PTB,,840,
+6259,SP,6,Deputado Federal,Dep. Federal,1453,MAURÍCIO DOMINGUES DA SILVA,14,PTB,,526,
+6259,SP,6,Deputado Federal,Dep. Federal,1440,NATALIA DOS SANTOS MINZIO,14,PTB,,595,
+6259,SP,6,Deputado Federal,Dep. Federal,1435,GABRIELA NOVELLI PEREIRA,14,PTB,,163,
+6259,SP,6,Deputado Federal,Dep. Federal,1479,FELIPE DANIEL SILVA BOLETTI,14,PTB,,178,
+6259,SP,6,Deputado Federal,Dep. Federal,1405,MARINA LIMA CALIXTO PLANAS,14,PTB,,143,
+6259,SP,6,Deputado Federal,Dep. Federal,1478,RICARDO OLIVEIRA DE ALMEIDA,14,PTB,,149,
+6259,SP,6,Deputado Federal,Dep. Federal,1420,MARIA APARECIDA CARVALHO DE JESUS,14,PTB,,153,
+6259,SP,6,Deputado Federal,Dep. Federal,1467,JONATHAN DE OLIVEIRA CAMPOS,14,PTB,,220,
+6259,SP,6,Deputado Federal,Dep. Federal,1419,GERALDO CESAR ALMEIDA,14,PTB,,3503,
+6259,SP,6,Deputado Federal,Dep. Federal,1409,PAMELA GIEDRE CORRADINI DE SOUZA,14,PTB,,126,
+6259,SP,6,Deputado Federal,Dep. Federal,1447,MARCEL MACHADO MUSCAT,14,PTB,,803,
+6259,SP,6,Deputado Federal,Dep. Federal,1431,MARCOS PAULO DA CUNHA BUGALLO,14,PTB,,91,
+6259,SP,6,Deputado Federal,Dep. Federal,1455,VICTOR DEREK SANTIAGO CANARIN,14,PTB,,502,
+6259,SP,6,Deputado Federal,Dep. Federal,1470,RÂNDALOS DIAS CUSTÓDIO DA CONCEIÇÃO MADEIRA,14,PTB,,191,
+6259,SP,6,Deputado Federal,Dep. Federal,1408,VANESSA PEREIRA DUTRA,14,PTB,,203,
+6259,SP,6,Deputado Federal,Dep. Federal,1426,VANESCA MARCELA ANASTÁCIO ESSU,14,PTB,,140,
+6259,SP,6,Deputado Federal,Dep. Federal,1412,KARINA DOS SANTOS CLARO,14,PTB,,453,
+6259,SP,6,Deputado Federal,Dep. Federal,1410,CRISTIANE PRISCILA NAVARRO,14,PTB,,673,
+6259,SP,6,Deputado Federal,Dep. Federal,1422,GABRIEL PIAUHY LIMA DA SILVA,14,PTB,,5169,
+6259,SP,6,Deputado Federal,Dep. Federal,1401,DIEGO ALEXANDRE GONZALEZ BENTIM,14,PTB,,1684,
+6259,SP,6,Deputado Federal,Dep. Federal,1406,STEPHANY PAULA FIGUEREDO DA SILVA,14,PTB,,161,
+6259,SP,6,Deputado Federal,Dep. Federal,1407,LUIS GUSTAVO VERDICCHIO BENA,14,PTB,,550,
+6259,SP,6,Deputado Federal,Dep. Federal,1477,AUGUSTO ZACARIAS CORRÊA LEITE,14,PTB,,41423,
+6259,SP,6,Deputado Federal,Dep. Federal,1423,ELIZABETE MERENDA GONÇALVES,14,PTB,,473,
+6259,SP,6,Deputado Federal,Dep. Federal,1414,KIM PATROCA KATAGUIRI,14,PTB,,520071,
+6259,SP,6,Deputado Federal,Dep. Federal,1441,LUDYMILLA DIAS DE OLIVEIRA,14,PTB,,1584,
+6259,SP,6,Deputado Federal,Dep. Federal,1456,CAIO ZANON DE MENDONÇA,14,PTB,,1946,
+6259,SP,6,Deputado Federal,Dep. Federal,1497,GUILHERME DA SILVA COUTO,14,PTB,,61,
+6259,SP,6,Deputado Federal,Dep. Federal,1452,KAIO VINICIUS FEITOSA DE SOUZA,14,PTB,,259,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12227,LUCIANA DE SOUZA SOLER,12,PDT,,798,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12110,EVERTON DA SILVA LEANDRO,12,PDT,,1212,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12033,ANDRÉ LUIZ BARBOSA,12,PDT,,1861,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12112,TATIANA TIBÉRIO VIANA RIBEIRO,12,PDT,,471,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12666,HIRANCELMO LIRA GONÇALVES,12,PDT,,107,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12369,CAIO HENRIQUE DA SILVA,12,PDT,,477,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12136,MANOEL PEREIRA VIANA DE LIMA,12,PDT,,62,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12342,WELINGTON RODRIGO DOS SANTOS TORRES,12,PDT,,473,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12023,FERNANDO IRINEU DE SOUZA MIGUEL,12,PDT,,51,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12612,IGOR HUNGARO,12,PDT,,5659,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12013,VANESSA LEMES DA SILVA,12,PDT,,249,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12888,MIRELLE CRISTINA DE ARAUJO BUENO,12,PDT,,2345,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12777,ANA PAULA DE SOUZA PASSOS,12,PDT,,514,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12000,HENRIQUE BARROS DA SILVA,12,PDT,,6904,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12012,MATEUS HENRIQUE TURINI,12,PDT,,4794,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12500,FERNANDO PEREIRA SIRCHIA JUNIOR,12,PDT,,12553,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12222,WILSON MARÇAL VIEIRA JUNIOR,12,PDT,,2231,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12987,LILIAN DA SILVA BOMFIM,12,PDT,,200,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12100,CARLOS EDUARDO MENDRONI GERARDI,12,PDT,,1511,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12691,LEONARDO GONÇALVES FREITAS,12,PDT,,118,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12345,ISADORA BRISOLLA,12,PDT,,72280,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12800,DEBORA CRISTINA DE SOUZA RIBEIRO,12,PDT,,258,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12321,LUIS CARLOS DE SOUZA,12,PDT,,713,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12333,FLÁVIA APARECIDA RODRIGUES,12,PDT,,925,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12456,IVANILSON GOMES DE MOURA,12,PDT,,826,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12007,RENATO MANTELLI PICOLI,12,PDT,,944,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12190,APARECIDO DA SILVA AGLIO,12,PDT,,349,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12856,GILSON SILVA PEREIRA,12,PDT,,118,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12122,ANDREIA ROLIM RIOS,12,PDT,,2314,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12444,RAIMUNDO RODRIGUES DE PAIVA,12,PDT,,868,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12019,ALAN AILTON DA SILVA,12,PDT,,841,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12789,MURILO HENRIQUE INOCENCIO,12,PDT,,226,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12712,WAGNERIANO DE LIMA MOREIRA,12,PDT,,918,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12999,MARCO VINICIUS DOS SANTOS,12,PDT,,91,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12650,SÉRGIO DE SOUZA,12,PDT,,137,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12002,LUCINEIDE CRUZ ALVES,12,PDT,,176,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12018,MANUEL  CARLOS PENSAMENTO DA SILVA,12,PDT,,173,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12065,MILTON VIANNA PINTO,12,PDT,,185,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12123,ROBSON ALEXANDRE DE OLIVEIRA,12,PDT,,1822,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12137,LUCIANA ALMEIDA DIAS SAMPAIO,12,PDT,,304,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12111,RONALDO HENRIQUE FERREIRA,12,PDT,,685,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12001,CELSO RODRIGO DOS SANTOS,12,PDT,,5372,
+6259,SP,7,Deputado Estadual,Dep. Estadual/Distrital,12555,MELISSA HELEN DA COSTA MONTEIRO,12,PDT,,514,
+6259,TO,3,Governador,Governador,45,VICENTE ALVES DE OLIVEIRA JÚNIOR,45,PSDB,,372848,2º turno
+6259,TO,5,Senador,Senador,133,PAULO SARDINHA MOURAO,13,PT,,129838,Não eleito
+6259,TO,6,Deputado Federal,Dep. Federal,2090,ZULMIRA BEZERRA,20,PSC,,242,Suplente
+6259,TO,6,Deputado Federal,Dep. Federal,2088,TIAGO DIMAS BRAGA PEREIRA,20,PSC,,27910,Suplente
+6259,TO,6,Deputado Federal,Dep. Federal,2022,SANDOVAL LOBO CARDOSO,20,PSC,,61747,Eleito por média
+6259,TO,6,Deputado Federal,Dep. Federal,2020,MARIA IRAMAR GLÓRIA REIS,20,PSC,,824,Suplente
+6259,TO,6,Deputado Federal,Dep. Federal,2026,OSEIAS ALVES DOS REIS,20,PSC,,261,Suplente
+6259,TO,6,Deputado Federal,Dep. Federal,2002,JOANA PEREIRA DE BRITO,20,PSC,,205,Suplente
+6259,TO,6,Deputado Federal,Dep. Federal,2077,CÉLIO CARMO DE SOUSA,20,PSC,,538,Suplente
+6259,TO,7,Deputado Estadual,Dep. Estadual/Distrital,10456,CARLOS ARMANDO SARDINHA BARROSO VALADARES,10,REPUBLICANOS,,105,Suplente
+6259,TO,7,Deputado Estadual,Dep. Estadual/Distrital,10222,KATIUSCYA ALVES BARBOSA CHAVES,10,REPUBLICANOS,,13159,Eleito por QP
+6259,TO,7,Deputado Estadual,Dep. Estadual/Distrital,10123,WELLINGTON FERREIRA DE MEDEIROS,10,REPUBLICANOS,,4933,Suplente
+6259,TO,7,Deputado Estadual,Dep. Estadual/Distrital,10190,MAXIANY BRITO AMORIM,10,REPUBLICANOS,,425,Suplente
+6259,TO,7,Deputado Estadual,Dep. Estadual/Distrital,10100,YHGOR LEONARDO CASTRO LEITE,10,REPUBLICANOS,,35212,Eleito por QP
+6259,TO,7,Deputado Estadual,Dep. Estadual/Distrital,10115,ELENIL DA PENHA ALVES DE BRITO,10,REPUBLICANOS,,6811,Suplente
+6259,TO,7,Deputado Estadual,Dep. Estadual/Distrital,10400,PRICILA PEREIRA DA SILVA DE OLIVEIRA,10,REPUBLICANOS,,583,Suplente
+6259,TO,7,Deputado Estadual,Dep. Estadual/Distrital,10111,EDUARDO MALHEIRO RIBEIRO FORTES,10,REPUBLICANOS,,35258,Eleito por QP
+6259,TO,7,Deputado Estadual,Dep. Estadual/Distrital,10789,JOAO RIGO GUIMARAES,10,REPUBLICANOS,,2144,Suplente
+6259,TO,7,Deputado Estadual,Dep. Estadual/Distrital,10888,ELIAS CABRAL JUNIOR,10,REPUBLICANOS,,1288,Suplente
+6259,TO,7,Deputado Estadual,Dep. Estadual/Distrital,10700,CLEITON CARDOSO DE ALMEIDA,10,REPUBLICANOS,,23960,Eleito por QP
+6259,TO,7,Deputado Estadual,Dep. Estadual/Distrital,10500,THIAGO ULISSES BORGES,10,REPUBLICANOS,,5698,Suplente
+6259,TO,7,Deputado Estadual,Dep. Estadual/Distrital,10101,JOAO BATISTA DA SILVA BOTELHO,10,REPUBLICANOS,,132,Suplente
+6259,TO,7,Deputado Estadual,Dep. Estadual/Distrital,10010,MARCUS VINICIUS CAMARGO PIRES,10,REPUBLICANOS,,7917,Suplente
+6259,TO,7,Deputado Estadual,Dep. Estadual/Distrital,10333,DINAMARCIA LUSTOSA DE SOUZA MIRANDA,10,REPUBLICANOS,,93,Não eleito
+6259,TO,7,Deputado Estadual,Dep. Estadual/Distrital,10000,REJANE ARAUJO DA SILVA,10,REPUBLICANOS,,1806,Suplente
+6259,TO,7,Deputado Estadual,Dep. Estadual/Distrital,10555,LUZIRENE ARAUJO DA SILVA PEREIRA,10,REPUBLICANOS,,140,Suplente
+6259,TO,7,Deputado Estadual,Dep. Estadual/Distrital,10990,MARINALVA VIANA RODRIGUES,10,REPUBLICANOS,,88,Suplente
+6259,TO,7,Deputado Estadual,Dep. Estadual/Distrital,10444,EDUARDO SILVA MADRUGA,10,REPUBLICANOS,,10329,Eleito por média
