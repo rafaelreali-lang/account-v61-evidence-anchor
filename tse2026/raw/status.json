@@ -1,29 +1,29 @@
 {
- "inicio_utc": "2026-10-05T03:47:41Z",
+ "inicio_utc": "2026-10-05T03:51:28Z",
  "passos": [
   {
-   "t": "03:47:42",
+   "t": "03:51:29",
    "msg": "CKAN package_show resultados-2026 -> HTTP 404"
   },
   {
-   "t": "03:47:42",
+   "t": "03:51:30",
    "msg": "GET https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_partido_munzona/votacao_partido_munzona_2026.zip -> 200 bytes=127521"
   },
   {
-   "t": "03:47:42",
+   "t": "03:51:31",
    "msg": "GET https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_candidato_munzona/votacao_candidato_munzona_2026.zip -> 200 bytes=350625"
   },
   {
-   "t": "03:47:42",
+   "t": "03:51:31",
    "msg": "tse2026_agrega.py rc=1",
    "stderr": "lendo /tmp/tse2026_dl/votacao_partido_munzona_2026.zip::votacao_partido_munzona_2026_BRASIL.csv ...\nlendo /tmp/tse2026_dl/votacao_candidato_munzona_2026.zip::votacao_candidato_munzona_2026_BRASIL.csv ...\nNenhum dado do 1º turno nos cargos-alvo foi encontrado.\n"
   },
   {
-   "t": "03:47:42",
+   "t": "03:51:31",
    "msg": "ele-c.json -> HTTP 200"
   },
   {
-   "t": "03:47:42",
+   "t": "03:51:31",
    "msg": "eleições 2026 1º turno com cargos-alvo",
    "eleicoes": [
     [
@@ -57,22 +57,54 @@
    ]
   },
   {
-   "t": "03:47:42",
-   "msg": "padrões do app",
-   "n": 0
-  },
-  {
-   "t": "03:47:51",
-   "msg": "sonda concluída",
-   "padrao": "https://resultados.tse.jus.br/oficial/ele2026/6259/dados/{uf}/{uf}-c{cg:04d}-e006259-u.json"
-  },
-  {
-   "t": "03:47:57",
+   "t": "03:51:41",
    "msg": "divulgação: 105 arquivos lidos, 0 falhas",
-   "falhas": []
+   "falhas": [],
+   "pst_nao_100": [
+    [
+     "AM",
+     "Governador",
+     "99,99"
+    ],
+    [
+     "AM",
+     "Senador",
+     "99,99"
+    ],
+    [
+     "AM",
+     "Deputado Federal",
+     "99,99"
+    ],
+    [
+     "AM",
+     "Deputado Estadual",
+     "99,99"
+    ],
+    [
+     "MA",
+     "Governador",
+     "99,97"
+    ],
+    [
+     "MA",
+     "Senador",
+     "99,97"
+    ],
+    [
+     "MA",
+     "Deputado Federal",
+     "99,97"
+    ],
+    [
+     "MA",
+     "Deputado Estadual",
+     "99,97"
+    ]
+   ]
   }
  ],
- "fim_utc": "2026-10-05T03:47:57Z",
+ "fim_utc": "2026-10-05T03:51:41Z",
  "ok_dados_abertos": false,
  "ok_divulgacao": true
 }
