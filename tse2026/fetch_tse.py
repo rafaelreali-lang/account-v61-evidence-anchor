@@ -31,6 +31,7 @@ from collections import defaultdict
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from tse2026_agrega import DIREITA, CENTRO_DIREITA, ORDEM_CARGOS, bloco, fmt, pct  # noqa: E402
+ORDEM = ORDEM_CARGOS + ["Presidente"]
 
 RAW = os.path.join(HERE, "raw")
 SAIDA = os.path.join(HERE, "saida")
@@ -43,7 +44,7 @@ UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/1
       "Accept": "*/*"}
 STATUS = {"inicio_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "passos": []}
 
-CARGO_GRUPO = {"3": "Governador", "5": "Senador", "6": "Dep. Federal",
+CARGO_GRUPO = {"1": "Presidente", "3": "Governador", "5": "Senador", "6": "Dep. Federal",
                "7": "Dep. Estadual/Distrital", "8": "Dep. Estadual/Distrital"}
 UFS = ["ac", "al", "am", "ap", "ba", "ce", "df", "es", "go", "ma", "mg", "ms", "mt", "pa", "pb",
        "pe", "pi", "pr", "rj", "rn", "ro", "rr", "rs", "sc", "se", "sp", "to"]
@@ -158,6 +159,8 @@ def eleicoes_2026(cfg):
                     if str(cp.get("cd")) in CARGO_GRUPO:
                         cargos.append((str(cp.get("cd")), cp.get("ds", "")))
             if cargos and ciclo == "ele2026":
+                if all(c == "1" for c, _ in cargos):
+                    ufs = ["br"]  # presidente: arquivo nacional
                 out.append((ciclo, str(e.get("cd")), e.get("nm", ""), sorted(set(ufs)), sorted(set(cargos))))
     return out
 
@@ -201,8 +204,11 @@ def divulgacao():
         eleicoes=[(c, cd, nm, len(u), cg) for c, cd, nm, u, cg in eleicoes])
     if not eleicoes:
         return False
-    ciclo, cd, nome, ufs, cargos = eleicoes[0]
-    padrao = f"{BASE}/{ciclo}/{cd}/dados/{{uf}}/{{uf}}-c{{cg:04d}}-e{int(cd):06d}-u.json"
+    padroes = {cd: f"{BASE}/{ciclo}/{cd}/dados/{{uf}}/{{uf}}-c{{cg:04d}}-e{int(cd):06d}-u.json"
+               for ciclo, cd, nome, ufs, cargos in eleicoes}
+    nome = "; ".join(f"{cd} – {nm}" for _, cd, nm, _, _ in eleicoes)
+    padrao = "; ".join(padroes.values())
+    cd = ", ".join(padroes)
 
     # linhas por UF x cargo x partido; por candidato; por UF x cargo
     part_rows = [["uf", "cd_cargo", "cargo", "grupo", "partido", "sigla_tse", "num_partido", "federacao",
@@ -215,11 +221,12 @@ def divulgacao():
                  "ok_tvtn_eq_vnom", "ok_tvtl_eq_vl", "ok_vap_eq_vnom_mais_vansj"]]
     agg = defaultdict(lambda: defaultdict(lambda: [0, 0]))  # grupo -> sigla -> [nominais, legenda]
     falhas, pst_nao_100 = [], []
-    for uf in ufs:
+    for ciclo_e, cd_e, nome_e, ufs, cargos in eleicoes:
+      for uf in ufs:
         for cg, ds in cargos:
             if (cg == "8") != (uf == "df"):
                 continue  # distrital só no DF; estadual nos demais
-            u = padrao.format(uf=uf, cg=int(cg))
+            u = padroes[cd_e].format(uf=uf, cg=int(cg))
             code, txt, _ = http(u, tries=3, timeout=180)
             if code != 200 or not txt:
                 falhas.append({"url": u, "http": code})
@@ -281,7 +288,7 @@ def divulgacao():
     resumo = []
     csv_rows = [["cargo", "partido", "bloco", "nominais_validos", "legenda", "total_validos", "pct_total_validos"]]
     nao_map = set()
-    for grupo in ORDEM_CARGOS:
+    for grupo in ORDEM:
         if grupo not in agg:
             continue
         tab = {sg: (v[0], v[1], v[0] + v[1]) for sg, v in agg[grupo].items()}
@@ -309,15 +316,15 @@ def divulgacao():
         resumo.append((grupo, d, c, r, tot_nom, tot_leg, total))
 
     md += ["## Resumo por bloco – votos nominais válidos (soma dos candidatos)\n",
-           "| Cargo | Direita | Centro-direita | Direita + Centro-direita | Demais | Total nominais | % Dir+CD |",
-           "|---|---:|---:|---:|---:|---:|---:|"]
+           "| Cargo | Direita | Centro-direita | Direita + Centro-direita | Demais | Total nominais | % só Direita | % Dir+CD |",
+           "|---|---:|---:|---:|---:|---:|---:|---:|"]
     for g, d, c, r, tn, tl, tt in resumo:
-        md.append(f"| {g} | {fmt(d[0])} | {fmt(c[0])} | {fmt(d[0]+c[0])} | {fmt(r[0])} | {fmt(tn)} | {pct(d[0]+c[0], tn)} |")
+        md.append(f"| {g} | {fmt(d[0])} | {fmt(c[0])} | {fmt(d[0]+c[0])} | {fmt(r[0])} | {fmt(tn)} | {pct(d[0], tn)} | {pct(d[0]+c[0], tn)} |")
     md += ["", "## Resumo por bloco – total válidos (nominais + legenda)\n",
-           "| Cargo | Direita | Centro-direita | Direita + Centro-direita | Demais | Total válidos | % Dir+CD |",
-           "|---|---:|---:|---:|---:|---:|---:|"]
+           "| Cargo | Direita | Centro-direita | Direita + Centro-direita | Demais | Total válidos | % só Direita | % Dir+CD |",
+           "|---|---:|---:|---:|---:|---:|---:|---:|"]
     for g, d, c, r, tn, tl, tt in resumo:
-        md.append(f"| {g} | {fmt(d[2])} | {fmt(c[2])} | {fmt(d[2]+c[2])} | {fmt(r[2])} | {fmt(tt)} | {pct(d[2]+c[2], tt)} |")
+        md.append(f"| {g} | {fmt(d[2])} | {fmt(c[2])} | {fmt(d[2]+c[2])} | {fmt(r[2])} | {fmt(tt)} | {pct(d[2], tt)} | {pct(d[2]+c[2], tt)} |")
     md += ["", "## Siglas fora das listas Direita / Centro-direita (contadas em Demais)\n",
            ", ".join(sorted(nao_map)) or "(nenhuma)", "",
            "## Checagens por UF x cargo\n",
@@ -335,10 +342,10 @@ def divulgacao():
         csv.writer(f).writerows(csv_rows)
     with open(os.path.join(out, "resumo_blocos.csv"), "w", encoding="utf-8", newline="") as f:
         w = csv.writer(f)
-        w.writerow(["cargo", "base", "direita", "centro_direita", "direita_mais_centro_direita", "demais", "total", "pct_dir_cd"])
+        w.writerow(["cargo", "base", "direita", "centro_direita", "direita_mais_centro_direita", "demais", "total", "pct_direita", "pct_dir_cd"])
         for g, d, c, r, tn, tl, tt in resumo:
-            w.writerow([g, "nominais_validos", d[0], c[0], d[0] + c[0], r[0], tn, f"{100.0*(d[0]+c[0])/tn:.4f}" if tn else ""])
-            w.writerow([g, "total_validos", d[2], c[2], d[2] + c[2], r[2], tt, f"{100.0*(d[2]+c[2])/tt:.4f}" if tt else ""])
+            w.writerow([g, "nominais_validos", d[0], c[0], d[0] + c[0], r[0], tn, f"{100.0*d[0]/tn:.4f}" if tn else "", f"{100.0*(d[0]+c[0])/tn:.4f}" if tn else ""])
+            w.writerow([g, "total_validos", d[2], c[2], d[2] + c[2], r[2], tt, f"{100.0*d[2]/tt:.4f}" if tt else "", f"{100.0*(d[2]+c[2])/tt:.4f}" if tt else ""])
     return True
 
 
