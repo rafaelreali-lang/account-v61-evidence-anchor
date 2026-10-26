@@ -349,6 +349,99 @@ def divulgacao():
     return True
 
 
+# ---------------------------------------------------------------- C) 2º turno (presidente e governadores)
+def eleicoes_turno(cfg, turno):
+    """[(ciclo, cd_eleicao, nome, [ufs], [(cd_cargo, ds_cargo)])] do turno pedido, ciclo ele2026."""
+    out = []
+    for pl in cfg.get("pl", []):
+        if pl.get("c", "") != "ele2026":
+            continue
+        for e in pl.get("e", []):
+            if str(e.get("t", "")) != str(turno):
+                continue
+            cargos, ufs = [], []
+            for abr in e.get("abr", []) or []:
+                ufs.append(str(abr.get("cd", "")).lower())
+                for cp in abr.get("cp", []) or []:
+                    if str(cp.get("cd")) in ("1", "3"):
+                        cargos.append((str(cp.get("cd")), cp.get("ds", "")))
+            if cargos:
+                out.append((pl.get("c"), str(e.get("cd")), e.get("nm", ""), sorted(set(ufs)), sorted(set(cargos))))
+    return out
+
+
+def extrair_majoritaria(ciclo, cd, cg, ufs, turno, rows_c, rows_t, falhas):
+    """Baixa {uf}-c{cg}-e{cd}-u.json para cada UF e acumula candidatos e totais."""
+    for uf in ufs:
+        u = f"{BASE}/{ciclo}/{cd}/dados/{uf}/{uf}-c{int(cg):04d}-e{int(cd):06d}-u.json"
+        code, txt, _ = http(u, tries=3, timeout=180)
+        if code != 200 or not txt:
+            falhas.append({"url": u, "http": code})
+            continue
+        try:
+            j = json.loads(txt)
+        except Exception as e:
+            falhas.append({"url": u, "erro": repr(e)})
+            continue
+        if uf in ("br", "ac"):
+            save(os.path.join(RAW, "samples", os.path.basename(u)), txt)
+        partidos, cands, t = processar_json(j)
+        e = j.get("e", {}) or {}
+        for c in cands:
+            rows_c.append([turno, cd, uf.upper(), cg, CARGO_GRUPO.get(cg, cg), c["num"], c["nm"], c["nmu"], c["sg"],
+                           c["vap"], f"{100.0*c['vap']/t['vv']:.4f}" if t["vv"] else "", c["dvt"], c["st"]])
+        rows_t.append([turno, cd, uf.upper(), cg, CARGO_GRUPO.get(cg, cg), len(cands), sum(c["vap"] for c in cands),
+                       t["vv"], t["vb"], t["vn"], t["tv"], t["vansj"], to_int_br(e.get("te")), to_int_br(e.get("c")),
+                       to_int_br(e.get("a")), e.get("pa", ""), t["pst"], t["dg"], t["hg"]])
+        print(f"T{turno} {uf} c{cg}: {len(cands)} cand, vv={t['vv']} tv={t['tv']} abst={e.get('a')} pst={t['pst']}", flush=True)
+
+
+def segundo_turno():
+    code, txt, _ = http(f"{BASE}/comum/config/ele-c.json")
+    if code != 200 or not txt:
+        log(f"2T: ele-c.json -> HTTP {code}")
+        return False
+    cfg = json.loads(txt)
+    e2 = eleicoes_turno(cfg, 2)
+    e1 = eleicoes_turno(cfg, 1)
+    log("eleições 2026 2º turno", eleicoes=[(c, cd, nm, u, cg) for c, cd, nm, u, cg in e2])
+    if not e2:
+        return False
+    rows_c = [["turno", "cd_eleicao", "uf", "cd_cargo", "cargo", "numero", "nome", "nome_urna", "partido",
+               "votos", "pct_validos", "validade", "situacao"]]
+    rows_t = [["turno", "cd_eleicao", "uf", "cd_cargo", "cargo", "n_cand", "soma_votos", "vv", "vb", "vn", "tv",
+               "vansj", "eleitorado_te", "comparecimento_c", "abstencao_a", "pct_abstencao", "pst", "dg", "hg"]]
+    falhas = []
+    ufs_gov2 = []
+    for ciclo, cd, nome, ufs, cargos in e2:
+        for cg, ds in cargos:
+            if cg == "1":
+                alvo = ["br"] + UFS + ["zz"]
+            else:
+                alvo = [u for u in ufs if u != "br"] or UFS
+                ufs_gov2 += alvo
+            extrair_majoritaria(ciclo, cd, cg, alvo, 2, rows_c, rows_t, falhas)
+    # 1º turno dos mesmos cargos, para comparação
+    for ciclo, cd, nome, ufs, cargos in e1:
+        for cg, ds in cargos:
+            if cg == "1":
+                extrair_majoritaria(ciclo, cd, cg, ["br"] + UFS + ["zz"], 1, rows_c, rows_t, falhas)
+            elif cg == "3" and ufs_gov2:
+                extrair_majoritaria(ciclo, cd, cg, sorted(set(ufs_gov2)), 1, rows_c, rows_t, falhas)
+    log(f"2T: {len(rows_t)-1} arquivos lidos, {len(falhas)} falhas", falhas=falhas[:40])
+    if len(rows_t) <= 1:
+        return False
+    out = os.path.join(SAIDA, "segundo_turno")
+    os.makedirs(out, exist_ok=True)
+    with open(os.path.join(out, "candidatos_uf.csv"), "w", encoding="utf-8", newline="") as f:
+        csv.writer(f).writerows(rows_c)
+    with open(os.path.join(out, "totais_uf.csv"), "w", encoding="utf-8", newline="") as f:
+        csv.writer(f).writerows(rows_t)
+    save(os.path.join(out, "extracao.json"), json.dumps({"quando_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+                                                          "eleicoes_2t": e2, "falhas": falhas}, ensure_ascii=False, indent=1))
+    return True
+
+
 def main():
     ok_a = ok_b = False
     try:
@@ -359,12 +452,18 @@ def main():
         ok_b = divulgacao()
     except Exception as e:
         log(f"divulgação: exceção {e!r}")
+    ok_c = False
+    try:
+        ok_c = segundo_turno()
+    except Exception as e:
+        log(f"2º turno: exceção {e!r}")
+    STATUS["ok_segundo_turno"] = ok_c
     STATUS["fim_utc"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
     STATUS["ok_dados_abertos"] = ok_a
     STATUS["ok_divulgacao"] = ok_b
     save(os.path.join(RAW, "status.json"), json.dumps(STATUS, ensure_ascii=False, indent=1))
-    print(json.dumps({"ok_dados_abertos": ok_a, "ok_divulgacao": ok_b}))
-    sys.exit(0 if (ok_a or ok_b) else 1)
+    print(json.dumps({"ok_dados_abertos": ok_a, "ok_divulgacao": ok_b, "ok_segundo_turno": ok_c}))
+    sys.exit(0 if (ok_a or ok_b or ok_c) else 1)
 
 
 if __name__ == "__main__":
