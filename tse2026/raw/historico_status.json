@@ -1,0 +1,82 @@
+{
+ "inicio_utc": "2026-10-26T02:51:40Z",
+ "passos": [
+  {
+   "t": "02:51:42",
+   "msg": "1989: candidato HTTP 404 0 bytes; detalhe HTTP 404 0 bytes"
+  },
+  {
+   "t": "02:51:48",
+   "msg": "2002: candidato HTTP 200 120264128 bytes; detalhe HTTP 200 3625552 bytes"
+  },
+  {
+   "t": "02:51:57",
+   "msg": "2002 candidatos: votacao_candidato_munzona_2002_BRASIL.csv 1902577 linhas, colunas votos: validos=não"
+  },
+  {
+   "t": "02:51:57",
+   "msg": "2002 detalhe: detalhe_votacao_munzona_2002_BRASIL.csv 12522 linhas de presidente, campos: ['QT_APTOS', 'QT_COMPARECIMENTO', 'QT_ABSTENCOES', 'QT_VOTOS', 'QT_VOTOS_BRANCOS', 'QT_VOTOS_NULOS', 'QT_VOTOS_NOMINAIS_VALIDOS', 'QT_VOTOS_ANULADOS_APU_SEP']"
+  },
+  {
+   "t": "02:52:00",
+   "msg": "2006: candidato HTTP 200 130940089 bytes; detalhe HTTP 200 3893736 bytes"
+  },
+  {
+   "t": "02:52:09",
+   "msg": "2006 candidatos: votacao_candidato_munzona_2006_BRASIL.csv 2074249 linhas, colunas votos: validos=não"
+  },
+  {
+   "t": "02:52:10",
+   "msg": "2006 detalhe: detalhe_votacao_munzona_2006_BRASIL.csv 12584 linhas de presidente, campos: ['QT_APTOS', 'QT_COMPARECIMENTO', 'QT_ABSTENCOES', 'QT_VOTOS', 'QT_VOTOS_BRANCOS', 'QT_VOTOS_NULOS', 'QT_VOTOS_NOMINAIS_VALIDOS', 'QT_VOTOS_ANULADOS_APU_SEP']"
+  },
+  {
+   "t": "02:52:13",
+   "msg": "2010: candidato HTTP 200 132565895 bytes; detalhe HTTP 200 3354480 bytes"
+  },
+  {
+   "t": "02:52:22",
+   "msg": "2010 candidatos: votacao_candidato_munzona_2010_BRASIL.csv 2097061 linhas, colunas votos: validos=não"
+  },
+  {
+   "t": "02:52:23",
+   "msg": "2010 detalhe: detalhe_votacao_munzona_2010_BRASIL.csv 12918 linhas de presidente, campos: ['QT_APTOS', 'QT_COMPARECIMENTO', 'QT_ABSTENCOES', 'QT_VOTOS', 'QT_VOTOS_BRANCOS', 'QT_VOTOS_NULOS', 'QT_VOTOS_NOMINAIS_VALIDOS', 'QT_VOTOS_ANULADOS_APU_SEP']"
+  },
+  {
+   "t": "02:53:38",
+   "msg": "2014: candidato HTTP 200 494100168 bytes; detalhe HTTP 200 3937094 bytes"
+  },
+  {
+   "t": "02:54:14",
+   "msg": "2014 candidatos: votacao_candidato_munzona_2014_BRASIL.csv 7905274 linhas, colunas votos: validos=não"
+  },
+  {
+   "t": "02:54:14",
+   "msg": "2014 detalhe: detalhe_votacao_munzona_2014_BRASIL.csv 13096 linhas de presidente, campos: ['QT_APTOS', 'QT_COMPARECIMENTO', 'QT_ABSTENCOES', 'QT_VOTOS', 'QT_VOTOS_BRANCOS', 'QT_VOTOS_NULOS', 'QT_VOTOS_NOMINAIS_VALIDOS', 'QT_VOTOS_ANULADOS_APU_SEP']"
+  },
+  {
+   "t": "02:54:23",
+   "msg": "2018: candidato HTTP 200 395389280 bytes; detalhe HTTP 200 4269741 bytes"
+  },
+  {
+   "t": "02:55:08",
+   "msg": "2018 candidatos: votacao_candidato_munzona_2018_BRASIL.csv 8680108 linhas, colunas votos: validos=sim"
+  },
+  {
+   "t": "02:55:09",
+   "msg": "2018 detalhe: detalhe_votacao_munzona_2018_BRASIL.csv 12546 linhas de presidente, campos: ['QT_APTOS', 'QT_COMPARECIMENTO', 'QT_ABSTENCOES', 'QT_VOTOS', 'QT_VOTOS_BRANCOS', 'QT_VOTOS_NULOS', 'QT_VOTOS_NOMINAIS_VALIDOS', 'QT_VOTOS_ANULADOS_APU_SEP']"
+  },
+  {
+   "t": "02:55:26",
+   "msg": "2022: candidato HTTP 200 642592078 bytes; detalhe HTTP 200 4429327 bytes"
+  },
+  {
+   "t": "02:56:17",
+   "msg": "2022 candidatos: votacao_candidato_munzona_2022_BRASIL.csv 9377845 linhas, colunas votos: validos=sim"
+  },
+  {
+   "t": "02:56:17",
+   "msg": "2022 detalhe: detalhe_votacao_munzona_2022_BRASIL.csv 12566 linhas de presidente, campos: ['QT_APTOS', 'QT_COMPARECIMENTO', 'QT_ABSTENCOES', 'QT_VOTOS', 'QT_VOTOS_BRANCOS', 'QT_VOTOS_NULOS', 'QT_VOTOS_NOMINAIS_VALIDOS', 'QT_VOTOS_ANULADOS_APU_SEP']"
+  }
+ ],
+ "fim_utc": "2026-10-26T02:56:17Z"
+}

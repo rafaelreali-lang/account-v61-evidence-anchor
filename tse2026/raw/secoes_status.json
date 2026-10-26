@@ -1,0 +1,49 @@
+{
+ "inicio_utc": "2026-10-26T03:47:57Z",
+ "passos": [
+  {
+   "t": "03:47:57",
+   "msg": "municípios no config: 5571"
+  },
+  {
+   "t": "03:49:19",
+   "msg": "municípios: 11142 registros, 0 falhas",
+   "falhas": []
+  },
+  {
+   "t": "03:49:22",
+   "msg": "munzona 2026 HTTP 200 bytes=452159174"
+  },
+  {
+   "t": "03:49:42",
+   "msg": "munzona: 6292 linhas UF/mun/zona/turno; linhas de presidente por turno: {'1': 75504}"
+  },
+  {
+   "t": "03:49:42",
+   "msg": "descoberta BU: https://dadosabertos.tse.jus.br/dataset/resultados-2026-boletim-de-urna -> 200"
+  },
+  {
+   "t": "03:49:42",
+   "msg": "descoberta BU: https://dadosabertos.tse.jus.br/dataset/resultados-2026 -> 200"
+  },
+  {
+   "t": "03:49:43",
+   "msg": "descoberta BU: https://dadosabertos.tse.jus.br/api/3/action/package_search?q=boletim+de+urna+2026&rows=50 -> 200"
+  },
+  {
+   "t": "03:49:43",
+   "msg": "listagem buweb -> 403"
+  },
+  {
+   "t": "03:49:43",
+   "msg": "BU 2T: 0 arquivos encontrados",
+   "urls": []
+  }
+ ],
+ "ok": {
+  "municipios_api": true,
+  "munzona": true,
+  "boletins_2t": false
+ },
+ "fim_utc": "2026-10-26T03:49:43Z"
+}
