@@ -1,33 +1,33 @@
 {
- "inicio_utc": "2026-10-26T02:27:28Z",
+ "inicio_utc": "2026-10-26T02:51:41Z",
  "passos": [
   {
-   "t": "02:27:29",
+   "t": "02:51:41",
    "msg": "CKAN package_show resultados-2026 -> HTTP 200"
   },
   {
-   "t": "02:27:29",
+   "t": "02:51:41",
    "msg": "CKAN: 61 recursos; alvo: ['https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_candidato_munzona/votacao_candidato_munzona_2026.zip', 'https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_partido_munzona/votacao_partido_munzona_2026.zip']"
   },
   {
-   "t": "02:27:33",
+   "t": "02:51:49",
    "msg": "GET https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_candidato_munzona/votacao_candidato_munzona_2026.zip -> 200 bytes=452159174"
   },
   {
-   "t": "02:27:33",
+   "t": "02:51:49",
    "msg": "GET https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_partido_munzona/votacao_partido_munzona_2026.zip -> 200 bytes=22850814"
   },
   {
-   "t": "02:28:27",
+   "t": "02:52:27",
    "msg": "tse2026_agrega.py rc=0",
    "stderr": "lendo /tmp/tse2026_dl/votacao_candidato_munzona_2026.zip::votacao_candidato_munzona_2026_BRASIL.csv ...\nlendo /tmp/tse2026_dl/votacao_partido_munzona_2026.zip::votacao_partido_munzona_2026_BRASIL.csv ...\n"
   },
   {
-   "t": "02:28:27",
+   "t": "02:52:27",
    "msg": "ele-c.json -> HTTP 200"
   },
   {
-   "t": "02:28:27",
+   "t": "02:52:27",
    "msg": "eleições 2026 1º turno com cargos-alvo",
    "eleicoes": [
     [
@@ -73,13 +73,13 @@
    ]
   },
   {
-   "t": "02:28:36",
+   "t": "02:52:40",
    "msg": "divulgação: 109 arquivos lidos, 0 falhas",
    "falhas": [],
    "pst_nao_100": []
   },
   {
-   "t": "02:28:36",
+   "t": "02:52:40",
    "msg": "eleições 2026 2º turno",
    "eleicoes": [
     [
@@ -118,13 +118,13 @@
    ]
   },
   {
-   "t": "02:28:39",
+   "t": "02:52:45",
    "msg": "2T: 70 arquivos lidos, 0 falhas",
    "falhas": []
   }
  ],
  "ok_segundo_turno": true,
- "fim_utc": "2026-10-26T02:28:39Z",
+ "fim_utc": "2026-10-26T02:52:45Z",
  "ok_dados_abertos": true,
  "ok_divulgacao": true
 }

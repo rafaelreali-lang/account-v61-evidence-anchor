@@ -1,7 +1,7 @@
 # TSE – Eleições 2026, 1º turno – votos por partido e por cargo
 
 Fonte: Tribunal Superior Eleitoral, API de divulgação de resultados (https://resultados.tse.jus.br/oficial). Eleição `6257, 6259` – 6257 – Eleição Ordinária Federal - 2026 1º Turno; 6259 – Eleição Ordinária Estadual - 2026 1º Turno.
-Arquivos: `https://resultados.tse.jus.br/oficial/ele2026/6257/dados/{uf}/{uf}-c{cg:04d}-e006257-u.json; https://resultados.tse.jus.br/oficial/ele2026/6259/dados/{uf}/{uf}-c{cg:04d}-e006259-u.json` (um por UF x cargo). Lidos: 109; falhas: 0. Extraído em 2026-10-26 02:28 UTC.
+Arquivos: `https://resultados.tse.jus.br/oficial/ele2026/6257/dados/{uf}/{uf}-c{cg:04d}-e006257-u.json; https://resultados.tse.jus.br/oficial/ele2026/6259/dados/{uf}/{uf}-c{cg:04d}-e006259-u.json` (um por UF x cargo). Lidos: 109; falhas: 0. Extraído em 2026-10-26 02:52 UTC.
 Votos **nominais válidos** = soma dos votos de todos os candidatos do partido (`par.tvtn`). **Legenda** = votos na legenda do partido (`par.tvtl`), só em proporcionais. **Total válidos** = nominais + legenda.
 Senador 2026: cada eleitor vota em 2 candidatos. Dep. Distrital (DF) agregado com Dep. Estadual.
 Seções totalizadas (`pst`) = 100,00% em todos os arquivos: sim.
