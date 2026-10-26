@@ -224,7 +224,7 @@ def divulgacao():
     for ciclo_e, cd_e, nome_e, ufs, cargos in eleicoes:
       for uf in ufs:
         for cg, ds in cargos:
-            if (cg == "8") != (uf == "df"):
+            if (cg == "8" and uf != "df") or (cg == "7" and uf == "df"):
                 continue  # distrital só no DF; estadual nos demais
             u = padroes[cd_e].format(uf=uf, cg=int(cg))
             code, txt, _ = http(u, tries=3, timeout=180)
