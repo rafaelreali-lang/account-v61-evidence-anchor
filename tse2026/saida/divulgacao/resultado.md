@@ -1,18 +1,18 @@
 # TSE – Eleições 2026, 1º turno – votos por partido e por cargo
 
 Fonte: Tribunal Superior Eleitoral, API de divulgação de resultados (https://resultados.tse.jus.br/oficial). Eleição `6257, 6259` – 6257 – Eleição Ordinária Federal - 2026 1º Turno; 6259 – Eleição Ordinária Estadual - 2026 1º Turno.
-Arquivos: `https://resultados.tse.jus.br/oficial/ele2026/6257/dados/{uf}/{uf}-c{cg:04d}-e006257-u.json; https://resultados.tse.jus.br/oficial/ele2026/6259/dados/{uf}/{uf}-c{cg:04d}-e006259-u.json` (um por UF x cargo). Lidos: 106; falhas: 0. Extraído em 2026-10-05 11:41 UTC.
+Arquivos: `https://resultados.tse.jus.br/oficial/ele2026/6257/dados/{uf}/{uf}-c{cg:04d}-e006257-u.json; https://resultados.tse.jus.br/oficial/ele2026/6259/dados/{uf}/{uf}-c{cg:04d}-e006259-u.json` (um por UF x cargo). Lidos: 106; falhas: 0. Extraído em 2026-10-26 02:24 UTC.
 Votos **nominais válidos** = soma dos votos de todos os candidatos do partido (`par.tvtn`). **Legenda** = votos na legenda do partido (`par.tvtl`), só em proporcionais. **Total válidos** = nominais + legenda.
 Senador 2026: cada eleitor vota em 2 candidatos. Dep. Distrital (DF) agregado com Dep. Estadual.
 Seções totalizadas (`pst`) = 100,00% em todos os arquivos: sim.
-Checagem por UF x cargo (soma partidos = totais do TSE): 92 de 106 ok.
+Checagem por UF x cargo (soma partidos = totais do TSE): 82 de 106 ok.
 
 Direita: PL, NOVO, REPUBLICANOS, PP, UNIAO, PRD, PRTB, DC, MISSAO  
 Centro-direita: PSD, MDB, PSDB, CIDADANIA, PODE, SOLIDARIEDADE, AVANTE, AGIR, MOBILIZA
 
 ## Dep. Estadual/Distrital
 
-Nominais válidos: **105.468.548** · Legenda: **7.270.677** · Total válidos: **112.739.225**
+Nominais válidos: **105.451.564** · Legenda: **7.287.561** · Total válidos: **112.739.125**
 
 | Partido | Bloco | Nominais válidos | Legenda | Total válidos | % total |
 |---|---|---:|---:|---:|---:|
@@ -20,16 +20,16 @@ Nominais válidos: **105.468.548** · Legenda: **7.270.677** · Total válidos: 
 | PT | Demais | 13.726.416 | 1.833.796 | 15.560.212 | 13,80% |
 | PSD | Centro-direita | 11.069.425 | 413.669 | 11.483.094 | 10,19% |
 | MDB | Centro-direita | 9.765.466 | 568.626 | 10.334.092 | 9,17% |
-| REPUBLICANOS | Direita | 6.923.498 | 368.683 | 7.292.181 | 6,47% |
+| REPUBLICANOS | Direita | 6.923.443 | 368.683 | 7.292.126 | 6,47% |
 | PP | Direita | 6.449.245 | 474.254 | 6.923.499 | 6,14% |
-| UNIAO | Direita | 6.048.578 | 313.793 | 6.362.371 | 5,64% |
+| UNIAO | Direita | 6.031.694 | 330.677 | 6.362.371 | 5,64% |
 | PODE | Centro-direita | 4.697.951 | 144.304 | 4.842.255 | 4,30% |
 | PSB | Demais | 4.263.327 | 377.796 | 4.641.123 | 4,12% |
 | PSOL | Demais | 4.069.130 | 177.194 | 4.246.324 | 3,77% |
 | PSDB | Centro-direita | 2.899.632 | 193.197 | 3.092.829 | 2,74% |
 | PDT | Demais | 2.415.382 | 270.422 | 2.685.804 | 2,38% |
 | NOVO | Direita | 2.070.874 | 158.114 | 2.228.988 | 1,98% |
-| AVANTE | Centro-direita | 2.165.093 | 58.643 | 2.223.736 | 1,97% |
+| AVANTE | Centro-direita | 2.165.064 | 58.643 | 2.223.707 | 1,97% |
 | PV | Demais | 1.636.799 | 54.728 | 1.691.527 | 1,50% |
 | PRD | Direita | 1.106.752 | 59.944 | 1.166.696 | 1,03% |
 | PCDOB | Demais | 1.084.108 | 43.442 | 1.127.550 | 1,00% |
@@ -37,7 +37,7 @@ Nominais válidos: **105.468.548** · Legenda: **7.270.677** · Total válidos: 
 | AGIR | Centro-direita | 712.643 | 12.988 | 725.631 | 0,64% |
 | SOLIDARIEDADE | Centro-direita | 623.609 | 29.779 | 653.388 | 0,58% |
 | MOBILIZA | Centro-direita | 526.838 | 15.725 | 542.563 | 0,48% |
-| REDE | Demais | 289.299 | 196.464 | 485.763 | 0,43% |
+| REDE | Demais | 289.283 | 196.464 | 485.747 | 0,43% |
 | DEMOCRATA | Demais | 298.875 | 10.479 | 309.354 | 0,27% |
 | CIDADANIA | Centro-direita | 209.213 | 35.530 | 244.743 | 0,22% |
 | DC | Direita | 222.637 | 6.189 | 228.826 | 0,20% |
@@ -45,11 +45,11 @@ Nominais válidos: **105.468.548** · Legenda: **7.270.677** · Total válidos: 
 | PSTU | Demais | 12.560 | 9.905 | 22.465 | 0,02% |
 | PCB | Demais | 2.143 | 4.098 | 6.241 | 0,01% |
 | PCO | Demais | 984 | 699 | 1.683 | 0,00% |
-| **Subtotal Direita** | | **44.961.079** | **2.810.444** | **47.771.523** | **42,37%** |
-| **Subtotal Centro-direita** | | **32.669.870** | **1.472.461** | **34.142.331** | **30,28%** |
-| **Direita + Centro-direita** | | **77.630.949** | **4.282.905** | **81.913.854** | **72,66%** |
-| Demais partidos | | 27.837.599 | 2.987.772 | 30.825.371 | 27,34% |
-| Total válidos | | 105.468.548 | 7.270.677 | 112.739.225 | 100,00% |
+| **Subtotal Direita** | | **44.944.140** | **2.827.328** | **47.771.468** | **42,37%** |
+| **Subtotal Centro-direita** | | **32.669.841** | **1.472.461** | **34.142.302** | **30,28%** |
+| **Direita + Centro-direita** | | **77.613.981** | **4.299.789** | **81.913.770** | **72,66%** |
+| Demais partidos | | 27.837.583 | 2.987.772 | 30.825.355 | 27,34% |
+| Total válidos | | 105.451.564 | 7.287.561 | 112.739.125 | 100,00% |
 
 ## Dep. Federal
 
@@ -199,7 +199,7 @@ Nominais válidos: **119.300.788** · Legenda: **0** · Total válidos: **119.30
 
 | Cargo | Direita | Centro-direita | Direita + Centro-direita | Demais | Total nominais | % só Direita | % Dir+CD |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Dep. Estadual/Distrital | 44.961.079 | 32.669.870 | 77.630.949 | 27.837.599 | 105.468.548 | 42,63% | 73,61% |
+| Dep. Estadual/Distrital | 44.944.140 | 32.669.841 | 77.613.981 | 27.837.583 | 105.451.564 | 42,62% | 73,60% |
 | Dep. Federal | 52.582.797 | 28.217.564 | 80.800.361 | 27.843.062 | 108.643.423 | 48,40% | 74,37% |
 | Senador | 107.783.379 | 30.410.790 | 138.194.169 | 65.617.752 | 203.811.921 | 52,88% | 67,80% |
 | Governador | 51.108.311 | 28.704.252 | 79.812.563 | 30.290.747 | 110.103.310 | 46,42% | 72,49% |
@@ -209,7 +209,7 @@ Nominais válidos: **119.300.788** · Legenda: **0** · Total válidos: **119.30
 
 | Cargo | Direita | Centro-direita | Direita + Centro-direita | Demais | Total válidos | % só Direita | % Dir+CD |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Dep. Estadual/Distrital | 47.771.523 | 34.142.331 | 81.913.854 | 30.825.371 | 112.739.225 | 42,37% | 72,66% |
+| Dep. Estadual/Distrital | 47.771.468 | 34.142.302 | 81.913.770 | 30.825.355 | 112.739.125 | 42,37% | 72,66% |
 | Dep. Federal | 53.843.524 | 28.793.022 | 82.636.546 | 29.382.416 | 112.018.962 | 48,07% | 73,77% |
 | Senador | 107.783.379 | 30.410.790 | 138.194.169 | 65.617.752 | 203.811.921 | 52,88% | 67,80% |
 | Governador | 51.108.311 | 28.704.252 | 79.812.563 | 30.290.747 | 110.103.310 | 46,42% | 72,49% |
@@ -237,11 +237,11 @@ Soma dos partidos vs totais do próprio arquivo do TSE: `tvtn`=`vnom` (nominais 
 | AM | Governador | 7 | 7 | 2.071.985 | 2.071.985 | 0 | 0 | 2.071.985 | 0 | 100,00 | sim |
 | AM | Senador | 8 | 8 | 3.841.845 | 3.841.845 | 0 | 0 | 3.841.845 | 0 | 100,00 | sim |
 | AM | Deputado Federal | 22 | 135 | 2.063.900 | 2.063.900 | 55.352 | 55.352 | 2.119.252 | 233 | 100,00 | sim |
-| AM | Deputado Estadual | 18 | 278 | 2.033.211 | 2.033.211 | 91.910 | 91.910 | 2.125.121 | 493 | 100,00 | sim |
+| AM | Deputado Estadual | 18 | 278 | 2.033.211 | 2.033.211 | 91.910 | 91.910 | 2.125.121 | 359 | 100,00 | NÃO |
 | AP | Governador | 5 | 5 | 448.747 | 448.747 | 0 | 0 | 448.747 | 0 | 100,00 | sim |
 | AP | Senador | 8 | 9 | 883.225 | 883.225 | 0 | 0 | 883.225 | 0 | 100,00 | sim |
 | AP | Deputado Federal | 16 | 84 | 447.950 | 447.950 | 11.730 | 11.730 | 459.680 | 1.016 | 100,00 | sim |
-| AP | Deputado Estadual | 15 | 183 | 432.501 | 432.501 | 18.230 | 18.230 | 450.731 | 13.175 | 100,00 | sim |
+| AP | Deputado Estadual | 15 | 183 | 432.501 | 432.501 | 18.230 | 18.230 | 450.731 | 11.441 | 100,00 | NÃO |
 | BA | Governador | 6 | 6 | 8.291.090 | 8.291.090 | 0 | 0 | 8.291.090 | 0 | 100,00 | sim |
 | BA | Senador | 9 | 10 | 14.418.409 | 14.418.409 | 0 | 0 | 14.418.409 | 0 | 100,00 | sim |
 | BA | Deputado Federal | 24 | 502 | 8.001.270 | 8.001.270 | 280.546 | 280.546 | 8.281.816 | 75 | 100,00 | sim |
@@ -263,14 +263,14 @@ Soma dos partidos vs totais do próprio arquivo do TSE: `tvtn`=`vnom` (nominais 
 | MA | Senador | 11 | 11 | 7.117.850 | 7.117.850 | 0 | 0 | 7.117.850 | 23.995 | 100,00 | sim |
 | MA | Deputado Federal | 25 | 266 | 3.857.063 | 3.857.063 | 113.904 | 113.904 | 3.970.967 | 1.019 | 100,00 | sim |
 | MA | Deputado Estadual | 18 | 271 | 3.650.791 | 3.650.791 | 271.195 | 271.195 | 3.921.986 | 2.294 | 100,00 | sim |
-| MG | Governador | 11 | 11 | 11.410.371 | 11.410.371 | 0 | 0 | 11.410.371 | 1.464 | 100,00 | sim |
-| MG | Senador | 13 | 16 | 20.522.302 | 20.522.302 | 0 | 0 | 20.522.302 | 3.184 | 100,00 | sim |
-| MG | Deputado Federal | 26 | 710 | 11.049.070 | 11.049.070 | 331.081 | 331.081 | 11.380.151 | 90.067 | 100,00 | NÃO |
-| MG | Deputado Estadual | 28 | 944 | 10.527.875 | 10.527.875 | 781.451 | 781.451 | 11.309.326 | 1.792 | 100,00 | NÃO |
+| MG | Governador | 11 | 11 | 11.410.371 | 11.410.371 | 0 | 0 | 11.410.371 | 0 | 100,00 | NÃO |
+| MG | Senador | 13 | 16 | 20.522.302 | 20.522.302 | 0 | 0 | 20.522.302 | 0 | 100,00 | NÃO |
+| MG | Deputado Federal | 26 | 710 | 11.049.070 | 11.049.070 | 331.081 | 331.081 | 11.380.151 | 83.146 | 100,00 | NÃO |
+| MG | Deputado Estadual | 28 | 943 | 10.527.875 | 10.527.875 | 781.451 | 781.451 | 11.309.326 | 943 | 100,00 | NÃO |
 | MS | Governador | 8 | 8 | 1.363.298 | 1.363.298 | 0 | 0 | 1.363.298 | 0 | 100,00 | sim |
 | MS | Senador | 8 | 9 | 2.608.059 | 2.608.059 | 0 | 0 | 2.608.059 | 0 | 100,00 | sim |
 | MS | Deputado Federal | 21 | 119 | 1.367.994 | 1.367.994 | 52.768 | 52.768 | 1.420.762 | 0 | 100,00 | sim |
-| MS | Deputado Estadual | 19 | 237 | 1.304.262 | 1.304.262 | 77.544 | 77.544 | 1.381.806 | 35.656 | 100,00 | sim |
+| MS | Deputado Estadual | 19 | 237 | 1.287.378 | 1.287.378 | 94.428 | 94.428 | 1.381.806 | 35.211 | 100,00 | NÃO |
 | MT | Governador | 6 | 6 | 1.856.293 | 1.856.293 | 0 | 0 | 1.856.293 | 0 | 100,00 | sim |
 | MT | Senador | 9 | 10 | 3.575.264 | 3.575.264 | 0 | 0 | 3.575.264 | 0 | 100,00 | sim |
 | MT | Deputado Federal | 23 | 129 | 1.843.036 | 1.843.036 | 58.683 | 58.683 | 1.901.719 | 2.889 | 100,00 | sim |
@@ -284,28 +284,28 @@ Soma dos partidos vs totais do próprio arquivo do TSE: `tvtn`=`vnom` (nominais 
 | PB | Deputado Federal | 22 | 164 | 2.330.421 | 2.330.421 | 69.528 | 69.528 | 2.399.949 | 4.211 | 100,00 | sim |
 | PB | Deputado Estadual | 13 | 195 | 2.249.989 | 2.249.989 | 149.399 | 149.399 | 2.399.388 | 23.053 | 100,00 | sim |
 | PE | Governador | 7 | 7 | 5.266.852 | 5.266.852 | 0 | 0 | 5.266.852 | 0 | 100,00 | sim |
-| PE | Senador | 11 | 12 | 9.292.778 | 9.292.778 | 0 | 0 | 9.292.778 | 18.179 | 100,00 | sim |
-| PE | Deputado Federal | 24 | 360 | 5.101.066 | 5.101.066 | 163.437 | 163.437 | 5.264.503 | 1.124 | 100,00 | sim |
-| PE | Deputado Estadual | 23 | 487 | 4.887.948 | 4.887.948 | 360.345 | 360.345 | 5.248.293 | 9.394 | 100,00 | NÃO |
-| PI | Governador | 10 | 10 | 2.021.200 | 2.021.200 | 0 | 0 | 2.021.200 | 5.075 | 100,00 | sim |
-| PI | Senador | 13 | 16 | 3.640.949 | 3.640.949 | 0 | 0 | 3.640.949 | 25.524 | 100,00 | sim |
-| PI | Deputado Federal | 23 | 154 | 2.026.624 | 2.026.624 | 82.439 | 82.439 | 2.109.063 | 5.629 | 100,00 | NÃO |
-| PI | Deputado Estadual | 13 | 143 | 1.943.626 | 1.943.626 | 160.964 | 160.964 | 2.104.590 | 827 | 100,00 | sim |
+| PE | Senador | 10 | 11 | 9.292.778 | 9.292.778 | 0 | 0 | 9.292.778 | 0 | 100,00 | sim |
+| PE | Deputado Federal | 24 | 359 | 5.101.066 | 5.101.066 | 163.437 | 163.437 | 5.264.503 | 242 | 100,00 | NÃO |
+| PE | Deputado Estadual | 23 | 487 | 4.887.948 | 4.887.948 | 360.345 | 360.345 | 5.248.293 | 2.715 | 100,00 | NÃO |
+| PI | Governador | 10 | 10 | 2.021.200 | 2.021.200 | 0 | 0 | 2.021.200 | 1.858 | 100,00 | NÃO |
+| PI | Senador | 13 | 16 | 3.640.949 | 3.640.949 | 0 | 0 | 3.640.949 | 2.790 | 100,00 | NÃO |
+| PI | Deputado Federal | 23 | 154 | 2.026.624 | 2.026.624 | 82.439 | 82.439 | 2.109.063 | 1.995 | 100,00 | NÃO |
+| PI | Deputado Estadual | 13 | 143 | 1.943.626 | 1.943.626 | 160.964 | 160.964 | 2.104.590 | 820 | 100,00 | NÃO |
 | PR | Governador | 8 | 8 | 6.242.274 | 6.242.274 | 0 | 0 | 6.242.274 | 1.525 | 100,00 | sim |
 | PR | Senador | 8 | 9 | 11.543.639 | 11.543.639 | 0 | 0 | 11.543.639 | 9.194 | 100,00 | sim |
 | PR | Deputado Federal | 23 | 404 | 6.034.278 | 6.034.278 | 182.951 | 182.951 | 6.217.229 | 32.452 | 100,00 | NÃO |
 | PR | Deputado Estadual | 25 | 591 | 5.794.554 | 5.794.554 | 385.707 | 385.707 | 6.180.261 | 17.517 | 100,00 | NÃO |
-| RJ | Governador | 9 | 9 | 8.394.627 | 8.394.627 | 0 | 0 | 8.394.627 | 274.411 | 100,00 | sim |
+| RJ | Governador | 8 | 8 | 8.394.627 | 8.394.627 | 0 | 0 | 8.394.627 | 0 | 100,00 | sim |
 | RJ | Senador | 12 | 15 | 15.923.657 | 15.923.657 | 0 | 0 | 15.923.657 | 5.825 | 100,00 | sim |
 | RJ | Deputado Federal | 27 | 765 | 8.467.054 | 8.467.054 | 276.699 | 276.699 | 8.743.753 | 114.193 | 100,00 | sim |
-| RJ | Deputado Estadual | 28 | 1139 | 7.943.487 | 7.943.487 | 536.018 | 536.018 | 8.479.505 | 338.516 | 100,00 | sim |
-| RN | Governador | 8 | 8 | 1.986.441 | 1.986.441 | 0 | 0 | 1.986.441 | 227 | 100,00 | sim |
+| RJ | Deputado Estadual | 28 | 1135 | 7.943.403 | 7.943.403 | 536.018 | 536.018 | 8.479.421 | 338.448 | 100,00 | sim |
+| RN | Governador | 7 | 7 | 1.986.441 | 1.986.441 | 0 | 0 | 1.986.441 | 0 | 100,00 | sim |
 | RN | Senador | 10 | 13 | 3.606.806 | 3.606.806 | 0 | 0 | 3.606.806 | 0 | 100,00 | sim |
 | RN | Deputado Federal | 20 | 99 | 1.906.878 | 1.906.878 | 60.822 | 60.822 | 1.967.700 | 0 | 100,00 | sim |
-| RN | Deputado Estadual | 16 | 148 | 1.849.787 | 1.849.787 | 88.522 | 88.522 | 1.938.309 | 3.922 | 100,00 | sim |
+| RN | Deputado Estadual | 16 | 147 | 1.849.771 | 1.849.771 | 88.522 | 88.522 | 1.938.293 | 3.922 | 100,00 | sim |
 | RO | Governador | 6 | 6 | 945.058 | 945.058 | 0 | 0 | 945.058 | 0 | 100,00 | sim |
 | RO | Senador | 9 | 10 | 1.759.898 | 1.759.898 | 0 | 0 | 1.759.898 | 25.316 | 100,00 | sim |
-| RO | Deputado Federal | 21 | 125 | 904.018 | 904.018 | 28.921 | 28.921 | 932.939 | 2.758 | 100,00 | NÃO |
+| RO | Deputado Federal | 21 | 125 | 904.018 | 904.018 | 28.921 | 28.921 | 932.939 | 753 | 100,00 | NÃO |
 | RO | Deputado Estadual | 18 | 248 | 896.601 | 896.601 | 45.420 | 45.420 | 942.021 | 2.030 | 100,00 | sim |
 | RR | Governador | 5 | 5 | 319.336 | 319.336 | 0 | 0 | 319.336 | 77 | 100,00 | sim |
 | RR | Senador | 11 | 13 | 603.365 | 603.365 | 0 | 0 | 603.365 | 6.248 | 100,00 | sim |
@@ -313,12 +313,12 @@ Soma dos partidos vs totais do próprio arquivo do TSE: `tvtn`=`vnom` (nominais 
 | RR | Deputado Estadual | 15 | 231 | 311.275 | 311.275 | 9.653 | 9.653 | 320.928 | 918 | 100,00 | sim |
 | RS | Governador | 7 | 7 | 6.055.306 | 6.055.306 | 0 | 0 | 6.055.306 | 2.137 | 100,00 | sim |
 | RS | Senador | 11 | 13 | 11.465.782 | 11.465.782 | 0 | 0 | 11.465.782 | 2.310 | 100,00 | sim |
-| RS | Deputado Federal | 26 | 435 | 5.905.067 | 5.905.067 | 176.204 | 176.204 | 6.081.271 | 27.611 | 100,00 | NÃO |
-| RS | Deputado Estadual | 21 | 528 | 5.772.830 | 5.772.830 | 334.165 | 334.165 | 6.106.995 | 2.308 | 100,00 | NÃO |
+| RS | Deputado Federal | 26 | 435 | 5.905.067 | 5.905.067 | 176.204 | 176.204 | 6.081.271 | 27.170 | 100,00 | NÃO |
+| RS | Deputado Estadual | 21 | 528 | 5.772.830 | 5.772.830 | 334.165 | 334.165 | 6.106.995 | 1.961 | 100,00 | NÃO |
 | SC | Governador | 8 | 8 | 4.265.641 | 4.265.641 | 0 | 0 | 4.265.641 | 0 | 100,00 | sim |
 | SC | Senador | 10 | 13 | 8.041.100 | 8.041.100 | 0 | 0 | 8.041.100 | 11.975 | 100,00 | sim |
 | SC | Deputado Federal | 24 | 224 | 4.109.395 | 4.109.395 | 122.103 | 122.103 | 4.231.498 | 28.651 | 100,00 | sim |
-| SC | Deputado Estadual | 22 | 398 | 4.054.787 | 4.054.787 | 216.297 | 216.297 | 4.271.084 | 17.253 | 100,00 | sim |
+| SC | Deputado Estadual | 22 | 398 | 4.054.787 | 4.054.787 | 216.297 | 216.297 | 4.271.084 | 484 | 100,00 | NÃO |
 | SE | Governador | 4 | 4 | 1.189.927 | 1.189.927 | 0 | 0 | 1.189.927 | 37.081 | 100,00 | sim |
 | SE | Senador | 8 | 10 | 2.254.769 | 2.254.769 | 0 | 0 | 2.254.769 | 78.400 | 100,00 | sim |
 | SE | Deputado Federal | 21 | 121 | 1.242.532 | 1.242.532 | 41.168 | 41.168 | 1.283.700 | 12.968 | 100,00 | NÃO |

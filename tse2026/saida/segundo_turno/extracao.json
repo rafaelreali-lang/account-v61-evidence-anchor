@@ -1,0 +1,39 @@
+{
+ "quando_utc": "2026-10-26T02:24:14Z",
+ "eleicoes_2t": [
+  [
+   "ele2026",
+   "6260",
+   "Eleição Ordinária Estadual - 2026 2º Turno",
+   [
+    "ac",
+    "am",
+    "df",
+    "es",
+    "rn",
+    "to"
+   ],
+   [
+    [
+     "3",
+     "Governador"
+    ]
+   ]
+  ],
+  [
+   "ele2026",
+   "6258",
+   "Eleição Ordinária Federal - 2026 2º Turno",
+   [
+    "br"
+   ],
+   [
+    [
+     "1",
+     "Presidente"
+    ]
+   ]
+  ]
+ ],
+ "falhas": []
+}
