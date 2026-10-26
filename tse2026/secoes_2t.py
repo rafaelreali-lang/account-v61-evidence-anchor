@@ -177,7 +177,9 @@ def descobrir_bu():
         log(f"descoberta BU: {pg} -> {code}")
         if code == 200 and txt:
             for m in re.findall(r'https?://[^"\'\s<>]*bweb_2t_[A-Z]{2}_\d+\.zip', txt):
-                urls.add(m)
+                carimbo = re.search(r'bweb_2t_[A-Z]{2}_(\d+)\.zip', m).group(1)
+                if "2026" in m.split("/")[-2:][0] or carimbo[4:8] == "2026":  # só boletins de 2026
+                    urls.add(m)
     if not urls:  # tentativa por padrão de nome com carimbo desconhecido: lista diretório
         code, txt = http("https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/", tries=1, timeout=60)
         log(f"listagem buweb -> {code}")
